@@ -6,5 +6,6 @@ Vous trouverez dans ce repository un ensemble de ressources pour vous aider dans
 
 ## Modèles EMail
 
-- [Consultez](docs/email-template.md)
+- [Consultez la documentation](docs/email-template.md)
 
+* Exemples de modèles dans le répertoire email-templates
