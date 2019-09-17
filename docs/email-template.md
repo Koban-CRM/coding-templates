@@ -58,7 +58,7 @@ Il est possible de positionner un texte sous 2 colonnes via le code suivant :
 
 #### Définition
 
-Un bloc Image est de type <img> et doit se positionner sous le <td> de la zone et comporter un attribut **data-kbnzone="image"**.
+Un bloc Image est de type &lt;img&gt; et doit se positionner sous le &lt;td&gt; de la zone et comporter un attribut **data-kbnzone="image"**.
 
 ```html
 <img data-kbnblock="image" src="/Content/img/cdn/logo.png" style="display:block" border="0" />
@@ -66,9 +66,19 @@ Un bloc Image est de type <img> et doit se positionner sous le <td> de la zone e
 
 #### Style
 
+Les styles suivants sont repérés par Koban et doivent être placés directement au niveau de la balise **img** :
 
+- **margin** : Positionner margin:auto pour avoir une image centrée
+- **padding** : Pour disposer d'un espacement, définissez un style padding en px qui sera repéré par Koban.
 
 ### Bouton
 
 ### Divider
 
+
+
+### Groupe d'image
+
+### Image et texte
+
+### Réseaux sociaux
