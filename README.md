@@ -6,4 +6,5 @@ Vous trouverez dans ce repository un ensemble de ressources pour vous aider dans
 
 ## Modèles EMail
 
-- [Consultez](LICENSE)
+- [Consultez](docs/email-template.md)
+
