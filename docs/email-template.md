@@ -2,8 +2,6 @@
 
 Le but de cette section est de vous guider dans la construction d'un template HTML email Koban compatible avec l'éditeur 2019.
 
-[TOC]
-
 ## Principe de base
 
 Un modèle d'email Koban est un fichier HTML directement lisible par un navigateur. Il comporte cependant quelques spécificités permettant d'initialiser l'interface de l'éditeur Koban.
