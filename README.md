@@ -70,7 +70,7 @@ You can find here payloads description for all webhooks.
 
 ##### Account
 
-```json
+```
 [
           {
             "GridLabel": "TESTTTTTT", // Account Label
@@ -163,7 +163,7 @@ You can find here payloads description for all webhooks.
 
 ##### Contact
 
-```json
+```
  [
                 {
                     "InvalidMail": false, // Invalid Email
