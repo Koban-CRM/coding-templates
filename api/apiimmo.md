@@ -6,17 +6,21 @@ Vous trouverez sur cette page des exemples de cas d'utilisation de l'API Koban I
 
 Afin de vous connecter à l'API Koban, il est nécessaire de vous authentifier. Vous trouverez sur cette [page](../API.md) l'ensemble des informations nécessaires.
 
+L'ensemble des exemples est disponible sur cette page :
+
+[https://documenter.getpostman.com/view/1804856/SzKQyLUw](https://documenter.getpostman.com/view/1804856/SzKQyLUw)
+
 ## Stock
 
 Le stock des programmes et des lots est récupérable par un système distant via l'API. De même, une alimentation du stock dans Koban est possible à partir d'un système distant via l'API.
 
 ### Liste des programmes
 
-La méthode à appeler est ncDealProcess/GetAll.
+La méthode à appeler est [ncDealProcess/GetAll](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#8733c229-9409-496c-908c-4fbd2bb17ee2).
 
 ### Liste des lots
 
-La méthode à appeler est [ncDeal/GetUpdated](https://app-koban.com/Static/apidoc.html#operation/ncDeal_GetUpdated).
+La méthode à appeler est [ncDeal/GetUpdated](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#9f747eeb-fa95-4e1e-b03e-66f4527de5fe).
 
 Cette méthode prend comme paramètre updated, de format date UNIX qui permet de ne récupérer que les lots créés ou modifiés dans Koban depuis une certaine date.
 
@@ -51,7 +55,7 @@ Plusieurs étapes sont nécessaire pour la pose d'une dénonciation :
 
 Il vous faut appeler la méthode de vérification grâce aux coordonnées du prospect concerné (Email, Nom et prénom, numéro de téléphone) et du programme (grâce à son code).
 
-La méthode à appeler est [ncDenonc/CheckDenonc](https://app-koban.com/Static/apidoc.html#operation/ncDenonc_CheckDenonc)
+La méthode à appeler est [ncDenonc/CheckDenonc](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#9618d302-595a-4c99-91e4-766c82b3eff7)
 
 Le résultat permet de savoir si une dénonciation est possible :
 
@@ -73,7 +77,7 @@ Les informations à transmettre sont les suivantes :
 
 ### Poser la dénonciation
 
-Dernièrement, vous devez poser la dénonciation en appelant la méthode [ncDenonc/Create](https://app-koban.com/Static/apidoc.html#operation/ncDenonc_Create). Les informations à fournir sont identiques à la méthode de vérification appelée en étape 1.
+Dernièrement, vous devez poser la dénonciation en appelant la méthode [ncDenonc/Create](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#e4bd4243-facd-48f3-80e9-b422089910f5). Les informations à fournir sont identiques à la méthode de vérification appelée en étape 1.
 
 ## Options
 
@@ -83,7 +87,7 @@ Via un WebHook, vous pouvez également être notifié en cas d'une pose d'option
 
 ### Vérification préalable à la pose d'option
 
-Pour vérifier qu'une pose d'option est possible sur un lot, vous devez appeler la méthode [ncOption/GetLotStatus](https://app-koban.com/Static/apidoc.html#operation/ncOption_GetLotStatus).
+Pour vérifier qu'une pose d'option est possible sur un lot, vous devez appeler la méthode [ncOption/GetLotStatus](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#069a1f5d-0ba0-427f-b609-5192ca0f1a9f).
 
 Cette méthode doit **<u>être appelée avant chaque pose d'option</u>**.
 
@@ -98,7 +102,7 @@ Les résultats possibles sont les suivants :
 
 ### Pose d'option
 
-Une fois la vérification effectuée, la pose d'option est possible via la méthode [ncOption/Add](https://app-koban.com/Static/apidoc.html#operation/ncOption_Add).
+Une fois la vérification effectuée, la pose d'option est possible via la méthode [ncOption/Add](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#16a2a9e1-baf8-4815-be2c-9a0e3d4e53ce).
 
 Les paramètres à fournir sont les suivants :
 
@@ -127,7 +131,7 @@ Si un système distant est connecté, les options doivent expirer suivant les r�
 
 ### Prolongation d'option
 
-La méthode permettant de prolonger une option est [ncOption/Prolong](https://app-koban.com/Static/apidoc.html#operation/ncOption_Prolong).
+La méthode permettant de prolonger une option est [ncOption/Prolong](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#6c26a601-3c10-47a0-85cf-b0df501a8513).
 
 Les seuls paramètres à transmettre sont Deal.Extcode, Rank et DateProlongation (au format UNIX).
 
@@ -138,7 +142,7 @@ Le résultat sera le suivant :
 
 ### Annulation d'option
 
-En cas d'annulation d'option, la méthode à appeler est [ncOption/Undo](https://app-koban.com/Static/apidoc.html#operation/ncOption_Undo).
+En cas d'annulation d'option, la méthode à appeler est [ncOption/Undo](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#f3e9cdca-74d0-406f-9f09-be167d166689).
 
 Les seuls paramètres à transmettre sont Deal.Extcode et Rank.
 
@@ -241,7 +245,7 @@ L'API Koban permet de poser un dossier de réservation incomplet (pose initiale)
 
 ### Pose de préréservation initiale
 
-La méthode Koban à appeler est [ncPreresv/Add](https://app-koban.com/Static/apidoc.html#operation/ncPreresv_Add).
+La méthode Koban à appeler est [ncPreresv/Add](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#33bceee9-4493-49a3-9bdf-4d8851c45a74).
 
 Les paramètres à transmettre sont :
 
@@ -258,7 +262,7 @@ Les résultats possibles sont :
 
 ### Désistement
 
-La méthode Koban à appeler est [ncPreresv/Desist](https://app-koban.com/Static/apidoc.html#operation/ncPreresv_Desist).
+La méthode Koban à appeler est [ncPreresv/Desist](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#a62d2c84-51f4-47e8-8834-1862d398a547).
 
 Les paramètres à transmettre sont :
 
