@@ -35,8 +35,32 @@ Here you can find API methods list.
 
 The first link provides all methods in the actual Koban cloud version. The second link provides all methods in the next Koban cloud version.
 
-- [Browse all methods (Production)](https://app-koban.com/Static/apidoc.html)
-- [Browse all methods (Future)](http://test.app-koban.com/Static/apidoc.html)
+- [Browse all methods](https://documenter.getpostman.com/view/1804856/SzKSSKAk?version=latest)
+
+### Dealing with Tags and specific fields with API
+
+You can create, update or retrieve accounts, contacts, leads, deals or actions with the API. For each object, tags and specific field can be retrieved.
+
+#### Tags
+
+Tags are retrieved or updated with Tags array.
+
+Each part of this array consists of minimum two properties :
+
+- **TagCategoryCode** : Tag category code (*you can customize it under Koban parameters > General > Tag Category, select your category and change External Code*) 
+- **Label** : The label of the tag
+- **ExternalCode** : If you prefer find your tag by its code, use this property
+
+Warning ! the tag must be declared in Koban before inserting it with the API !
+
+#### Specific objects 
+
+Specific objects are retrieved or updated with **MoreFields** array.
+
+Each part of this array consists of two properties :
+
+- **FieldId** : The specific field ID in Koban (*you can find it in Koban parameters > Object (Third, Contact, Lead...) > Customization*)
+- **Value** : The specific field value (true or false for a boolean value, DD/MM/YYYY for a date...)
 
 ### Webhooks
 
