@@ -27,9 +27,15 @@ Cette méthode prend comme paramètre updated, de format date UNIX qui permet de
 Le retour est un tableau paginé de lots dont les propriétés immobilier sont les suivantes :
 
 - Label : Le nom du lot
-- Status : Le statut du lot
+- Status : Le statut du lot :
+  - LIBRE - Lot libre
+  - OPTION - Au moins une option est en cours sur ce lot
+  - PRERESV - Lot préréservé
+  - RESV - Lot réservé
+  - BLOQUE - Lot bloqué
+  - (*) : D'autres statuts peuvent également être disponible en fonction de votre paramétrage
 - Process : Le programme
-- Result : Définit si le lot a été acté ou non 
+- Result : Définit si le lot a été acté ou non. Si oui, Result est égal à WON
 - Extcode : Le code externe
 - Amountprev : Le montant du lot
 - Tags : Tableau de segmentation du lot. Le tableau comprend X valeurs (TagCategory, Label)  dont TagCategory correspond à :
@@ -37,9 +43,27 @@ Le retour est un tableau paginé de lots dont les propriétés immobilier sont l
   - TPLOG : Type de logement
   - ETAGE : Etage 
 - MoreFields : Tableau des informations supplémentaires. Le tableau comprend X valeurs (FieldId, Value) dont FieldId correspond au champ personnalisé créé dans Koban. Pour récupérer les valeurs, il faut consulter la page de paramétrage Programmes et Lots > Personnalisation
-- Type : Le type du lot. NULL si le lot est principal, SECONDARY si le lot est secondaire.
+- Type : Le type du lot. NULL si le lot est principal, **Secondary** si le lot est secondaire.
 - Link : Si le lot est secondaire, donne l'identifiant Koban du lot principal attaché.
 - Guid : L'identifiant Koban du lot
+
+### Alimenter les lots
+
+#### Méthode à appeler
+
+La méthode à appeler est ncDeal/PostMany?uniqueproperty=Extcode&thirduniqueproperty=Extcode
+
+Cette méthode prend comme corps de requête un tableau de lot dont les propriétés sont les mêmes que celles retournées par la méthode de liste ci-dessus.
+
+#### Lots secondaires
+
+La méthode de transmission des lots secondaires d'un lot principal est la suivante :
+
+- Dans ncDeal/PostMany, alimentez d'abord le lot principal
+- Puis rappelez ncDeal/PostMany pour alimenter les lots secondaires en remplissant les propriétés :
+  - Type : **Secondary**
+  - Link : Le <u>code externe</u> du lot principal
+- Vous pouvez transmettre le lot principal et le lot secondaire dans la même requête à la condition que le lot principal figure en premier dans le tableau
 
 ## Dénonciations
 
