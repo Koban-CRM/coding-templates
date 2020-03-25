@@ -51,7 +51,7 @@ Le retour est un tableau paginé de lots dont les propriétés immobilier sont l
 
 #### Méthode à appeler
 
-La méthode à appeler est ncDeal/PostMany?uniqueproperty=Extcode&thirduniqueproperty=Extcode
+La méthode à appeler est [ncDeal/PostMany?uniqueproperty=Extcode&thirduniqueproperty=Extcode](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#0b003fe9-260c-4b5e-ba3e-2e4b91859c69)
 
 Cette méthode prend comme corps de requête un tableau de lot dont les propriétés sont les mêmes que celles retournées par la méthode de liste ci-dessus.
 
