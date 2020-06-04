@@ -65,6 +65,46 @@ La méthode de transmission des lots secondaires d'un lot principal est la suiva
   - Link : Le <u>code externe</u> du lot principal
 - Vous pouvez transmettre le lot principal et le lot secondaire dans la même requête à la condition que le lot principal figure en premier dans le tableau
 
+## Leads et Demandes
+
+Koban permet d'alimenter un système distant avec les demandes (ou engagements) fournis online ou offline.
+
+### Notification par Koban d'un système distant via un webhook
+
+Les URL à appeler par Koban sont paramétrables par l'administrateur au niveau de l'interface de paramétrage du module Koban Immobilier.
+
+En cas d'authentification nécessaire sur ces URL (header, querystring...), il est nécessaire de contacter le support Koban pour la mise en place du processus d'authentification.
+
+Les différentes notifications possibles sont les suivantes :
+
+#### Transmission d'une demande d'un lead
+
+Cette notification s'effectue au moment de l'engagement dans Koban, qu'il soit fait via un point d'engagement ou bien via une saisie d'une demande offline.
+
+L'URL est appelée en POST, les paramètres transmis en form-encoded.
+
+| Paramètre    | Description                                                  |
+| ------------ | ------------------------------------------------------------ |
+| Contact_Type | Type du contact Piste (Lead) ou Compte (Third)               |
+| Lead_Guid    | Guid Koban de la piste (si la personne est une piste)        |
+| Third_Guid   | Guid Koban du compte (si la personne est un compte)          |
+| Name         | Nom du contact                                               |
+| FirstName    | Prénom du contact                                            |
+| EMail        | EMail du contact                                             |
+| Phone        | Numéro de téléphone du contact                               |
+| Mobile       | Mobile du contact                                            |
+| Tags         | Tableau des tags du contact.<br />De la forme { TagCategoryCode : "", Label : "" }<br />**TagCategoryCode** : PROGRAMME, NBPIECES, ETAGE<br />**Label** : Valeur |
+| MoreFields   | Tableau des champs supplémentaires du contact<br />De la forme { FieldId : "", Value : ""} |
+| Optin        | Optin du contact                                             |
+| Comments     | Commentaires                                                 |
+
+Le retour attendu est au format JSON avec les propriétés suivantes **:**
+
+- success : true ou false
+- error : Erreur éventuelle composée des propriétés :
+  - message : libellé de l’erreur
+  - code : Code de l’erreur
+
 ## Dénonciations
 
 Les dénonciations peuvent être alimentées dans Koban par un outil externe.
