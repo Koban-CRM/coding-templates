@@ -155,7 +155,7 @@ Dernièrement, vous devez poser la dénonciation en appelant la méthode [ncDeno
 
 L'API Koban permet de vérifier qu'une pose d'option est possible et ensuite de pouvoir poser une option.
 
-Via un WebHook, vous pouvez également être notifié en cas d'une pose d'option sur Koban. Si vous associez un système distant à Koban sur les options, vous devez également vérifier que votre système gère l'expiration d'option de la même manière que Koban, afin que les systèmes soient synchrones.
+Via un WebHook, vous pouvez également être notifié en cas d'une pose d'option sur Koban. Si vous associez un système distant à Koban sur les options, vous devez également vérifier que votre système gère l'expiration d'option de la même manière que Koban, afin que les systèmes soient synchrones. Si l'expiration n'est pas possible, alors un abonnement au webhook Koban correspondant est obligatoire.
 
 ### Vérification préalable à la pose d'option
 
@@ -200,6 +200,7 @@ Si un système distant est connecté, les options doivent expirer suivant les r�
 
 - Expiration possible toutes les 30 minutes à heure et demi-heure fixe
 - L'expiration doit tenir compte de la durée de vie des options paramétrée dans Koban et de l'éventuellement date de prolongation.
+- Si le système distant ne gère pas les expirations, alors il devra s'abonner au webhook d'expiration de Koban dont la documentation est disponible ci-dessous.
 
 ### Prolongation d'option
 
@@ -307,6 +308,24 @@ Le retour attendu est au format JSON avec les propriétés suivantes **:**
 
 - success : true ou false
 
+- error : Erreur éventuelle composée des propriétés :
+  - message : libellé de l’erreur
+  - code : Code de l’erreur
+
+#### Expiration d'option
+
+L'URL est appelée en POST, les paramètres transmis en form-encoded.
+
+| Paramètre     | Description                                |
+| ------------- | ------------------------------------------ |
+| Deal_Extcode  | Code externe du lot                        |
+| Deal_Guid     | Code Koban du lot                          |
+| Third_Extcode | Code externe du compte ayant posé l’option |
+| Third_Guid    | Guid Koban du compte ayant posé l’option   |
+
+Le retour attendu est au format JSON avec les propriétés suivantes **:**
+
+- success : true ou false
 - error : Erreur éventuelle composée des propriétés :
   - message : libellé de l’erreur
   - code : Code de l’erreur
