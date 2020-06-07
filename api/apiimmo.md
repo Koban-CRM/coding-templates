@@ -47,6 +47,14 @@ Le retour est un tableau paginé de lots dont les propriétés immobilier sont l
 - Link : Si le lot est secondaire, donne l'identifiant Koban du lot principal attaché.
 - Guid : L'identifiant Koban du lot
 
+### Liste des lots d'un programme
+
+La méthode à appeler est ncDeal/GetUpdatedProcess
+
+Cette méthode prend comme paramètre **updated**, de format date UNIX qui permet de ne récupérer que les lots créés ou modifiés dans Koban depuis une certaine date ainsi que le paramètre **processcode** prenant comme valeur le code du programme.
+
+Le retour est de format identique à la liste des lots.
+
 ### Alimenter les lots
 
 #### Méthode à appeler
@@ -323,6 +331,61 @@ Les résultats possibles sont :
 
 - success : Si true, la pose du dossier de réservation a été effectuée. Si false, la pose du dossier de réservation n'a pas été faite et la raison est retournée par errorcode
 - errorcode. Si errorcode = 01, alors le lot n'existe pas, Si errorcode = 02, le prospect n'existe pas.
+
+### Pose de préréservation validée
+
+La méthode Koban à appeler est ncPreresv/AddValid
+
+Les paramètres à transmettre sont les suivants :
+
+| Paramètre                | Description                                          |
+| ------------------------ | ---------------------------------------------------- |
+| Deal.Extcode             | Code externe du lot                                  |
+| Res1Genre                | Genre Réservataire 1                                 |
+| ThirdId                  | Guid Acquéreur                                       |
+| PrixVente                | Prix de vente                                        |
+| Garantie                 | Montant de Garantie                                  |
+| AssignedToId             | Guid Commercial                                      |
+| PreresaDate              | Date de préréservation                               |
+| Annexe1_cent             | Montant Annexe 1 (en centimes)                       |
+| Annexe2_cent             | Montant Annexe 1 (en centimes)                       |
+| Annexe3_cent             | Montant Annexe 1 (en centimes)                       |
+| Annexe4_cent             | Montant Annexe 1 (en centimes)                       |
+| Annexe5_cent             | Montant Annexe 1 (en centimes)                       |
+| Res1Nom                  | Nom Réservataire 1                                   |
+| Res1Prenom               | Prénom Réservataire 1                                |
+| Res1DateNaissance        | Date de naissance  Réservataire  1                   |
+| CanalOrigine             | Canal d'origine (Code valeur de liste Koban)         |
+| Res1NomSCI               | Nom SCI                                              |
+| Res1Adr_Street           | Adresse - Rue Réservataire 1                         |
+| Res1Adr_Complement       | Adresse - Complément Réservataire 1                  |
+| Res1Adr_ZipCode          | Adresse - Code Postal Réservataire 1                 |
+| Res1Adr_City             | Adresse - Ville Réservataire 1                       |
+| Res1Phone                | Numéro de téléphone Réservataire 1                   |
+| Res1Mail                 | EMail Réservataire 1                                 |
+| Res2                     | Réservataire 2 (O/N)                                 |
+| Res2Nom                  | Nom Réservataire 2                                   |
+| Res2Prenom               | Prénom Réservataire 2                                |
+| Res2Phone                | Numéro de téléphone Réservataire 2                   |
+| Res2Mail                 | EMail Réservataire 2                                 |
+| Options                  | Options                                              |
+| FraisNotaireMontant_cent | Montant frais de notaire (centimes)                  |
+| Apport_cent              | Montant Apport (centimes)                            |
+| PretImmo1_cent           | Montant Prêt Immo 1 (centimes)                       |
+| TVA                      | TVA                                                  |
+| PretImmo2_cent           | Montant Prêt Immo 2 (Centimes)                       |
+| CanalVente               | Canal de vente (Code valeur de liste Koban)          |
+| Res1Profession           | Profession Réservaire 1 (Code valeur de liste Koban) |
+| Res2DateNaissance        | Date de naissance Réservataire 2                     |
+| Res2Profession           | Profession Réservaire 2 (Code valeur de liste Koban) |
+| Res2Adr_Street           | Rue Réservataire 2                                   |
+| Res2Adr_ZipCode          | Code postal Réservataire 2                           |
+| Res2Adr_City             | Ville Réservataire 2                                 |
+| FraisNotaireOffert       | Frais de notaire offert (O/N)                        |
+| NatureAchat              | Nature achat (Code valeur de liste Koban)            |
+| PlusieursPrets           | Plusieurs prêts (O/N)                                |
+| PTZ                      | PTZ (O/N)                                            |
+| PTZMontant_cent          | Montant PTZ (centimes)                               |
 
 ### Désistement
 
