@@ -171,6 +171,8 @@ Les résultats possibles sont les suivants :
 - Result = 1 et MaxRank = 1. Une option en cours de rang 1 est posée. La pose d'option est possible en rang 2. EndDate donne la date et l'heure d'expiration de l'option en rang 1.
 - Result = 1 et MaxRank = 2. Deux options sont en cours. La pose d'option n'est pas possible.
 - Result = -1. Le lot est inconnu dans Koban. La pose d'option n'est pas possible.
+- Result = -2. Le lot est préréservé
+- Result = -3. Il y a déjà 2 options sur le lot.
 
 ### Pose d'option
 
