@@ -137,7 +137,7 @@ Le résultat permet de savoir si une dénonciation est possible :
 
 ### Créer le prospect
 
-Si vous devez au préalable créer le prospect dans Koban, vous devez appeler la méthode [ncThird/PostOne](https:/app-koban.com/Static/apidoc.html#operation/ncThird_PostOne).
+Si vous devez au préalable créer le prospect dans Koban, vous devez appeler la méthode [ncThird/PostOne](https://documenter.getpostman.com/view/1804856/SzKSSKAk?version=latest#1de098b3-97db-462f-ba84-feb91776b214).
 
 Les informations à transmettre sont les suivantes :
 
