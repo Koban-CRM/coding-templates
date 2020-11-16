@@ -15,8 +15,8 @@ Here you can find endpoints :
 For authentication, you must provide two keys on your **header request**.
 This keys can be found on Koban under **Parameters > API**.
 
-- **x-ncApi** : API Key
-- **x-ncUser** : User login key
+- **X-ncApi** : API Key
+- **X-ncUser** : User login key
 
 Example : 20 first leads
 
