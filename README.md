@@ -14,5 +14,5 @@ Afin de permettre un accès à nos clients français et étrangers, le chapitre 
 ## API
 
 - [Read the documentation](API.md)
-
+- [Cas d'utilisation de l'API](api/apiuse.md)
 - [Koban Immobilier : Exemples d'utilisation de l'API](api/apiimmo.md)
