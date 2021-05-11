@@ -147,6 +147,17 @@ Les informations à transmettre sont les suivantes :
 - Des informations supplémentaires (Budget, source marketing)
 - L'origine du prospect (CGP par exemple dans le cas d'une dénonciation via un CGP)
 
+### Créer le CGP
+
+Si le prospect a été apporté par un CGP, vous pouvez renseigner la fiche du CGP dans Koban. Vous devez dans ce cas appeler la méthode [ncThird/PostOne](https://documenter.getpostman.com/view/1804856/SzKSSKAk?version=latest#1de098b3-97db-462f-ba84-feb91776b214).
+
+Les informations à transmettre sont les suivantes :
+
+* Coordonnées du CGP
+* Statut CGP (Code CGP)
+
+En retour, vous devez conserver l'identifiant du CGP pour pouvoir le transmettre au moment de la dénonciation.
+
 ### Poser la dénonciation
 
 Dernièrement, vous devez poser la dénonciation en appelant la méthode [ncDenonc/Create](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#e4bd4243-facd-48f3-80e9-b422089910f5). Les informations à fournir sont identiques à la méthode de vérification appelée en étape 1.
