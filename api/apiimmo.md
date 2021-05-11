@@ -162,6 +162,8 @@ En retour, vous devez conserver l'identifiant du CGP pour pouvoir le transmettre
 
 Dernièrement, vous devez poser la dénonciation en appelant la méthode [ncDenonc/Create](https://documenter.getpostman.com/view/1804856/SzKQyLUw?version=latest#e4bd4243-facd-48f3-80e9-b422089910f5). Les informations à fournir sont identiques à la méthode de vérification appelée en étape 1.
 
+Si vous souhaitez transmettre un CGP posant la dénonciation, vous devez transmettre la propriété **By** avec comme valeur l'identifiant Koban du CGP.
+
 ## Options
 
 L'API Koban permet de vérifier qu'une pose d'option est possible et ensuite de pouvoir poser une option.
