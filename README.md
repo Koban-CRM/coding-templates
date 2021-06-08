@@ -11,6 +11,10 @@ Afin de permettre un accès à nos clients français et étrangers, le chapitre 
 
 * Exemples de modèles dans le répertoire email-templates
 
+## Modèles de document
+
+* [Modèle Devis](gestdoc/quote.md)
+
 ## API
 
 - [Read the documentation](API.md)
