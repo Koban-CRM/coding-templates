@@ -13,7 +13,7 @@ Afin de permettre un accès à nos clients français et étrangers, le chapitre 
 
 ## Modèles de document
 
-* [Modèle Devis](gestdoc/quote.md)
+* [Modèle Devis](gestdocs/quote.md)
 
 ## API
 
