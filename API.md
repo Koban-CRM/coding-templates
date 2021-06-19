@@ -226,3 +226,6 @@ You can find here payloads description for all webhooks.
             ]
 ```
 
+##### Deal
+
+Look at this page for description : [Webhook Deal](/api/webhook/deal.md)
