@@ -5,33 +5,29 @@ Elle est à utiliser pour les mises à jour via l'API et est également retourn�
 
 **Version Compatible** : Juin 2021 et supérieures
 
-```json
+```
 {
-    {
-    	"Dateorder": "2021-02-15",
-    	"eShop": "",
-    	"eShopStatus": "",
-    	"Extcode": "",
-    	"Number": "CM210003",
-    	"Status": "PENDING",
-    	"Third": { "Extcode": "C1000446" },
-    	"Lines":
+    	"Dateorder": "2021-02-15", 	// Date Commande
+    	"Extcode": "",				// Code Externe Commande
+    	"Number": "CM210003",		// Numéro Commande
+    	"Status": "PENDING",		// Statut. Peut etre : DRAFT (Brouillon), PENDING (En cours), CLOSED (Terminé)
+    	"Third": { "Extcode": "C1000446" }, // Compte associé (renseigner la clé)
+    	"Lines": // Lignes de commande
     	[
     		{
-    			"Label": "Line name",
-    			"Extcode": "line code",
-    			"Comments":"",
-    			"Ht": 10,
-    			"PrHt": 8,
-    			"Quantity": 1,
-    			"Product": { "Reference": "A" },
-    			"Red": 0,
-    			"Ttc": 12,
-    			"Vat": 20,
-    			"UnitPrice": 10
+    			"Label": "Line name", // Libellé
+    			"Extcode": "line code", // Code externe ligne
+    			"Comments": "", // Commentaires
+    			"Ht": 10, // Montant HT
+    			"PrHt": 8, // Montant Prix de revient HT
+    			"Quantity": 1, // Quantité
+    			"Product": { "Reference": "A" }, // Référence Produit
+    			"Red": 0, // Réduction
+    			"Ttc": 12, // Montant TTC
+    			"Vat": 20, // Taux de TVA
+    			"UnitPrice": 10 // Montant unitaire HT
     		}
     	]
-    }
 }
 ```
 
