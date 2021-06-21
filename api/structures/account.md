@@ -5,39 +5,25 @@ Elle est à utiliser pour les mises à jour via l'API et est également retourn�
 
 **Version Compatible** : Juin 2021 et supérieures
 
-```json
+```
 {
-    "Label": "SNCF RESEAU", 					// Nom du compte
+    "Label": "SNCF RESEAU", 		 			// Nom du compte			
     "Obsolete": false,							// Obsolète O/N
     "FirstName": null,							// Prénom du compte (dans le cas d'un Particulier)
-    "Gender": null,
-    "StructCode": null,
+    "Gender": null,								// Civilité
+    "StructCode": null,							// Code Structure (non utilisé)
     "Status": {
-    	"Label": "Prospect",
-        "Code": "PRO",
-        "Guid": "60cd9f910dc36124f4d11baa",
-        "DUpdated": 0.0,
-        "Updated": "0001-01-01T00:00:00",
-        "DCreated": 0.0,
-        "Created": "0001-01-01T00:00:00"
+    	"Code": "PRO",							// Code externe du statut
 	},
     "Type": {
-    	"Label": "Professionnel",
-        "Code": "PRO",
-        "Guid": "60cd9f910dc36124f4d11bd1",
-        "DUpdated": 0.0,
-        "Updated": "0001-01-01T00:00:00",
-        "DCreated": 0.0,
-        "Created": "0001-01-01T00:00:00"
+    	"Code": "PRO",							// Code Type
 	},
-    "Extcode": "C1000739",
-    "OtherCode": null,
-    "Comments": null,
-    "AccountingCode": null,
-    "Address": {
-    	"Guid": null,
+    "Extcode": "C1000739",						// Code Externe
+    "OtherCode": null,							// Autre code
+    "Comments": null,							// Commentaires
+    "AccountingCode": null,						// Compte comptable
+    "Address": {								// Adresse principale
         "Extcode": null,
-        "Reference": null,
         "Compl": null,
         "Street": "8 chemin de hausses",
         "ZipCode": "64100",
@@ -47,52 +33,68 @@ Elle est à utiliser pour les mises à jour via l'API et est également retourn�
         "Phone": null,
         "Country": "FR"
 	},
-    "InvoiceAddress": null,
-    "DelivAddress": [],
-    "Website": null,
-    "Phone": null,
-    "Cell": null,
-    "Fax": null,
-    "EMail": null,
-    "OfficialNumber": null,
-    "Vat": null,
-    "Unsuscribe": false,
-    "InvalidMail": false,
-    "InvalidSMS": false,
-    "ModeRglt": { "ExternalCode": "CB"},
-    "EcheanceCode": null,
-    "Title": null,
-    "eShop": null,
-    "TaxRate": 0.0,
-    "AssignedTo": null,
-    "UpdatedBy": "60cd9f910dc36124f4d11b9b",
-    "Tags": [
+    "InvoiceAddress": {							// Adresse de facturation
+        "Extcode": null,
+        "Compl": null,
+        "Street": "8 chemin de hausses",
+        "ZipCode": "64100",
+        "City": "BAYONNE",
+        "Name": null,
+        "FirstName": null,
+        "Phone": null,
+        "Country": "FR"
+	},
+    "DelivAddress": [							// Adresses de livraison
+        {
+            "Extcode": null,
+            "Compl": null,
+            "Street": "8 chemin de hausses",
+            "ZipCode": "64100",
+            "City": "BAYONNE",
+            "Name": null,
+            "FirstName": null,
+            "Phone": null,
+            "Country": "FR"
+        }
+    ],
+    "Website": null,							// Site web
+    "Phone": null,								// Téléphone
+    "Cell": null,								// Mobile
+    "Fax": null,								// Fax
+    "EMail": null,								// EMail
+    "OfficialNumber": null,						// SIRET
+    "Vat": null,								// Code TVA
+    "Unsuscribe": false,						// Désinscrit (O/N)
+    "InvalidMail": false,						// Email invalide (O/N)
+    "InvalidSMS": false,						// SMS invalide (O/N)
+    "ModeRglt": "CB",							// Code Mode de règlement
+    "TaxRate": 0.0,								// Taux de TVA
+    "AssignedTo": "Louise DUMONT",				// Affectation
+    "Tags": [									// Liste des Tags
     	{
             "TagCategoryCode": "CODE",
             "Label": "Nom Tag",
             "ExternalCode": "CodeTag"
         }
     ],
-    "MoreFields": [
+    "MoreFields": [								// Liste des champs complémentaires
     	{
             "FieldId": "60cda25c0dc36124f4d11cfb",
             "Value": "Customized field value"
         }
     ],
-    "Origin": null,
-    "NextAction": null,
-    "UTMCampaign": null,
-    "UTMMedium": null,
-    "UTMSource": null,
-    "Optin": false,
-    "Geo": null,
-    "AccountToInvoice": null,
-    "IBAN": null,
-    "Guid": "60cda25c0dc36124f4d11cfa",
+    "Origin": {									// Code Origine
+    	"Code": "WEB"
+    },
+    "Optin": false,								// Optin
+    "AccountToInvoice": {						// Identifiant Autre compte à facturer
+    	"Extcode" : "C1000740"
+    },					
+    "Guid": "60cda25c0dc36124f4d11cfa",			// Identifiant Koban
     "DUpdated": 1624096380.3639998,
     "Updated": "2021-06-19T09:53:00.364",
     "DCreated": 1624096380.3639998,
-    "Created": "2021-06-19T09:53:00.364""
+    "Created": "2021-06-19T09:53:00.364"
 }
 ```
 
