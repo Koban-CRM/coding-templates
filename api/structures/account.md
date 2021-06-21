@@ -59,15 +59,26 @@ Elle est à utiliser pour les mises à jour via l'API et est également retourn�
     "Unsuscribe": false,
     "InvalidMail": false,
     "InvalidSMS": false,
-    "ModeRglt": null,
+    "ModeRglt": { "ExternalCode": "CB"},
     "EcheanceCode": null,
     "Title": null,
     "eShop": null,
     "TaxRate": 0.0,
     "AssignedTo": null,
     "UpdatedBy": "60cd9f910dc36124f4d11b9b",
-    "Tags": null,
-    "MoreFields": null,
+    "Tags": [
+    	{
+            "TagCategoryCode": "CODE",
+            "Label": "Nom Tag",
+            "ExternalCode": "CodeTag"
+        }
+    ],
+    "MoreFields": [
+    	{
+            "FieldId": "60cda25c0dc36124f4d11cfb",
+            "Value": "Customized field value"
+        }
+    ],
     "Origin": null,
     "NextAction": null,
     "UTMCampaign": null,
