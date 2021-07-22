@@ -68,3 +68,4 @@ POST http(s)://SERVERKOBAN/Form/sbm?id=[IDFORMULAIRE]&cid=[cid]&zid=[CLESECURITE
 contact_name=ACMETEST&Tag5502afe50dc3610e8c5fd66f=5502afe50dc3610e8c5fd66c&Spe57cfe7b40dc3610ed8db0bf5=38
 ```
 
+[See example here](https://documenter.getpostman.com/view/1804856/SzKSSKAk?version=latest#cd216ab2-f29d-417e-bf0c-32ef63b19fd7).
