@@ -3,7 +3,7 @@
 Voici la structure JSON d'une commande via l'API Koban.
 Elle est à utiliser pour les mises à jour via l'API et est également retournée par les méthodes de sélection.
 
-**Version Compatible** : Juin 2021 et supérieures
+**Version Compatible** : Aout 2021 et supérieures
 
 ```
 {
