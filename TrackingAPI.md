@@ -69,3 +69,15 @@ contact_name=ACMETEST&Tag5502afe50dc3610e8c5fd66f=5502afe50dc3610e8c5fd66c&Spe57
 ```
 
 [See example here](https://documenter.getpostman.com/view/1804856/SzKSSKAk?version=latest#cd216ab2-f29d-417e-bf0c-32ef63b19fd7).
+
+#### Return
+
+The method returns a JSON with this structure :
+
+* s (Success true or false)
+
+* a
+  * ld : Lead Guid created or updated
+  * ctc : Contact Guid updated
+  * th: Third Guid updated
+
