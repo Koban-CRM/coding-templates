@@ -80,3 +80,35 @@ It is to be used for updates via the API and is also returned by the selection m
 | Declinaisons   | Product Declinaisons                 | yes             | yes                              |
 | DCreated       | Creation Date (timestamp)            | yes             | yes                              |
 | DUpdated       | Last update date (timestamp)         | no              | yes                              |
+
+# API Price structure
+
+You can find here JSON structure for a product price in the Koban API.
+
+It is to be used for updates via the API and is also returned by the selection methods.
+
+**Versions** : From August 2021
+
+```
+{
+    "Product": { "Reference": "Product Reference"},
+    "AccountType": { "Guid": "xxxxxxx"},
+    "Third": { "Extcode": "XXXXX"},
+    "Ht": 10,
+    "Margin": 2,
+    "PrHt": 8,
+    "VatRate": 20,
+    "Ttc": 12
+}
+```
+
+| Property    | Comment                    | In POST methods             | In GET methods   |
+| ----------- | -------------------------- | --------------------------- | ---------------- |
+| Product     | Product                    | yes                         | yes              |
+| AccountType | Account Type               | yes (Guid)                  | no               |
+| Third       | Account                    | yes (External code or Guid) | yes (Koban Guid) |
+| Ht          | Amount without taxes       | yes                         | yes              |
+| Margin      | Margin without taxes       | yes                         | yes              |
+| PrHt        | Buying price without taxes | yes                         | yes              |
+| VatRate     | Taxes %                    | yes                         | yes              |
+| Ttc         | Amount with taxes          | yes                         | yes              |
