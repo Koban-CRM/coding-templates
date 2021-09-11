@@ -10,7 +10,7 @@ Elle est à utiliser pour les mises à jour via l'API et est également retourn�
     	"Dateorder": "2021-02-15", 	// Date Commande
     	"Extcode": "",				// Code Externe Commande
     	"Number": "CM210003",		// Numéro Commande
-    	"Status": "PENDING",		// Statut. Peut etre : DRAFT (Brouillon), PENDING (En cours), CLOSED (Terminé). Si Status est égal à PENDING ou CLOSED, alors le devis ou l'opportunité liés seront gagnés
+    	"Status": "PENDING",		// Statut. Peut etre : DRAFT (Brouillon), PENDING (En cours), CLOSED (Terminé), TOVALID, TODELIVER, DELIVERED. Si Status est égal à PENDING ou CLOSED, alors le devis ou l'opportunité liés seront gagnés
     	"Third": { "Extcode": "C1000446" }, // Compte associé (renseigner la clé)
     	"Deal": { "Extcode": "D10004" }, // Opportunité associée (renseigner la clé)
     	"Quote": { "Number": "D10004" }, // Devis associé (renseigner obligatoirement Number. Si le devis est fourni, l'opportunité associée sera celle du devis)
