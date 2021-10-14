@@ -1,100 +1,146 @@
-# Structure API Compte
+# API Model Structure - Account
 
-Voici la structure JSON d'un compte via l'API Koban.
-Elle est à utiliser pour les mises à jour via l'API et est également retournée par les méthodes de sélection.
+You can find here JSON structure for an account (company or person) in the Koban API.
 
-**Version Compatible** : Juin 2021 et supérieures
+It is to be used for updates via the API and is also returned by the selection methods.
+
+**Versions** : From August 2021
 
 ```
 {
-    "Label": "SNCF RESEAU", 		 			// Nom du compte			
-    "Obsolete": false,							// Obsolète O/N
-    "FirstName": null,							// Prénom du compte (dans le cas d'un Particulier)
-    "Gender": null,								// Civilité
-    "StructCode": null,							// Code Structure (non utilisé)
+    "Label": "Account Label",
+    "FirstName": "FirstName (for a person)",
+    "Gender": null,
+    "StructCode": null,
     "Status": {
-    	"Code": "PRO",							// Code externe du statut
-	},
-    "Type": {
-    	"Code": "PRO",							// Code Type
-	},
-    "Extcode": "C1000739",						// Code Externe
-    "OtherCode": null,							// Autre code
-    "Comments": null,							// Commentaires
-    "AccountingCode": null,						// Compte comptable
-    "Address": {								// Adresse principale
-        "Extcode": null,
-        "Compl": null,
-        "Street": "8 chemin de hausses",
-        "ZipCode": "64100",
-        "City": "BAYONNE",
-        "Name": null,
-        "FirstName": null,
-        "Phone": null,
-        "Country": "FR"
-	},
-    "InvoiceAddress": {							// Adresse de facturation
-        "Extcode": null,
-        "Compl": null,
-        "Street": "8 chemin de hausses",
-        "ZipCode": "64100",
-        "City": "BAYONNE",
-        "Name": null,
-        "FirstName": null,
-        "Phone": null,
-        "Country": "FR"
-	},
-    "DelivAddress": [							// Adresses de livraison
-        {
-            "Extcode": null,
-            "Compl": null,
-            "Street": "8 chemin de hausses",
-            "ZipCode": "64100",
-            "City": "BAYONNE",
-            "Name": null,
-            "FirstName": null,
-            "Phone": null,
-            "Country": "FR"
-        }
-    ],
-    "Website": null,							// Site web
-    "Phone": null,								// Téléphone
-    "Cell": null,								// Mobile
-    "Fax": null,								// Fax
-    "EMail": null,								// EMail
-    "OfficialNumber": null,						// SIRET
-    "Vat": null,								// Code TVA
-    "Unsuscribe": false,						// Désinscrit (O/N)
-    "InvalidMail": false,						// Email invalide (O/N)
-    "InvalidSMS": false,						// SMS invalide (O/N)
-    "ModeRglt": "CB",							// Code Mode de règlement
-    "TaxRate": 0.0,								// Taux de TVA
-    "AssignedTo": "Louise DUMONT",				// Affectation
-    "Tags": [									// Liste des Tags
-    	{
-            "TagCategoryCode": "CODE",
-            "Label": "Nom Tag",
-            "ExternalCode": "CodeTag"
-        }
-    ],
-    "MoreFields": [								// Liste des champs complémentaires
-    	{
-            "FieldId": "60cda25c0dc36124f4d11cfb",
-            "Value": "Customized field value"
-        }
-    ],
-    "Origin": {									// Code Origine
-    	"Code": "WEB"
+        "Code": "CLI"
     },
-    "Optin": false,								// Optin
-    "AccountToInvoice": {						// Identifiant Autre compte à facturer
-    	"Extcode" : "C1000740"
-    },					
-    "Guid": "60cda25c0dc36124f4d11cfa",			// Identifiant Koban
-    "DUpdated": 1624096380.3639998,
-    "Updated": "2021-06-19T09:53:00.364",
-    "DCreated": 1624096380.3639998,
-    "Created": "2021-06-19T09:53:00.364"
+    "Type": {
+        "Code": "PRO"
+    },
+    "Extcode": "External Code",
+    "OtherCode": null,
+    "Comments": "Comments",
+    "AccountingCode": "411FEF",
+    "Address": {
+    	"Reference": "Code",
+    	"Name": "Address Contact name",
+    	"FirstName": "Address Contact First name",
+    	"Phone": "Address Contact phone",
+    	"Compl": "Address complement",
+    	"Street": "Address street",
+    	"ZipCode": "00000",
+    	"City": "Address City",
+    	"Country": "FR"
+    },
+    "DelivAddress": {
+    	"Reference": "Code",
+    	"Name": "Address Contact name",
+    	"FirstName": "Address Contact First name",
+    	"Phone": "Address Contact phone",
+    	"Compl": "Delivery Address complement",
+    	"Street": "Delivery Address street",
+    	"ZipCode": "00000",
+    	"City": "Delivery Address City",
+    	"Country": "FR"
+    },
+    "Website": null,
+    "Phone": null,
+    "Cell": null,
+    "Fax": null,
+    "EMail": null,
+    "ModeRglt": "PAYMENTMODE LIST VALUE CODE",
+    "OfficialNumber": null,
+    "Vat": null,
+    "Unsuscribe": false,
+    "InvalidMail": false,
+    "InvalidSMS": false,
+    "Title": null,
+    "eShop": null,
+    "TaxRate": 0,
+    "AssignedTo": {
+        "Extcode": "User Code"
+    },
+    "Tags": [
+    	{
+    		"TagCategoryCode": "ACTIVITY",
+    		"Label": "Agriculture"
+		}
+	],
+    "MoreFields": [
+        {
+            "FieldId": "5583bc220dc3610a94746d3b",
+            "Value": "Field Value"
+        },
+        {
+            "FieldId": "5583bc2c0dc3610a94746d3c",
+            "Value": ""
+        },
+        {
+            "FieldId": "55bb1fc80dc3610a9c3128d8_lb",
+            "Value": ""
+        },
+        {
+            "FieldId": "55bb1fc80dc3610a9c3128d8",
+            "Value": ""
+        },
+        {
+            "FieldId": "55e706ce0dc36404a8cd2278",
+            "Value": "true"
+        }
+    ],
+    "Origin": {
+        "Code": "WEB"
+    },
+    "UTMSource": "UTM Marketing Source",
+    "UTMMedium": "UTM Marketing Medium",
+    "UTMCampaign": "UTM Marketing Campaign",
+    "Optin": true,
+    "DCreated": 1555608374,
+    "DUpdated": 1555608374
 }
 ```
+
+| Property         | Comment                                                      | In POST methods                | In GET methods |
+| ---------------- | ------------------------------------------------------------ | ------------------------------ | -------------- |
+| Label            | Company Label or Name for a person                           | yes                            | yes            |
+| Extcode          | External Code                                                | yes                            | yes            |
+| Guid             | Koban Guid                                                   | yes                            | yes            |
+| OtherCode        | Other Code                                                   | yes                            | no             |
+| Obsolete         | Obsolete or not                                              | yes                            | no             |
+| FirstName        | First name (for a person)                                    | yes                            | yes            |
+| Gender           | Civility Code                                                | yes                            | yes            |
+| Status           | Status                                                       | yes (Fill Code)                | yes            |
+| Type             | Type                                                         | yes (Fill Code)                | yes            |
+| Comments         | Comments                                                     | yes                            | yes            |
+| AccountingCode   | Accounting Code                                              | yes                            | yes            |
+| Address          | Address Object (Street, Complement, ZipCode, City, Country). County must by ISO 2 letters. | yes                            | yes            |
+| InvoiceAddress   | Invoice Address Object (Street, Complement, ZipCode, City, Country). County must by ISO 2 letters. | yes                            | yes            |
+| DelivAddress     | Array of Delivery addresses Object (External Code, Koban Guid, Street, Complement, ZipCode, City, Country). County must by ISO 2 letters. | yes (Fill Extcode or Guid)     | yes            |
+| Website          | Web site                                                     | yes                            | yes            |
+| Phone            | Phone                                                        | yes                            | yes            |
+| Cell             | Cell                                                         | yes                            | yes            |
+| Fax              | Fax                                                          | yes                            | yes            |
+| EMail            | EMail                                                        | yes                            | yes            |
+| OfficialNumber   | SIREN                                                        | yes                            | yes            |
+| Vat              | VAT Number                                                   | yes                            | yes            |
+| Unsuscribe       | true if account has unsuscribed                              | yes                            | yes            |
+| InvalidMail      | true if account email detected invalid                       | yes                            | no             |
+| InvalidSMS       | true if account cell detected invalid                        | yes                            | no             |
+| ModeRglt         | Payment mode Code                                            | yes (Fill list Value)          | no             |
+| EcheanceCode     | Term mode                                                    | yes (fill Term label)          | no             |
+| eShop            | eShop origin                                                 | yes                            | yes            |
+| TaxRate          | Tax rate                                                     | yes                            | yes            |
+| AssignedTo       | User assigned.<br />If FullName is provided, it must by "First Name + Name" filled in Koban | yes (Fill Extcode or FullName) | yes            |
+| Tags             | Tag array                                                    | yes                            | yes            |
+| MoreFields       | Specific fields array                                        | yes                            | yes            |
+| Origin           | Origin list value                                            | yes (Fill Code)                | yes            |
+| NextAction       | Next action                                                  | no                             | no             |
+| UTMCampaign      | UTM Campaign                                                 | yes                            | yes            |
+| UTMMedium        | UTM Medium                                                   | yes                            | yes            |
+| UTMSource        | UTM Source                                                   | yes                            | yes            |
+| Optin            | true if account is optin                                     | yes                            | yes            |
+| Geo              | Geographical coords. X and Y subproperties                   | yes                            | no             |
+| AccountToInvoice | Account to invoice                                           | yes (Fill Extcode or Guid)     | yes            |
+| IBAN             | IBAN coords. BANQUE, GUICHET, SWIFT, IBAN subproperties      | no                             | no             |
 
