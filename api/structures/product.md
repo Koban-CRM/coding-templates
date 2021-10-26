@@ -80,6 +80,9 @@ It is to be used for updates via the API and is also returned by the selection m
 | Declinaisons   | Product Declinaisons                 | yes             | yes                              |
 | DCreated       | Creation Date (timestamp)            | yes             | yes                              |
 | DUpdated       | Last update date (timestamp)         | no              | yes                              |
+| IsProviding    | Define if product can be bought      | yes             | yes                              |
+| BarCode        | Bar code                             | yes             | yes                              |
+| ImageUrl       | Product image absolute URL           | yes             | yes                              |
 
 # API Price structure
 
