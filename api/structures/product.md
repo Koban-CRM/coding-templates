@@ -64,7 +64,7 @@ It is to be used for updates via the API and is also returned by the selection m
 | Vat            | Taxes %                              | yes             | yes                              |
 | Ttc            | Amount with taxes                    | yes             | yes                              |
 | IsSelling      | Define if product can be sold        | yes             | yes                              |
-| IsManufactured | Define if product is manufactured    | yes             | yes                              |
+| IsManufactured | Define if product is deliverable     | yes             | yes                              |
 | VatUpdatable   | Define if tax is updatable           | yes             | yes                              |
 | Model          | Model                                | yes             | yes                              |
 | Brand          | Brand                                | yes             | yes                              |
@@ -115,3 +115,35 @@ It is to be used for updates via the API and is also returned by the selection m
 | PrHt        | Buying price without taxes | yes                         | yes              |
 | VatRate     | Taxes %                    | yes                         | yes              |
 | Ttc         | Amount with taxes          | yes                         | yes              |
+
+# API Product Provider structure
+
+You can find here JSON structure for a product provider link in the Koban API.
+
+It is to be used for updates via the API and is also returned by the selection methods.
+
+**Versions** : From November 2021
+
+```
+{
+    "Product": { "Reference": "Product Reference"},
+    "Third": { "Extcode": "XXXXX"},
+    "Ht": 10,
+    "VatRate": 20,
+    "Ttc": 12,
+    "ProviderCode": "ABC",
+    "MinQuantityToOrder": 5
+}
+```
+
+| Property           | Comment                   | In POST methods             | In GET methods   |
+| ------------------ | ------------------------- | --------------------------- | ---------------- |
+| Product            | Product                   | yes (Reference)             | yes              |
+| Third              | Provider Account          | yes (External code or Guid) | yes (Koban Guid) |
+| ProviderCode       | Provider Code             | yes                         | yes              |
+| MinQuantityToOrder | Minimum quantity to order | yes                         | yes              |
+| Ht                 | Amount without taxes      | yes                         | yes              |
+| VatRate            | Taxes %                   | yes                         | yes              |
+| Ttc                | Amount with taxes         | yes                         | yes              |
+| RemRate            | Reduction rate %          | yes                         | yes              |
+
