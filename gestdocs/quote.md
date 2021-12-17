@@ -316,6 +316,18 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>DELIVCP</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="DELIVNAMECONTACT">
+          <DataField>DELIVNAMECONTACT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DELIVFIRSTNAMECONTACT">
+          <DataField>DELIVFIRSTNAMECONTACT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DELIVPHONE">
+          <DataField>DELIVPHONE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="ECHEANCE">
           <DataField>ECHEANCE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
