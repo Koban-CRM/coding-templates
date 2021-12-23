@@ -100,6 +100,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>MOBILE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="OTHERCODE">
+          <DataField>OTHERCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Query>
         <DataSourceName>Apeacz</DataSourceName>
@@ -314,6 +318,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
         </Field>
         <Field Name="DELIVCP">
           <DataField>DELIVCP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DELIVCOUNTRY">
+          <DataField>DELIVCOUNTRY</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DELIVNAMECONTACT">
