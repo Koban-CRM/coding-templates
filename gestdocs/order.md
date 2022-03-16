@@ -416,6 +416,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>PRIXPAR</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
+        <Field Name="REDUCTION_CTR">
+          <DataField>REDUCTION_CTR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
         <Field Name="CATPRODUCT_LABEL">
           <DataField>CATPRODUCT_LABEL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
