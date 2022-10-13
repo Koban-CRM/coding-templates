@@ -34,6 +34,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>ADR_CPOSTAL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ADR_COUNTRY">
+          <DataField>ADR_COUNTRY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Query>
         <DataSourceName>Apeacz</DataSourceName>
@@ -138,6 +142,58 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>MENTIONCOMPL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="DELIVERYDATEESTIMATED">
+          <DataField>DELIVERYDATEESTIMATED</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDER_NOM">
+          <DataField>CUSTORDER_NOM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDER_ADR_COMPLEMENT">
+          <DataField>CUSTORDER_ADR_COMPLEMENT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDER_ADR_STREET">
+          <DataField>CUSTORDER_ADR_STREET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDER_ADR_CITY">
+          <DataField>CUSTORDER_ADR_CITY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDER_ADR_ZIPCODE">
+          <DataField>CUSTORDER_ADR_ZIPCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDER_ADR_COUNTRY">
+          <DataField>CUSTORDER_ADR_COUNTRY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MENTIONCOMPL">
+          <DataField>MENTIONCOMPL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDER_ADRLIV_COMPLEMENT">
+          <DataField>CUSTORDER_ADRLIV_COMPLEMENT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDER_ADRLIV_STREET">
+          <DataField>CUSTORDER_ADRLIV_STREET</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDER_ADRLIV_CITY">
+          <DataField>CUSTORDER_ADRLIV_CITY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDER_ADRLIV_ZIPCODE">
+          <DataField>CUSTORDER_ADRLIV_ZIPCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDER_ADRLIV_COUNTRY">
+          <DataField>CUSTORDER_ADRLIV_COUNTRY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Query>
         <DataSourceName>Apeacz</DataSourceName>
@@ -201,47 +257,60 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 
 ## Définition des champs
 
-| Nom DataSet | Nom Champ          | Définition                            |
-| ----------- | ------------------ | ------------------------------------- |
-| client      | NOM                | Nom du fournisseur                    |
-| client      | ADR_COMPLEMENT     | Adresse / Complément Fournisseur      |
-| client      | ADR_NOVOIE         | Non utilisé                           |
-| client      | ADR_RUE            | Adresse / Rue Fournisseur             |
-| client      | ADR_VILLE          | Adresse / Ville Fournisseur           |
-| client      | ADR_CPOSTAL        | Adresse / Code Postal Fournisseur     |
-| commande    | DATECOMMANDE       | Date de la commande fournisseur       |
-| commande    | TELPAR             | Téléphone personne affectée           |
-| commande    | EMAILPAR           | EMail personne affectée               |
-| commande    | LOGO               | Logo structure                        |
-| commande    | PIEDPAGE           | Texte Pied de page                    |
-| commande    | NUMERO             | Numéro Commande Fournisseur           |
-| commande    | PAR                | Nom et prénom personne affectée       |
-| commande    | NOMCONTACT         | Nom du contact fournisseur            |
-| commande    | BACKCOLOR          | Couleur de fond du modèle de document |
-| commande    | PERIODEVALIDITE    | Période de validité                   |
-| commande    | MODERGLT           | Mode de règlement                     |
-| commande    | DEPOSIT            | Dépot                                 |
-| commande    | NOCUSTORDER        | Numéro commande client                |
-| commande    | NOPROVIDER         | Numéro fournisseur                    |
-| commande    | CURRENCYSYMBOL     | Devise                                |
-| commande    | NOMSOCIETE         | Nom Structure                         |
-| commande    | FORMECAPITAL       | Forme Capital Structure               |
-| commande    | ADRESSE1           | Adresse 1 Structure                   |
-| commande    | ADRESSE2           | Adresse 2 Structure                   |
-| commande    | SIREN              | SIREN Structure                       |
-| commande    | RCS                | Non utilisé                           |
-| commande    | APE                | Non utilisé                           |
-| commande    | NOTVA              | Numéro TVA Structure                  |
-| commande    | MENTIONCOMPL       | Mentions complémentaire Structure     |
-| lignes      | REFERENCE          | Libellé ligne                         |
-| lignes      | COMMENTAIRE        | Commentaire ligne                     |
-| lignes      | UNITE              | Unité                                 |
-| lignes      | PRIXUNITAIRE       | Prix unitaire                         |
-| lignes      | HT                 | Montant HT                            |
-| lignes      | QUANTITE           | Quantité                              |
-| lignes      | REDUCTION          | Réduction                             |
-| lignes      | TTC                | Montant TTC                           |
-| lignes      | TVA                | Montant TVA                           |
-| lignes      | REFPRODUCT         | Référence Produit interne             |
-| lignes      | REFPRODUCTPROVIDER | Référence Produit Fournisseur         |
+| Nom DataSet | Nom Champ                   | Définition                                                   |
+| ----------- | --------------------------- | ------------------------------------------------------------ |
+| client      | NOM                         | Nom du fournisseur                                           |
+| client      | ADR_COMPLEMENT              | Adresse / Complément Fournisseur                             |
+| client      | ADR_NOVOIE                  | Non utilisé                                                  |
+| client      | ADR_RUE                     | Adresse / Rue Fournisseur                                    |
+| client      | ADR_VILLE                   | Adresse / Ville Fournisseur                                  |
+| client      | ADR_CPOSTAL                 | Adresse / Code Postal Fournisseur                            |
+| client      | ADR_COUNTRY                 | Adresse / Pays Fournisseur                                   |
+| commande    | DATECOMMANDE                | Date de la commande fournisseur                              |
+| commande    | TELPAR                      | Téléphone personne affectée                                  |
+| commande    | EMAILPAR                    | EMail personne affectée                                      |
+| commande    | LOGO                        | Logo structure                                               |
+| commande    | PIEDPAGE                    | Texte Pied de page                                           |
+| commande    | NUMERO                      | Numéro Commande Fournisseur                                  |
+| commande    | PAR                         | Nom et prénom personne affectée                              |
+| commande    | NOMCONTACT                  | Nom du contact fournisseur                                   |
+| commande    | BACKCOLOR                   | Couleur de fond du modèle de document                        |
+| commande    | PERIODEVALIDITE             | Période de validité                                          |
+| commande    | MODERGLT                    | Mode de règlement                                            |
+| commande    | DEPOSIT                     | Dépot                                                        |
+| commande    | NOCUSTORDER                 | Numéro commande client                                       |
+| commande    | NOPROVIDER                  | Numéro fournisseur                                           |
+| commande    | CURRENCYSYMBOL              | Devise                                                       |
+| commande    | NOMSOCIETE                  | Nom Structure                                                |
+| commande    | FORMECAPITAL                | Forme Capital Structure                                      |
+| commande    | ADRESSE1                    | Adresse 1 Structure                                          |
+| commande    | ADRESSE2                    | Adresse 2 Structure                                          |
+| commande    | SIREN                       | SIREN Structure                                              |
+| commande    | RCS                         | Non utilisé                                                  |
+| commande    | APE                         | Non utilisé                                                  |
+| commande    | NOTVA                       | Numéro TVA Structure                                         |
+| commande    | MENTIONCOMPL                | Mentions complémentaire Structure                            |
+| commande    | DELIVERYDATEESTIMATED       | Date de livraison estimée                                    |
+| commande    | CUSTORDER_NOM               | Nom du client de la commande client liée à la commande fournisseur |
+| commande    | CUSTORDER_ADR_COMPLEMENT    | Adresse - Complément du client de la commande client liée à la commande fournisseur |
+| commande    | CUSTORDER_ADR_STREET        | Adresse - Rue du client de la commande client liée à la commande fournisseur |
+| commande    | CUSTORDER_ADR_CITY          | Adresse - Ville du client de la commande client liée à la commande fournisseur |
+| commande    | CUSTORDER_ADR_ZIPCODE       | Adresse - Code postal du client de la commande client liée à la commande fournisseur |
+| commande    | CUSTORDER_ADR_COUNTRY       | Adresse - Pays du client de la commande client liée à la commande fournisseur |
+| commande    | CUSTORDER_ADRLIV_COMPLEMENT | Adresse de livraison - Complément de la commande client liée à la commande fournisseur |
+| commande    | CUSTORDER_ADRLIV_STREET     | Adresse de livraison - Rue de la commande client liée à la commande fournisseur |
+| commande    | CUSTORDER_ADRLIV_CITY       | Adresse de livraison - Ville de la commande client liée à la commande fournisseur |
+| commande    | CUSTORDER_ADRLIV_ZIPCODE    | Adresse de livraison -Code postal de la commande client liée à la commande fournisseur |
+| commande    | CUSTORDER_ADRLIV_COUNTRY    | Adresse de livraison - Pays de la commande client liée à la commande fournisseur |
+| lignes      | REFERENCE                   | Libellé ligne                                                |
+| lignes      | COMMENTAIRE                 | Commentaire ligne                                            |
+| lignes      | UNITE                       | Unité                                                        |
+| lignes      | PRIXUNITAIRE                | Prix unitaire                                                |
+| lignes      | HT                          | Montant HT                                                   |
+| lignes      | QUANTITE                    | Quantité                                                     |
+| lignes      | REDUCTION                   | Réduction                                                    |
+| lignes      | TTC                         | Montant TTC                                                  |
+| lignes      | TVA                         | Montant TVA                                                  |
+| lignes      | REFPRODUCT                  | Référence Produit interne                                    |
+| lignes      | REFPRODUCTPROVIDER          | Référence Produit Fournisseur                                |
 
