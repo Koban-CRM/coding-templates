@@ -268,7 +268,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>CF1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CF2">
+        <Field Name="CF3">
           <DataField>CF2</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
