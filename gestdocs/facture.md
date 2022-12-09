@@ -1,8 +1,18 @@
-# Modèle de document Bon de commande
+# Modèle de document Facture
 
-Voici le code correspondant  à la déclaration des champs d'un modèle de document Bon de commande.
+Voici le code correspondant à la déclaration des champs d'un modèle de document Facture.
 
-**Version Compatible** : Février 2022 et supérieures
+**Version Compatible** : Octobre 2021 2.0 et supérieures
+
+## DataSet
+
+------
+
+------
+
+- RDL Facture client
+
+------
 
 ```xml
 <DataSets>
@@ -32,104 +42,68 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>ADR_CPOSTAL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ADRDEL_NOM">
-          <DataField>ADRDEL_NOM</DataField>
+        <Field Name="NOTVA">
+          <DataField>NOTVA</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ADRDEL_PRENOM">
-          <DataField>ADRDEL_PRENOM</DataField>
+        <Field Name="CONTACTNAME">
+          <DataField>CONTACTNAME</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ADRDEL_TEL">
-          <DataField>ADRDEL_TEL</DataField>
+        <Field Name="CONTACTFIRSTNAME">
+          <DataField>CONTACTFIRSTNAME</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ADRDEL_COMPLEMENT">
-          <DataField>ADRDEL_COMPLEMENT</DataField>
+        <Field Name="ORIG_NOM">
+          <DataField>ORIG_NOM</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ADRDEL_RUE">
-          <DataField>ADRDEL_RUE</DataField>
+        <Field Name="ORIG_ADR_COMPLEMENT">
+          <DataField>ORIG_ADR_COMPLEMENT</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ADRDEL_VILLE">
-          <DataField>ADRDEL_VILLE</DataField>
+        <Field Name="ORIG_ADR_RUE">
+          <DataField>ORIG_ADR_RUE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ADRDEL_CPOSTAL">
-          <DataField>ADRDEL_CPOSTAL</DataField>
+        <Field Name="ORIG_ADR_VILLE">
+          <DataField>ORIG_ADR_VILLE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ORIG_ADR_CPOSTAL">
+          <DataField>ORIG_ADR_CPOSTAL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ISTTC">
+          <DataField>ISTTC</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
         </Field>
         <Field Name="ACCOUNTINGCODE">
           <DataField>ACCOUNTINGCODE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ADR_COUNTRY">
-          <DataField>ADR_COUNTRY</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ADRDEL_COUNTRY">
-          <DataField>ADRDEL_COUNTRY</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="NOTVA">
-          <DataField>NOTVA</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="EXTCODE">
           <DataField>EXTCODE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="RIB">
-          <DataField>RIB</DataField>
+        <Field Name="SPECFIELD1">
+          <DataField>SPECFIELD1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="IBAN">
-          <DataField>IBAN</DataField>
+        <Field Name="SPECFIELD2">
+          <DataField>SPECFIELD2</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="BIC">
-          <DataField>BIC</DataField>
+        <Field Name="ADR_COUNTRY">
+          <DataField>ADR_COUNTRY</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="BANK">
-          <DataField>BANK</DataField>
+        <Field Name="ORIG_NOTVA">
+          <DataField>ORIG_NOTVA</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PRENOM">
-          <DataField>PRENOM</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="GENDER">
-          <DataField>GENDER</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="OFFICIALNUMBER">
-          <DataField>OFFICIALNUMBER</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="OFFICIALNUMBER">
-          <DataField>OFFICIALNUMBER</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ADRFAC_COMPLEMENT">
-          <DataField>ADRFAC_COMPLEMENT</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ADRFAC_RUE">
-          <DataField>ADRFAC_RUE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ADRFAC_VILLE">
-          <DataField>ADRFAC_VILLE</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ADRFAC_CPOSTAL">
-          <DataField>ADRFAC_CPOSTAL</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ADRFAC_COUNTRY">
-          <DataField>ADRFAC_COUNTRY</DataField>
+        <Field Name="CUST_LOGO">
+          <DataField>CUST_LOGO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
@@ -138,23 +112,67 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
         <CommandText />
       </Query>
     </DataSet>
-    <DataSet Name="commande">
+    <DataSet Name="facture">
       <Fields>
-        <Field Name="DATECOMMANDE">
-          <DataField>DATECOMMANDE</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="TELPAR">
-          <DataField>TELPAR</DataField>
+        <Field Name="NOMCONTACT">
+          <DataField>NOMCONTACT</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="EMAILPAR">
-          <DataField>EMAILPAR</DataField>
+        <Field Name="FAXCONTACT">
+          <DataField>FAXCONTACT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MAILCONTACT">
+          <DataField>MAILCONTACT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PHONECONTACT">
+          <DataField>PHONECONTACT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AVOIR">
+          <DataField>AVOIR</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DATE">
+          <DataField>DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ECHEANCE">
+          <DataField>ECHEANCE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="NOCOMMANDE">
+          <DataField>NOCOMMANDE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LABELOPPORTUNITE">
+          <DataField>LABELOPPORTUNITE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NODEVIS">
+          <DataField>NODEVIS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NOCOMMANDECLIENT">
+          <DataField>NOCOMMANDECLIENT</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="LOGO">
           <DataField>LOGO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ACOMPTEHT">
+          <DataField>ACOMPTEHT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="ACOMPTETVA">
+          <DataField>ACOMPTETVA</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="ACOMPTETTC">
+          <DataField>ACOMPTETTC</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
         </Field>
         <Field Name="PIEDPAGE">
           <DataField>PIEDPAGE</DataField>
@@ -164,21 +182,9 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>NUMERO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PAR">
-          <DataField>PAR</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="NOMCONTACT">
-          <DataField>NOMCONTACT</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="BACKCOLOR">
           <DataField>BACKCOLOR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PERIODEVALIDITE">
-          <DataField>PERIODEVALIDITE</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
         <Field Name="MODERGLT">
           <DataField>MODERGLT</DataField>
@@ -228,44 +234,168 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>FOOTER</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="REFCLIENT">
-          <DataField>REFCLIENT</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="ISPAYED">
+          <DataField>ISPAYED</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
         </Field>
         <Field Name="CURRENCYSYMBOL">
           <DataField>CURRENCYSYMBOL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="MAILCONTACT">
-          <DataField>MAILCONTACT</DataField>
+        <Field Name="NODELIV">
+          <DataField>NODELIV</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="TELCONTACT">
-          <DataField>TELCONTACT</DataField>
+        <Field Name="RIB">
+          <DataField>RIB</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="LABELECHEANCE">
-          <DataField>LABELECHEANCE</DataField>
+        <Field Name="IBAN">
+          <DataField>IBAN</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="NODEVIS">
-          <DataField>NODEVIS</DataField>
+        <Field Name="BIC">
+          <DataField>BIC</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="EMAILAFFECTE">
-          <DataField>EMAILAFFECTE</DataField>
+        <Field Name="CHPSUP1">
+          <DataField>CHPSUP1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="NOMAFFECTE">
-          <DataField>NOMAFFECTE</DataField>
+        <Field Name="CHPSUP2">
+          <DataField>CHPSUP2</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="MOBILEAFFECTE">
-          <DataField>MOBILEAFFECTE</DataField>
+        <Field Name="CHPSUP3">
+          <DataField>CHPSUP3</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="THIRDLOGO">
-          <DataField>THIRDLOGO</DataField>
+        <Field Name="CHPSUP4">
+          <DataField>CHPSUP4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CHPSUP5">
+          <DataField>CHPSUP5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DELIVCOMPL">
+          <DataField>DELIVCOMPL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DELIVRUE">
+          <DataField>DELIVRUE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DELIVVILLE">
+          <DataField>DELIVVILLE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DELIVCP">
+          <DataField>DELIVCP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PAR">
+          <DataField>PAR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TELPAR">
+          <DataField>TELPAR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EMAILPAR">
+          <DataField>EMAILPAR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TH_CHPSUP1">
+          <DataField>TH_CHPSUP1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TH_CHPSUP2">
+          <DataField>TH_CHPSUP2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TH_CHPSUP3">
+          <DataField>TH_CHPSUP3</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TH_CHPSUP4">
+          <DataField>TH_CHPSUP4</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TH_CHPSUP5">
+          <DataField>TH_CHPSUP5</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TH_CHPSUP6">
+          <DataField>TH_CHPSUP6</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PERIODFROM">
+          <DataField>PERIODFROM</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="PERIODTO">
+          <DataField>PERIODTO</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="HASH">
+          <DataField>HASH</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TTCPAYED">
+          <DataField>TTCPAYED</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="NBPACK">
+          <DataField>NBPACK</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TOTALWEIGHT">
+          <DataField>TOTALWEIGHT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PROCLOGO">
+          <DataField>PROCLOGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DEALPROCESS">
+          <DataField>DEALPROCESS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DEALPROCESS_VILLE">
+          <DataField>DEALPROCESS_VILLE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="STEP">
+          <DataField>STEP</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="STEPPERCENT">
+          <DataField>STEPPERCENT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRJ_DONE">
+          <DataField>PRJ_DONE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PRJ_TOPAY">
+          <DataField>PRJ_TOPAY</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PRJ_TODO">
+          <DataField>PRJ_TODO</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="CODEOPPORTUNITE">
+          <DataField>CODEOPPORTUNITE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="QUOTE_LABEL">
+          <DataField>QUOTE_LABEL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IBAN_LABEL">
+          <DataField>IBAN_LABEL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DEVISPERIODEVALIDITE">
@@ -274,27 +404,15 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
         </Field>
         <Field Name="DEVISDATELIVRAISON">
           <DataField>DEVISDATELIVRAISON</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="DEVISDUREETRAVAUX">
           <DataField>DEVISDUREETRAVAUX</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PRENOMCONTACT">
-          <DataField>PRENOMCONTACT</DataField>
+        <Field Name="MOBILECONTACT">
+          <DataField>MOBILECONTACT</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="GENDERCONTACT">
-          <DataField>GENDERCONTACT</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="LIBELLEDEVIS">
-          <DataField>LIBELLEDEVIS</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DATELIVRAISONESTIMEE">
-          <DataField>DATELIVRAISONESTIMEE</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
       </Fields>
       <Query>
@@ -302,31 +420,139 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
         <CommandText />
       </Query>
     </DataSet>
-    <DataSet Name="opportspecfield">
+    <DataSet Name="detailtva">
       <Fields>
-        <Field Name="SPECFIELD1">
-          <DataField>SPECFIELD1</DataField>
+        <Field Name="TAUX">
+          <DataField>TAUX</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="HT">
+          <DataField>HT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TVA">
+          <DataField>TVA</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>Apeacz</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+    <DataSet Name="echeances">
+      <Fields>
+        <Field Name="DATE">
+          <DataField>DATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="HT">
+          <DataField>HT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TTC">
+          <DataField>TTC</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>Apeacz</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+    <DataSet Name="facintermediaires">
+      <Fields>
+        <Field Name="NUMERO">
+          <DataField>NUMERO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="SPECFIELD2">
-          <DataField>SPECFIELD2</DataField>
+        <Field Name="INVOICEDATE">
+          <DataField>INVOICEDATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="HT">
+          <DataField>HT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TTC">
+          <DataField>TTC</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="AMOUNTPAYED">
+          <DataField>AMOUNTPAYED</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="MODEREGLT">
+          <DataField>MODEREGLT</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="SPECFIELD3">
-          <DataField>SPECFIELD3</DataField>
+      </Fields>
+      <Query>
+        <DataSourceName>Apeacz</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+    <DataSet Name="faccommande">
+      <Fields>
+        <Field Name="NUMERO">
+          <DataField>NUMERO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="SPECFIELD4">
-          <DataField>SPECFIELD4</DataField>
+        <Field Name="INVOICEDATE">
+          <DataField>INVOICEDATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="HT">
+          <DataField>HT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TTC">
+          <DataField>TTC</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="AMOUNTPAYED">
+          <DataField>AMOUNTPAYED</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="MODEREGLT">
+          <DataField>MODEREGLT</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="SPECFIELD5">
-          <DataField>SPECFIELD5</DataField>
+        <Field Name="LASTPAYMENTDATE">
+          <DataField>LASTPAYMENTDATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ISACOMPTE">
+          <DataField>ISACOMPTE</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="ISASSET">
+          <DataField>ISASSET</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>Apeacz</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+    <DataSet Name="histoacompte">
+      <Fields>
+        <Field Name="NUMERO">
+          <DataField>NUMERO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="SPECFIELD6">
-          <DataField>SPECFIELD6</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="TTC">
+          <DataField>TTC</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="HT">
+          <DataField>HT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TVA">
+          <DataField>TVA</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
         </Field>
       </Fields>
       <Query>
@@ -392,41 +618,25 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>COMMENTAIRE_SECTION</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ISCTR">
-          <DataField>ISCTR</DataField>
-          <rd:TypeName>System.Boolean</rd:TypeName>
-        </Field>
-        <Field Name="HT_PUCTR">
-          <DataField>HT_PUCTR</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="TTC_PUCTR">
-          <DataField>TTC_PUCTR</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="HT_NOCTR">
-          <DataField>HT_NOCTR</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="TTC_NOCTR">
-          <DataField>TTC_NOCTR</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="PRIXPAR">
-          <DataField>PRIXPAR</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
         <Field Name="CATPRODUCT_LABEL">
           <DataField>CATPRODUCT_LABEL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ORDERQUANTITE">
+          <DataField>ORDERQUANTITE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="CUSTORDERREFERENCE">
+          <DataField>CUSTORDERREFERENCE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="PRODUCTLOGO">
           <DataField>PRODUCTLOGO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CLASSIF">
-          <DataField>CLASSIF</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="HTTPS">
+          <DataField>HTTPS</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
         </Field>
         <Field Name="TVA5">
           <DataField>TVA5</DataField>
@@ -440,10 +650,6 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>TVA20</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
-        <Field Name="PACKING">
-          <DataField>PACKING</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="CF1">
           <DataField>CF1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -451,34 +657,6 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
         <Field Name="CF2">
           <DataField>CF2</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PROVIDER">
-          <DataField>PROVIDER</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="NOORDERPROVIDER">
-          <DataField>NOORDERPROVIDER</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>Apeacz</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
-    <DataSet Name="detailtva">
-      <Fields>
-        <Field Name="TAUX">
-          <DataField>TAUX</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="HT">
-          <DataField>HT</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="TVA">
-          <DataField>TVA</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
         </Field>
       </Fields>
       <Query>
@@ -488,4 +666,160 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
     </DataSet>
   </DataSets>
 ```
+
+
+
+## Définition des champs
+
+
+
+
+
+| Nom DataSet       | Nom Champ            | Définition                             |
+| ----------------- | -------------------- | :------------------------------------- |
+| client            | NOM                  | Nom du client                          |
+| client            | ADR_COMPLEMENT       | Adresse / Complément client            |
+| client            | ADR_NOVOIE           | Non utilisé                            |
+| client            | ADR_RUE              | Adresse / Rue client                   |
+| client            | ADR_VILLE            | Adresse / Ville client                 |
+| client            | ADR_CPOSTAL          | Adresse / Code Postal client           |
+| client            | ADR_COUNTRY          | Adresse / Pays client                  |
+| client            | NOTVA                | N° TVA  client                         |
+| client            | CONTACTNAME          | Nom du contact client                  |
+| client            | CONTACTFIRSTNAME     | Prénom du contact client               |
+| client            | CONTACTEMAIL         | Email contact client                   |
+| client            | ORIG_NOM             |                                        |
+| client            | ORIG_ADR_COMPLEMENT  |                                        |
+| client            | ORIG_ADR_RUE         |                                        |
+| client            | ORIG_ADR_VILLE       |                                        |
+| client            | ORIG_ADR_CPOSTA      |                                        |
+| client            | ISTTC                |                                        |
+| client            | ACCOUNTINGCODE       |                                        |
+| client            | EXTCODE              | Code externe client                    |
+| client            | SPECFIELD1           |                                        |
+| client            | SPECFIELD2           |                                        |
+| client            | ORIG_NOTVA           |                                        |
+| client            | CUST_SIRET           | N° SIRET client                        |
+| client            | CUST_LOGO            | Logo client                            |
+| facture           | NOMCONTACT           |                                        |
+| facture           | FAXCONTACT           |                                        |
+| facture           | MAILCONTACT          |                                        |
+| facture           | PHONECONTACT         |                                        |
+| facture           | AVOIR                |                                        |
+| facture           | DATE                 | Date de Facture                        |
+| facture           | ECHEANCE             | Échéance                               |
+| facture           | NOCOMMANDE           | Numéro commande client                 |
+| facture           | LABELOPPORTUNITE     | Libellé Opportunité                    |
+| facture           | NODEVIS              | Numéro devis client                    |
+| facture           | NOCOMMANDECLIENT     | Numéro commande externe client         |
+| facture           | LOGO                 | Logo structure                         |
+| facture           | ACOMPTEHT            |                                        |
+| facture           | ACOMPTETVA           |                                        |
+| facture           | ACOMPTETTC           |                                        |
+| facture           | PIEDPAGE             | Texte Pied de page                     |
+| facture           | NUMERO               | Numéro Facture client                  |
+| facture           | BACKCOLOR            | Couleur de fond du modèle de document  |
+| facture           | MODERGLT             | Mode de règlement                      |
+| facture           | NOMSOCIETE           | Nom Structure                          |
+| facture           | FORMECAPITAL         | Forme Capital Structure                |
+| facture           | ADRESSE1             | Adresse 1 Structure                    |
+| facture           | ADRESSE2             | Adresse 2 Structure                    |
+| facture           | SIREN                | SIREN Structure                        |
+| facture           | RCS                  | Non utilisé                            |
+| facture           | APE                  | Non utilisé                            |
+| facture           | NOTVA                | Numéro TVA Structure                   |
+| facture           | MENTIONCOMPL         | Mentions complémentaire Structure      |
+| facture           | HEADER               | Texte Entête                           |
+| facture           | FOOTER               | Texte Pied de page                     |
+| facture           | ISPAYED              |                                        |
+| facture           | CURRENCYSYMBOL       | Devise                                 |
+| facture           | NODELIV              |                                        |
+| facture           | RIB                  | RIB Structure                          |
+| facture           | IBAN                 | IBAN Structure                         |
+| facture           | BIC                  | BIC Structure                          |
+| facture           | DELIVCOMPL           | Adresse Livraison / Complément Client  |
+| facture           | DELIVRUE             | Adresse Livraison / Rue Client         |
+| facture           | DELIVVILLE           | Adresse Livraison / Ville Client       |
+| facture           | DELIVCP              | Adresse Livraison / Code Postal Client |
+| facture           | PAR                  | Personne affectée                      |
+| facture           | TELPAR               | Téléphone personne affectée            |
+| facture           | EMAILPAR             | EMail personne affectée                |
+| facture           | PERIODFROM           |                                        |
+| facture           | PERIODTO             |                                        |
+| facture           | HASH                 |                                        |
+| facture           | TTCPAYED             |                                        |
+| facture           | NBPACK               |                                        |
+| facture           | TOTALWEIGHT          |                                        |
+| facture           | PROCLOGO             |                                        |
+| facture           | DEALPROCESS          |                                        |
+| facture           | DEALPROCESS_VILLE    |                                        |
+| facture           | STEP                 |                                        |
+| facture           | STEPPERCENT          |                                        |
+| facture           | PRJ_DONE             |                                        |
+| facture           | PRJ_TOPAY            |                                        |
+| facture           | PRJ_TODO             |                                        |
+| facture           | CODEOPPORTUNITE      |                                        |
+| facture           | QUOTE_LABEL          |                                        |
+| facture           | IBAN_LABEL           |                                        |
+| facture           | DEVISPERIODEVALIDITE |                                        |
+| facture           | DEVISDATELIVRAISON   |                                        |
+| facture           | DEVISDUREETRAVAUX    |                                        |
+| facture           | MOBILECONTACT        |                                        |
+| detailtva         | TAUX                 |                                        |
+| detailtva         | HT                   |                                        |
+| detailtva         | TVA                  |                                        |
+| echeances         | DATE                 |                                        |
+| echeances         | HT                   |                                        |
+| echeances         | TTC                  |                                        |
+| facintermediaires | NUMERO               |                                        |
+| facintermediaires | INVOICEDATE          |                                        |
+| facintermediaires | HT                   |                                        |
+| facintermediaires | TTC                  |                                        |
+| facintermediaires | AMOUNTPAYED          |                                        |
+| facintermediaires | MODEREGLT            |                                        |
+| faccommande       | NUMERO               |                                        |
+| faccommande       | INVOICEDATE          |                                        |
+| faccommande       | HT                   |                                        |
+| faccommande       | TTC                  |                                        |
+| faccommande       | AMOUNTPAYED          |                                        |
+| faccommande       | MODEREGLT            |                                        |
+| faccommande       | LASTPAYMENTDATE      |                                        |
+| faccommande       | ISACOMPTE            |                                        |
+| faccommande       | ISASSET              |                                        |
+| histoacompte      | NUMERO               |                                        |
+| histoacompte      | TTC                  |                                        |
+| histoacompte      | HT                   |                                        |
+| histoacompte      | TVA                  |                                        |
+| lignes            | REFERENCE            | Libellé ligne                          |
+| lignes            | COMMENTAIRE          | Commentaire ligne                      |
+| lignes            | UNITE                | Unité                                  |
+| lignes            | PRIXUNITAIRE         | Prix unitaire                          |
+| lignes            | HT                   | Montant HT                             |
+| lignes            | QUANTITE             | Quantité                               |
+| lignes            | REDUCTION            | Réduction                              |
+| lignes            | TTC                  | Montant TTC                            |
+| lignes            | TVA                  | Montant TVA                            |
+| lignes            | REFPRODUCT           | Référence Produit interne              |
+| lignes            | BARCODE              |                                        |
+| lignes            | SECTIONID            |                                        |
+| lignes            | LIBELLE              | Libellé ligne                          |
+| lignes            | COMMENTAIRE_SECTION  | Commentaire section                    |
+| lignes            | CATPRODUCT_LABEL     | Libellé catégorie produit              |
+| lignes            | ORDERQUANTITE        | Quantité commandée                     |
+| lignes            | CUSTORDERREFERENCE   | Référence client                       |
+| lignes            | PRODUCTLOGO          | Logo Produit                           |
+| lignes            | HTTPS                |                                        |
+| lignes            | TVA5                 |                                        |
+| lignes            | TVA10                |                                        |
+| lignes            | TVA20                |                                        |
+
+
+
+
+
+
+
+
+
+------
 
