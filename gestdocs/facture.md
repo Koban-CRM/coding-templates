@@ -667,16 +667,10 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
   </DataSets>
 ```
 
-
-
 ## Définition des champs
 
-
-
-
-
 | Nom DataSet       | Nom Champ            | Définition                             |
-| ----------------- | -------------------- | :------------------------------------- |
+| ----------------- | -------------------- |:-------------------------------------- |
 | client            | NOM                  | Nom du client                          |
 | client            | ADR_COMPLEMENT       | Adresse / Complément client            |
 | client            | ADR_NOVOIE           | Non utilisé                            |
@@ -800,7 +794,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | lignes            | TTC                  | Montant TTC                            |
 | lignes            | TVA                  | Montant TVA                            |
 | lignes            | REFPRODUCT           | Référence Produit interne              |
-| lignes            | BARCODE              |                                        |
+| lignes            | BARCODE              | Code barre                             |
 | lignes            | SECTIONID            |                                        |
 | lignes            | LIBELLE              | Libellé ligne                          |
 | lignes            | COMMENTAIRE_SECTION  | Commentaire section                    |
@@ -813,13 +807,4 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | lignes            | TVA10                |                                        |
 | lignes            | TVA20                |                                        |
 
-
-
-
-
-
-
-
-
-------
-
+-----
