@@ -7,14 +7,15 @@ Afin de permettre un accès à nos clients français et étrangers, le chapitre 
 ## Modèles EMail
 
 - [Construire un modèle brut compatible Koban](docs/htmlemailbrut.md)
-- [Consultez la documentation](docs/email-template.md)
 
+- [Consultez la documentation](docs/email-template.md)
 * Exemples de modèles dans le répertoire email-templates
 
 ## Modèles de document
 
 * [Modèle Devis](gestdocs/quote.md)
 * [Modèle Bon de livraison](gestdocs/delivery.md)
+* [Modèle Facture](gestiondocs/facture.md)
 * [Modèle Bon de commande fournisseur](gestdocs/purchaseorder.md)
 
 ## Koban API
