@@ -699,7 +699,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | FAXCONTACT           | N° de fax contact client                |
 | facture           | MAILCONTACT          | Email contact client                    |
 | facture           | PHONECONTACT         | Télephone contact client                |
-| facture           | AVOIR                | **Avoir**                               |
+| facture           | AVOIR                | Avoir                                   |
 | facture           | DATE                 | Date de Facture                         |
 | facture           | ECHEANCE             | Échéance                                |
 | facture           | NOCOMMANDE           | Numéro commande client                  |
@@ -725,7 +725,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | MENTIONCOMPL         | Mentions complémentaire Structure       |
 | facture           | HEADER               | Texte Entête                            |
 | facture           | FOOTER               | Texte Pied de page                      |
-| facture           | ISPAYED              | **Statut soldé**                        |
+| facture           | ISPAYED              | Statut soldé                            |
 | facture           | CURRENCYSYMBOL       | Devise                                  |
 | facture           | NODELIV              | N°  bon de livraison                    |
 | facture           | RIB                  | RIB Structure                           |
@@ -741,7 +741,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | PERIODFROM           | Date de début de période                |
 | facture           | PERIODTO             | Date de fin de période                  |
 | facture           | HASH                 |                                         |
-| facture           | TTCPAYED             | **Montant ttc payé**                    |
+| facture           | TTCPAYED             | Montant ttc payé                        |
 | facture           | NBPACK               |                                         |
 | facture           | TOTALWEIGHT          | Poids total                             |
 | Immobilier        |                      |                                         |
@@ -750,9 +750,9 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | DEALPROCESS_VILLE    |                                         |
 | facture           | STEP                 | Etape                                   |
 | facture           | STEPPERCENT          | Pourcentage étape                       |
-| facture           | PRJ_DONE             | **Appel de fonds émis**                 |
-| facture           | PRJ_TOPAY            | **Appel de fond payer**                 |
-| facture           | PRJ_TODO             | **Appel de fonds à emettre**            |
+| facture           | PRJ_DONE             | Appel de fonds émis                     |
+| facture           | PRJ_TOPAY            | Appel de fond payer                     |
+| facture           | PRJ_TODO             | Appel de fonds à emettre                |
 | facture           | CODEOPPORTUNITE      | Code opportunité                        |
 | facture           | QUOTE_LABEL          | Libellé devis                           |
 | facture           | IBAN_LABEL           | Libellé IBAN                            |
@@ -780,7 +780,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | faccommande       | MODEREGLT            | Mode de reglement commande              |
 | faccommande       | LASTPAYMENTDATE      | Date du dernier paiement                |
 | faccommande       | ISACOMPTE            | **Est un acompte **                     |
-| faccommande       | ISASSET              | **Est un avoir**                        |
+| faccommande       | ISASSET              | Est un avoir                            |
 | histoacompte      | NUMERO               | N° d'acompte                            |
 | histoacompte      | TTC                  | Montant ttc acompte                     |
 | histoacompte      | HT                   | Montant Hors Taxes acompte              |
