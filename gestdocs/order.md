@@ -488,4 +488,3 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
     </DataSet>
   </DataSets>
 ```
-
