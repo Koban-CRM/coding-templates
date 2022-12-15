@@ -13,6 +13,7 @@ Afin de permettre un accès à nos clients français et étrangers, le chapitre 
 
 ## Modèles de document
 
+* [Modèle Commande](gestdocs/order.md)
 * [Modèle Devis](gestdocs/quote.md)
 * [Modèle Bon de livraison](gestdocs/delivery.md)
 * [Modèle Facture](gestdocs/facture.md)
