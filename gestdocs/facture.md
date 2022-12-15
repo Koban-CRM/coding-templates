@@ -744,14 +744,15 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | TTCPAYED             | **Montant ttc payé**                    |
 | facture           | NBPACK               |                                         |
 | facture           | TOTALWEIGHT          | Poids total                             |
+| Immobilier        |                      |                                         |
 | facture           | PROCLOGO             |                                         |
 | facture           | DEALPROCESS          |                                         |
 | facture           | DEALPROCESS_VILLE    |                                         |
 | facture           | STEP                 | Etape                                   |
 | facture           | STEPPERCENT          | Pourcentage étape                       |
-| facture           | PRJ_DONE             |                                         |
-| facture           | PRJ_TOPAY            |                                         |
-| facture           | PRJ_TODO             |                                         |
+| facture           | PRJ_DONE             | **Appel de fonds émis**                 |
+| facture           | PRJ_TOPAY            | **Appel de fond payer**                 |
+| facture           | PRJ_TODO             | **Appel de fonds à emettre**            |
 | facture           | CODEOPPORTUNITE      | Code opportunité                        |
 | facture           | QUOTE_LABEL          | Libellé devis                           |
 | facture           | IBAN_LABEL           | Libellé IBAN                            |
