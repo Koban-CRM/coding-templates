@@ -15,7 +15,7 @@ Afin de permettre un accès à nos clients français et étrangers, le chapitre 
 
 * [Modèle Devis](gestdocs/quote.md)
 * [Modèle Bon de livraison](gestdocs/delivery.md)
-* [Modèle Facture](gestiondocs/facture.md)
+* [Modèle Facture](gestdocs/facture.md)
 * [Modèle Bon de commande fournisseur](gestdocs/purchaseorder.md)
 
 ## Koban API
