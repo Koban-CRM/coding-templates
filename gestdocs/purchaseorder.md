@@ -302,8 +302,8 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | commande    | CUSTORDER_ADRLIV_CITY       | Adresse de livraison - Ville de la commande client liée à la commande fournisseur      |
 | commande    | CUSTORDER_ADRLIV_ZIPCODE    | Adresse de livraison -Code postal de la commande client liée à la commande fournisseur |
 | commande    | CUSTORDER_ADRLIV_COUNTRY    | Adresse de livraison - Pays de la commande client liée à la commande fournisseur       |
-| lignes      | REFERENCE                   | Libellé ligne                                                                          |
-| lignes      | COMMENTAIRE                 | Commentaire ligne                                                                      |
+| lignes      | REFERENCE                   | Référence produit                                                                      |
+| lignes      | COMMENTAIRE                 | Commentaire produit                                                                    |
 | lignes      | UNITE                       | Unité                                                                                  |
 | lignes      | PRIXUNITAIRE                | Prix unitaire                                                                          |
 | lignes      | HT                          | Montant HT                                                                             |
