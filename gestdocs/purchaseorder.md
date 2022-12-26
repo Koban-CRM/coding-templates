@@ -279,7 +279,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | commande    | MODERGLT                    | Mode de règlement                                                                      |
 | commande    | DEPOSIT                     | Dépot                                                                                  |
 | commande    | NOCUSTORDER                 | Numéro commande client                                                                 |
-| commande    | NOPROVIDER                  | Numéro fournisseur                                                                     |
+| commande    | NOPROVIDER                  | Numéro commande fournisseur                                                            |
 | commande    | CURRENCYSYMBOL              | Devise                                                                                 |
 | commande    | NOMSOCIETE                  | Nom Structure                                                                          |
 | commande    | FORMECAPITAL                | Forme Capital Structure                                                                |
@@ -302,7 +302,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | commande    | CUSTORDER_ADRLIV_CITY       | Adresse de livraison - Ville de la commande client liée à la commande fournisseur      |
 | commande    | CUSTORDER_ADRLIV_ZIPCODE    | Adresse de livraison -Code postal de la commande client liée à la commande fournisseur |
 | commande    | CUSTORDER_ADRLIV_COUNTRY    | Adresse de livraison - Pays de la commande client liée à la commande fournisseur       |
-| lignes      | REFERENCE                   | Référence produit                                                                      |
+| lignes      | REFERENCE                   | Libellé produit                                                                        |
 | lignes      | COMMENTAIRE                 | Commentaire produit                                                                    |
 | lignes      | UNITE                       | Unité                                                                                  |
 | lignes      | PRIXUNITAIRE                | Prix unitaire                                                                          |
@@ -312,4 +312,4 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | lignes      | TTC                         | Montant TTC                                                                            |
 | lignes      | TVA                         | Montant TVA                                                                            |
 | lignes      | REFPRODUCT                  | Référence Produit interne                                                              |
-| lignes      | REFPRODUCTPROVIDER          | Référence Produit Fournisseur                                                          |
+| lignes      | REFPRODUCTPROVIDER          | Référence Produit Fournisseur (Code fournisseur)                                       |
