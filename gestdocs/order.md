@@ -590,7 +590,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | lignes          | TVA5                 | Montant TVA 5% sur ligne               |
 | lignes          | TVA10                | Montant TVA 10% sur ligne              |
 | lignes          | TVA20                | Montant TVA 20% sur ligne              |
-| lignes          | PACKING              |                                        |
+| lignes          | PACKING              | Conditionnement                        |
 | detailtva       | TAUX                 | Taux de TVA                            |
 | detailtva       | HT                   | Montant Hors Taxes TVA                 |
 | detailtva       | TVA                  | Montant TVA                            |
