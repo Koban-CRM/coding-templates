@@ -800,7 +800,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | lignes            | TVA                  | Montant TVA                             |
 | lignes            | REFPRODUCT           | Référence Produit interne               |
 | lignes            | BARCODE              | Code barre                              |
-| lignes            | SECTIONID            | Libellé section                         |
+| lignes            | SECTIONID            | Identifiant section                     |
 | lignes            | LIBELLE              | Libellé ligne                           |
 | lignes            | COMMENTAIRE_SECTION  | Commentaire section                     |
 | lignes            | CATPRODUCT_LABEL     | Libellé catégorie produit               |
