@@ -664,13 +664,11 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
         <CommandText />
       </Query>
     </DataSet>
-  </DataSets>
+  </DataSets> Définition des champs
 ```
 
-## Définition des champs
-
 | Nom DataSet       | Nom Champ            | Définition                              |
-| ----------------- | -------------------- |:--------------------------------------- |
+| ----------------- | -------------------- | --------------------------------------- |
 | client            | NOM                  | Nom du client                           |
 | client            | ADR_COMPLEMENT       | Adresse / Complément client             |
 | client            | ADR_NOVOIE           | Non utilisé                             |
@@ -678,7 +676,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | client            | ADR_VILLE            | Adresse / Ville client                  |
 | client            | ADR_CPOSTAL          | Adresse / Code Postal client            |
 | client            | ADR_COUNTRY          | Adresse / Pays client                   |
-| client            | NOTVA                | N° TVA  client                          |
+| client            | NOTVA                | N° TVA client                           |
 | client            | CONTACTNAME          | Nom du contact client                   |
 | client            | CONTACTFIRSTNAME     | Prénom du contact client                |
 | client            | CONTACTEMAIL         | Email contact client                    |
@@ -687,12 +685,12 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | client            | ORIG_ADR_RUE         |                                         |
 | client            | ORIG_ADR_VILLE       |                                         |
 | client            | ORIG_ADR_CPOSTA      |                                         |
-| client            | ISTTC                |                                         |
+| client            | ORIG_NOTVA           |                                         |
+| client            | ISTTC                | Est TTC                                 |
 | client            | ACCOUNTINGCODE       | Compte comptable client                 |
 | client            | EXTCODE              | Code externe client                     |
 | client            | SPECFIELD1           | Non utilisé                             |
 | client            | SPECFIELD2           | Non utilisé                             |
-| client            | ORIG_NOTVA           |                                         |
 | client            | CUST_SIRET           | N° SIRET client                         |
 | client            | CUST_LOGO            | Logo client                             |
 | facture           | NOMCONTACT           | Nom contact client                      |
@@ -707,7 +705,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | NODEVIS              | Numéro devis client                     |
 | facture           | NOCOMMANDECLIENT     | Numéro commande externe client          |
 | facture           | LOGO                 | Logo structure                          |
-| facture           | ACOMPTEHT            | Montant hors taxes acompte              |
+| facture           | ACOMPTEHT            | Montant hors taxes acompte              |
 | facture           | ACOMPTETVA           | Montant TVA acompte                     |
 | facture           | ACOMPTETTC           | Montant TTC acompte                     |
 | facture           | PIEDPAGE             | Texte Pied de page                      |
@@ -727,7 +725,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | FOOTER               | Texte Pied de page                      |
 | facture           | ISPAYED              | Statut soldé                            |
 | facture           | CURRENCYSYMBOL       | Devise                                  |
-| facture           | NODELIV              | N°  bon de livraison                    |
+| facture           | NODELIV              | N° bon de livraison                     |
 | facture           | RIB                  | RIB Structure                           |
 | facture           | IBAN                 | IBAN Structure                          |
 | facture           | BIC                  | BIC Structure                           |
@@ -738,26 +736,32 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | PAR                  | Personne affectée                       |
 | facture           | TELPAR               | Téléphone personne affectée             |
 | facture           | EMAILPAR             | EMail personne affectée                 |
+| facture           | TH_CHPSUP1           | Non utilisé                             |
+| facture           | TH_CHPSUP2           | Non utilisé                             |
+| facture           | TH_CHPSUP3           | Non utilisé                             |
+| facture           | TH_CHPSUP4           | Non utilisé                             |
+| facture           | TH_CHPSUP5           | Non utilisé                             |
+| facture           | TH_CHPSUP6           | Non utilisé                             |
 | facture           | PERIODFROM           | Date de début de période                |
 | facture           | PERIODTO             | Date de fin de période                  |
-| facture           | HASH                 |                                         |
+| facture           | HASH                 | ID KOBAN                                |
 | facture           | TTCPAYED             | Montant ttc payé                        |
-| facture           | NBPACK               |                                         |
+| facture           | NBPACK               | Nombre de colis                         |
 | facture           | TOTALWEIGHT          | Poids total                             |
 | Immobilier        |                      |                                         |
-| facture           | PROCLOGO             |                                         |
-| facture           | DEALPROCESS          |                                         |
-| facture           | DEALPROCESS_VILLE    |                                         |
-| facture           | STEP                 | Etape                                   |
-| facture           | STEPPERCENT          | Pourcentage étape                       |
-| facture           | PRJ_DONE             | Appel de fonds émis                     |
-| facture           | PRJ_TOPAY            | Appel de fond payer                     |
-| facture           | PRJ_TODO             | Appel de fonds à emettre                |
+| facture / adf     | PROCLOGO             | Logo programme                          |
+| facture / adf     | DEALPROCESS          | Libellé programme                       |
+| facture / adf     | DEALPROCESS_VILLE    | Ville programme                         |
+| facture / adf     | STEP                 | Etape                                   |
+| facture / adf     | STEPPERCENT          | Pourcentage étape                       |
+| facture / adf     | PRJ_DONE             | Appel de fonds émis                     |
+| facture / adf     | PRJ_TOPAY            | Appel de fond payer                     |
+| facture / adf     | PRJ_TODO             | Appel de fonds à emettre                |
 | facture           | CODEOPPORTUNITE      | Code opportunité                        |
-| facture           | QUOTE_LABEL          | Libellé devis                           |
+| facture           | QUOTE_LABEL          | Libellé du devis initial                |
 | facture           | IBAN_LABEL           | Libellé IBAN                            |
 | facture           | DEVISPERIODEVALIDITE | Durée de validité devis                 |
-| facture           | DEVISDATELIVRAISON   | Date de livraion devis                  |
+| facture           | DEVISDATELIVRAISON   | Date de livraison devis                 |
 | facture           | DEVISDUREETRAVAUX    | Durée des travaux devis                 |
 | facture           | MOBILECONTACT        | N° de mobile du contact client          |
 | detailtva         | TAUX                 | Taux de TVA                             |
@@ -767,7 +771,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | echeances         | HT                   | Montant hors taxe de l'écheance         |
 | echeances         | TTC                  | Montant TTC de l'écheance               |
 | facintermediaires | NUMERO               | N° de facture intermediaire             |
-| facintermediaires | INVOICEDATE          | Date de facture intermediaire           |
+| facintermediaires | INVOICEDATE          | Date de facture intermediaire           |
 | facintermediaires | HT                   | Montant hors taxe facture intermediaire |
 | facintermediaires | TTC                  | Montant TTC facture intermediaire       |
 | facintermediaires | AMOUNTPAYED          | Montant payé facture intermediaire      |
@@ -779,7 +783,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | faccommande       | AMOUNTPAYED          | Montant payé commande                   |
 | faccommande       | MODEREGLT            | Mode de reglement commande              |
 | faccommande       | LASTPAYMENTDATE      | Date du dernier paiement                |
-| faccommande       | ISACOMPTE            | **Est un acompte **                     |
+| faccommande       | ISACOMPTE            | Est un acompte                          |
 | faccommande       | ISASSET              | Est un avoir                            |
 | histoacompte      | NUMERO               | N° d'acompte                            |
 | histoacompte      | TTC                  | Montant ttc acompte                     |
@@ -805,7 +809,5 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | lignes            | PRODUCTLOGO          | Logo Produit                            |
 | lignes            | HTTPS                | URL boutique                            |
 | lignes            | TVA5                 | Montant TVA 5% sur ligne                |
-| lignes            | TVA10                | Montant TVA 10% sur ligne               |
-| lignes            | TVA20                | Montant TVA 20% sur ligne               |
-
------
+| lignes            | TVA10                | Montant TVA 10% sur ligne               |
+| lignes            | TVA20                | Montant TVA 20% sur ligne               |
