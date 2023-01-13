@@ -689,7 +689,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | client            | ORIG_ADR_RUE         |                                         |
 | client            | ORIG_ADR_VILLE       |                                         |
 | client            | ORIG_ADR_CPOSTA      |                                         |
-| client            | ORIG_NOTVA           |                                         |
+| client            | ORIG_NOTVA           | N° de TVA du compte d'Origine           |
 | client            | ISTTC                | Est TTC                                 |
 | client            | ACCOUNTINGCODE       | Compte comptable client                 |
 | client            | EXTCODE              | Code externe client                     |
