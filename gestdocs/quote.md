@@ -188,6 +188,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>DATEENVOI</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
+   <Field Name="DATECREATION">
+          <DataField>DATECREATION</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
         <Field Name="NUMERO">
           <DataField>NUMERO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -575,6 +579,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | Opportunité     | EMAILAFFECTE       | EMail personne affectée                |
 | Opportunité     | NOMAFFECTE         | Personne affectée                      |
 | devis           | DATEENVOI          | Date d'envoi                           |
+| devis           | DATECREATION       | Date de création du devis              |
 | devis           | NUMERO             | N° de devis                            |
 | devis           | LIBELLE            | Libellé devis                          |
 | devis           | PIEDPAGE           | Texte Pied de page                     |
