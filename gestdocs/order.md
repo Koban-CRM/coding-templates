@@ -544,8 +544,8 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | commande        | FOOTER               | Texte Pied de page                     |
 | commande        | CURRENCYSYMBOL       | Devise                                 |
 | commande        | MAILCONTACT          | Email contact client                   |
-| commande        | TELCONTACT           | SIREN Structure                        |
-| commande        | LABELECHEANCE        | Libellé échéance                       |
+| commande        | TELCONTACT           | Téléphone contact client               |
+| commande        | LABELECHEANCE        | `Libellé échéance`                     |
 | commande        | NODEVIS              | N° de devis                            |
 | commande        | EMAILAFFECTE         | EMail personne affectée                |
 | commande        | NOMAFFECTE           | Personne affectée                      |
