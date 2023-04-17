@@ -285,12 +285,12 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 
 | Nom DataSet | Nom Champ           | Définition                            |
 | ----------- | ------------------- | ------------------------------------- |
-| client      | NOM                 | Nom du fournisseur                    |
-| client      | ADR_COMPLEMENT      | Adresse / Complément Fournisseur      |
-| client      | ADR_NOVOIE          | Non utilisé                           |
-| client      | ADR_RUE             | Adresse / Rue Fournisseur             |
-| client      | ADR_VILLE           | Adresse / Ville Fournisseur           |
-| client      | ADR_CPOSTAL         | Adresse / Code Postal Fournisseur     |
+| client      | NOM                 | Nom du client                         |
+| client      | ADR_COMPLEMENT      | Adresse / Complément client           |
+| client      | ADR_NOVOIE          | Adresse / N° de rue client            |
+| client      | ADR_RUE             | Adresse / Rue client                  |
+| client      | ADR_VILLE           | Adresse / Ville client                |
+| client      | ADR_CPOSTAL         | Adresse / Code Postal client          |
 | client      | ADR_CONTACT         | Adresse / Nom du contact              |
 | client      | ADR_PHONE           | Adresse / Téléphone                   |
 | client      | ACCOUNTINGCODE      | Compte comptable                      |
@@ -308,13 +308,13 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | commande    | EMAILPAR            | EMail personne affectée               |
 | commande    | LOGO                | Logo structure                        |
 | commande    | PIEDPAGE            | Texte Pied de page                    |
-| commande    | NUMERO              | Numéro Commande Fournisseur           |
+| commande    | NUMERO              | Numéro Commande                       |
 | commande    | PAR                 | Nom et prénom personne affectée       |
-| commande    | NOMCONTACT          | Nom du contact fournisseur            |
+| commande    | NOMCONTACT          | Nom du contact                        |
 | commande    | BACKCOLOR           | Couleur de fond du modèle de document |
-| commande    | HEADER              |                                       |
-| commande    | FOOTER              | Mode de règlement                     |
-| commande    | NOORDER             | Dépot                                 |
+| commande    | HEADER              | Texte Entête                          |
+| commande    | FOOTER              | Texte Pied de page                    |
+| commande    | NOORDER             | Numéro de commande                    |
 | commande    | NOMSOCIETE          | Nom Structure                         |
 | commande    | FORMECAPITAL        | Forme Capital Structure               |
 | commande    | ADRESSE1            | Adresse 1 Structure                   |
@@ -329,7 +329,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | commande    | PHONECONTACT        | Téléphone du contact                  |
 | commande    | MAILCONTACT         | Mail du contact                       |
 | commande    | NODEVIS             | Numéro de devis initial               |
-| commande    | COMMENT             | Commentaire bon de livraison          |
+| commande    | COMMENT             | Commentaire commande                  |
 | commande    | LABELDEVIS          | Libellé du devis initial              |
 | commande    | MOBILECONTACT       | Mobile du contact                     |
 | lignes      | REFERENCE           | Libellé ligne                         |

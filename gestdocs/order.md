@@ -416,10 +416,6 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>PRIXPAR</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
-        <Field Name="REDUCTION_CTR">
-          <DataField>REDUCTION_CTR</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
         <Field Name="CATPRODUCT_LABEL">
           <DataField>CATPRODUCT_LABEL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -493,3 +489,108 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
   </DataSets>
 ```
 
+## Définition des champs
+
+| Nom DataSet     | Nom Champ            | Définition                             |
+| --------------- | -------------------- | -------------------------------------- |
+| client          | NOM                  | Nom du fournisseur                     |
+| client          | ADR_COMPLEMENT       | Adresse / Complément Fournisseur       |
+| client          | ADR_NOVOIE           | Non utilisé                            |
+| client          | ADR_RUE              | Adresse / Rue Fournisseur              |
+| client          | ADR_VILLE            | Adresse / Ville Fournisseur            |
+| client          | ADR_CPOSTAL          | Adresse / Code Postal Fournisseur      |
+| client          | ADR_COUNTRY          | Adresse / Pays Fournisseur             |
+| client          | ADRDEL_NOM           | Adresse Livraison / Nom Client         |
+| client          | ADRDEL_PRENOM        | Adresse Livraison / Prénom Client      |
+| client          | ADRDEL_TEL           | Adresse Livraison / Téléphone Client   |
+| client          | ADRDEL_COMPLEMENT    | Adresse Livraison / Complément Client  |
+| client          | ADRDEL_RUE           | Adresse Livraison / Rue Client         |
+| client          | ADRDEL_VILLE         | Adresse Livraison / Ville Client       |
+| client          | ADRDEL_CPOSTAL       | Adresse Livraison / Code Postal Client |
+| client          | ADRDEL_COUNTRY       | Adresse Livraison / Pays Client        |
+| client          | NOTVA                | Numéro TVA Structure                   |
+| client          | ACCOUNTINGCODE       | Compte comptable client                |
+| client          | EXTCODE              | Code externe client                    |
+| client          | RIB                  | RIB Structure                          |
+| client          | IBAN                 | IBAN Structure                         |
+| client          | BIC                  | BIC Structure                          |
+| client          | BANK                 | Banque                                 |
+| client          | ADRFAC_COMPLEMENT    | Adresse de facturation / Complément    |
+| client          | ADRFAC_RUE           | Adresse de facturation / Rue           |
+| client          | ADRFAC_VILLE         | Adresse de facturation / Ville         |
+| client          | ADRFAC_CP            | Adresse de facturation / Code postal   |
+| client          | ADRFAC_COUNTRY       | Adresse de facturation / Pays          |
+| commande        | DATECOMMANDE         | Date de la commande fournisseur        |
+| commande        | TELPAR               | Téléphone personne affectée            |
+| commande        | EMAILPAR             | EMail personne affectée                |
+| commande        | LOGO                 | Logo structure                         |
+| commande        | PIEDPAGE             | Texte Pied de page                     |
+| commande        | NUMERO               | Numéro Commande Fournisseur            |
+| commande        | PAR                  | Nom et prénom personne affectée        |
+| commande        | NOMCONTACT           | Nom du contact fournisseur             |
+| commande        | BACKCOLOR            | Couleur de fond du modèle de document  |
+| commande        | PERIODEVALIDITE      | Période de validité                    |
+| commande        | MODERGLT             | Mode de règlement                      |
+| commande        | NOMSOCIETE           | Nom Structure                          |
+| commande        | FORMECAPITAL         | Forme Capital Structure                |
+| commande        | ADRESSE1             | Adresse 1 Structure                    |
+| commande        | ADRESSE2             | Adresse 2 Structure                    |
+| commande        | SIREN                | SIREN Structure                        |
+| commande        | RCS                  | Non utilisé                            |
+| commande        | APE                  | Non utilisé                            |
+| commande        | NOTVA                | Numéro TVA Structure                   |
+| commande        | MENTIONCOMPL         | Mentions complémentaire Structure      |
+| commande        | HEADER               | Texte Entête                           |
+| commande        | FOOTER               | Texte Pied de page                     |
+| commande        | CURRENCYSYMBOL       | Devise                                 |
+| commande        | MAILCONTACT          | Email contact client                   |
+| commande        | TELCONTACT           | Téléphone contact client               |
+| commande        | LABELECHEANCE        | `Libellé échéance`                     |
+| commande        | NODEVIS              | N° de devis                            |
+| commande        | EMAILAFFECTE         | EMail personne affectée                |
+| commande        | NOMAFFECTE           | Personne affectée                      |
+| commande        | MOBILEAFFECTE        | Mobile personne affectée               |
+| commande        | THIRDLOGO            | Logo structure                         |
+| commande        | DEVISPERIODEVALIDITE | Durée de validité devis                |
+| commande        | DEVISDATELIVRAISON   | Date de livraion devis                 |
+| commande        | DEVISDUREETRAVAUX    | Durée des travaux devis                |
+| commande        | PRENOMCONTACT        | Prénom contact client                  |
+| commande        | GENDERCONTACT        | Civilité Contact client                |
+| commande        | LIBELLEDEVIS         | Libellé devis                          |
+| commande        | DATELIVRAISONESTIMEE | Date de livraison client estimée       |
+| opportspecfield | SPECFIELD1           | Non utilisé                            |
+| opportspecfield | SPECFIELD2           | Non utilisé                            |
+| opportspecfield | SPECFIELD3           | Non utilisé                            |
+| opportspecfield | SPECFIELD4           | Non utilisé                            |
+| opportspecfield | SPECFIELD5           | Non utilisé                            |
+| opportspecfield | SPECFIELD6           | Non utilisé                            |
+| lignes          | REFERENCE            | Libellé ligne                          |
+| lignes          | COMMENTAIRE          | Commentaire ligne                      |
+| lignes          | UNITE                | Unité                                  |
+| lignes          | PRIXUNITAIRE         | Prix unitaire                          |
+| lignes          | HT                   | Montant HT                             |
+| lignes          | QUANTITE             | Quantité                               |
+| lignes          | REDUCTION            | Réduction                              |
+| lignes          | TTC                  | Montant TTC                            |
+| lignes          | TVA                  | Montant TVA                            |
+| lignes          | REFPRODUCT           | Référence Produit interne              |
+| lignes          | BARCODE              | Code barre                             |
+| lignes          | SECTIONID            | Identifiant section                    |
+| lignes          | LIBELLE              | Libellé section                        |
+| lignes          | COMMENTAIRESECTION   | Commentaire section                    |
+| lignes          | ISCTR                | Est un produit avec tarif client       |
+| lignes          | HT_PUCTR             | Montant HT prix tarif client           |
+| lignes          | TTC_PUCTR            | Montant TTC prix tarif client          |
+| lignes          | HT_NOCTR             | Montant HT hors prix tarif client      |
+| lignes          | TTC_NOCTR            | Montant TTC hors prix tarif client     |
+| lignes          | PRIXPAR              |                                        |
+| lignes          | CATPRODUCT_LABEL     | Libellé catégorie produit              |
+| lignes          | PRODUCTLOGO          | Logo Produit                           |
+| lignes          | CLASSIF              | Classification produit                 |
+| lignes          | TVA5                 | Montant TVA 5% sur ligne               |
+| lignes          | TVA10                | Montant TVA 10% sur ligne              |
+| lignes          | TVA20                | Montant TVA 20% sur ligne              |
+| lignes          | PACKING              | Conditionnement                        |
+| detailtva       | TAUX                 | Taux de TVA                            |
+| detailtva       | HT                   | Montant Hors Taxes TVA                 |
+| detailtva       | TVA                  | Montant TVA                            |
