@@ -104,6 +104,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>OTHERCODE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ASSIGNEDTO">
+          <DataField>ASSIGNEDTO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Query>
         <DataSourceName>Apeacz</DataSourceName>
@@ -573,6 +577,13 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | client          | EXTCODE            | Code externe client                    |
 | client          | ISTTC              |                                        |
 | client          | NOTVA              | N° TVA client                          |
+| client          | ADR_COUNTRY        | Adresse / Pays                         |
+| client          | THIRDLOGO          | Logo du compte                         |
+| client          | FIRSTNAME          | Prénom du compte                       |
+| client          | GENDER             | Civilité du compte                     |
+| client          | MOBILE             | Mobile du compte                       |
+| client          | OTHERCODE          | Autre code                             |
+| client          | ASSIGNEDTO         | Utilisateur affecté au compte          |
 | Opportunité     | LIBELLE            | Libellé opportunité                    |
 | Opportunité     | DESCRIPTION        | Commenrtaire opportunité               |
 | Opportunité     | TELAFFECTE         | Téléphone personne affectée            |
