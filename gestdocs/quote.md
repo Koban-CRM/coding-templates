@@ -224,7 +224,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>PAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field
-<Field Name="FONCTIONPAR">
+        <Field Name="FONCTIONPAR">
           <DataField>FONCTIONPAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
