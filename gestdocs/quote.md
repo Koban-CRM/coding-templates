@@ -220,6 +220,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>PAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+
         <Field Name="NOMCONTACT">
           <DataField>NOMCONTACT</DataField>
           <rd:TypeName>System.String</rd:TypeName>
