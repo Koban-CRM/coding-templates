@@ -4,11 +4,12 @@
 
 Here you can find endpoints :
 
-| Environment                                     | Endpoint                          | Comments                 |
-| ----------------------------------------------- | --------------------------------- | ------------------------ |
-| PRODUCTION                                      | https://addin-koban.com           |                          |
-| SANDBOX                                         | http://devttrack.itsonlyleads.com | Ask Koban to open access |
-| FUTURE VERSION<br />*Warning ! Alpha version !* | http://testtrack.itsonlyleads.com | Ask Koban to open access |
+| Environment                                            | Endpoint                          | Comments                 |
+| ------------------------------------------------------ | --------------------------------- | ------------------------ |
+| PRODUCTION                                             | https://addin-koban.com           |                          |
+| SANDBOX                                                | https://trk-preprod.app-koban.com | Ask Koban to open access |
+| SANDBOX **V5**                                         | http://devttrack.itsonlyleads.com | Ask Koban to open access |
+| FUTURE VERSION **V5**<br />*Warning ! Alpha version !* | http://testtrack.itsonlyleads.com | Ask Koban to open access |
 
 ### Authentication
 
