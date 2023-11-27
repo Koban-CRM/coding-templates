@@ -20,38 +20,45 @@ The following identification parameters are necessary for use of the tracking AP
 | Zid     | Your account security key. Available under Parameters > API  |
 | Clé API | Available under Parameters > API                             |
 
-### Field types in Koban
+### Transmettre les valeurs de champ à Koban
 
-Engagement information is passed through field values. Each field has an internal Koban code that must be transmitted via the tracking API.
+Les informations d'engagement sont transmises à Koban via des valeurs de champ. Chaque champ dispose d'un code interne à Koban qui doit être transmis via l'API de Tracking.
 
-#### Standard fields
+#### Champs standard
 
-All of the following fields can be transmitted to Koban :
+Ces champs standards peuvent être transmis à Koban :
 
 | **Champ**             | **Code**             | **Format**                                                   |
 | --------------------- | -------------------- | ------------------------------------------------------------ |
-| Official code (SIRET) | third_officialnumber | Texte                                                        |
-| External Code         | third_extcode        | Texte                                                        |
-| Company name          | third_label          | Texte                                                        |
-| Address > Complement  | third_adrscompl      | Texte                                                        |
-| Address > Street      | third_adrsstreet     | Texte                                                        |
-| Address > Zip Code    | third_adrszipcode    | Texte                                                        |
-| Address > City        | third_adrscity       | Texte                                                        |
-| Address > Country     | third_adrscountry    | Format ISO 2 lettres                                         |
-| Name                  | contact_name         | Texte                                                        |
-| First Name            | contact_firstname    | Texte                                                        |
-| Gender                | contact_gender       | Code de la valeur de liste Appelation dans Koban             |
+| SIRET                 | third_officialnumber | Texte                                                        |
+| Code externe          | third_extcode        | Texte                                                        |
+| Nom Entreprise        | third_label          | Texte                                                        |
+| Adresse > Complément  | third_adrscompl      | Texte                                                        |
+| Adresse > Rue         | third_adrsstreet     | Texte                                                        |
+| Adresse > Code Postal | third_adrszipcode    | Texte                                                        |
+| Adresse > Ville       | third_adrscity       | Texte                                                        |
+| Adresse > Pays        | third_adrscountry    | Format ISO 2 lettres                                         |
+| Nom                   | contact_name         | Texte                                                        |
+| Prénom                | contact_firstname    | Texte                                                        |
+| Civilité              | contact_gender       | Code de la valeur de liste Appelation dans Koban             |
 | EMail                 | contact_email        | Texte                                                        |
-| Phone number          | contact_phone        | Texte                                                        |
-| Function              | contact_function     | Texte ou si le champ fonction est paramétré comme liste, libellé du  valeur de liste |
-| Cell                  | contact_mobile       | Texte                                                        |
-| Comments              | contact_comment      | Texte                                                        |
+| Numéro de téléphone   | contact_phone        | Texte                                                        |
+| Fonction              | contact_function     | Texte ou si le champ fonction est paramétré comme liste, libellé du  valeur de liste |
+| Mobile                | contact_mobile       | Texte                                                        |
+| Commentaires          | contact_comment      | Texte                                                        |
 | Optin                 | Optin                | on ou off                                                    |
 
-#### Transmission on the server side
+#### Tags
 
-For each point of engagement, you must have the form identifier and the associated landing page.
-The information must then be transmitted via an http POST as follows:
+de
+
+#### Champs personnalisé
+
+de
+
+#### Transmission coté serveur
+
+Pour chaque point d'engagement, vous devez disposer de l'identifiant du formulaire et de l'identifiant du point d'engagement. L'information est transmise ensuite via un http POST :
 
 ```
 POST http(s)://SERVERKOBAN/Form/sbm?id=[IDFORMULAIRE]&cid=[cid]&zid=[CLESECURITE]&_cnl=&_scl=&_lp=[IDLANDINGPAGE]&utm_campaign=[utm_campaign]&utm_source=[utm_source]&utm_medium=[utm_medium]&utm_content=[utm_content]&utm_term=[utm_term] HTTP/1.1
@@ -71,14 +78,14 @@ contact_name=ACMETEST&Tag5502afe50dc3610e8c5fd66f=5502afe50dc3610e8c5fd66c&Spe57
 
 [See example here](https://documenter.getpostman.com/view/1804856/SzKSSKAk?version=latest#cd216ab2-f29d-417e-bf0c-32ef63b19fd7).
 
-#### Return
+##### Retour
 
-The method returns a JSON with this structure :
+La méthode retourne un JSON avec cette structure :
 
-* s (Success true or false)
+* s (Succès true or false)
 
 * a
-  * ld : Lead Guid created or updated
-  * ctc : Contact Guid updated
-  * th: Third Guid updated
+  * ld : Guid Piste créée ou mise à jour
+  * ctc : Guid Contact créé ou mis à jour
+  * th: Guid Compte créé ou mis à jour
 
