@@ -50,11 +50,42 @@ Ces champs standards peuvent être transmis à Koban :
 
 #### Tags
 
-de
+##### Code
+
+Le code de chaque tag est transmis selon le code suivant :
+
+**Tag + Identifiant de la catégorie de tag**
+
+Ex. :
+
+*Tag56e118c00dc3610dc461fbf4*
+
+##### Format
+
+La valeur transmise peut être soit le libellé exact, soit le code externe du tag.
 
 #### Champs personnalisé
 
-de
+##### Code
+
+Le code de chaque champ personnalisé est transmis selon le code suivant :
+
+**Spé + Identifiant du champ personnalisé**
+
+Ex. :
+
+*Spe56e98f390dc3610c5cb4032a*
+
+##### Valeur
+
+| Type de champ | Format                                                       |
+| ------------- | ------------------------------------------------------------ |
+| Texte         | Texte                                                        |
+| Numérique     | Nombre (séparateur point)                                    |
+| Date          | Date au format DD/MM/YYYY                                    |
+| Oui/Non       | Les valeurs suivantes sont acceptées :<br />- pour true : on, true<br />- pour false : off, false |
+
+
 
 #### Transmission coté serveur
 
