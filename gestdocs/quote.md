@@ -223,6 +223,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
         <Field Name="PAR">
           <DataField>PAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
+        </Field
+        <Field Name="FONCTIONPAR">
+          <DataField>FONCTIONPAR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="NOMCONTACT">
           <DataField>NOMCONTACT</DataField>
@@ -598,6 +602,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | devis           | TELPAR             | Téléphone personne affectée            |
 | devis           | EMAILPAR           | EMail personne affectée                |
 | devis           | PAR                | Nom et prénom personne affectée        |
+| devis           | FONCTIONPAR        | Fonction de la personne affectée       |
 | devis           | NOMCONTACT         | Nom contact client                     |
 | devis           | DATELIVRAISON      | Date de livraion devis                 |
 | devis           | DUREETRAVAUX       | Durée des travaux devis                |
