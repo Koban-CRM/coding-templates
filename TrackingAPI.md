@@ -1,24 +1,24 @@
-# Tracking API
+# API de tracking
 
-### Access and endpoints
+### endpoints
 
-Here you can find endpoints :
+Les endpoints principaux sont les suivants :
 
-| Environment                                            | Endpoint                          | Comments                 |
-| ------------------------------------------------------ | --------------------------------- | ------------------------ |
-| PRODUCTION                                             | https://addin-koban.com           |                          |
-| SANDBOX                                                | https://trk-preprod.app-koban.com | Ask Koban to open access |
-| SANDBOX **V5**                                         | http://devttrack.itsonlyleads.com | Ask Koban to open access |
-| FUTURE VERSION **V5**<br />*Warning ! Alpha version !* | http://testtrack.itsonlyleads.com | Ask Koban to open access |
+| Environnement                                          | Endpoint                          | Commentaires                                      |
+| ------------------------------------------------------ | --------------------------------- | ------------------------------------------------- |
+| PRODUCTION                                             | https://addin-koban.com           |                                                   |
+| SANDBOX                                                | https://trk-preprod.app-koban.com | Demande d'accès préalable auprès du support Koban |
+| SANDBOX **V5**                                         | http://devttrack.itsonlyleads.com | Demande d'accès préalable auprès du support Koban |
+| FUTURE VERSION **V5**<br />*Warning ! Alpha version !* | http://testtrack.itsonlyleads.com | Demande d'accès préalable auprès du support Koban |
 
 ### Authentication
 
-The following identification parameters are necessary for use of the tracking API
+Les paramètres d'authentification suivants sont nécessaires
 
 | Server  | The Koban Tracking Server. By default :   https://addin-koban.com |
 | ------- | ------------------------------------------------------------ |
-| Zid     | Your account security key. Available under Parameters > API  |
-| Clé API | Available under Parameters > API                             |
+| Zid     | La clé de sécurité. Disponibles sous Paramètres > API        |
+| Clé API | Disponible sous Paramètres > API                             |
 
 ### Transmettre les valeurs de champ à Koban
 
