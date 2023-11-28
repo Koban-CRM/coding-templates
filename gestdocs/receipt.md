@@ -121,7 +121,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 
 | Nom DataSet | Nom Champ      | Définition                            |
 | ----------- | -------------- | ------------------------------------- |
-| client      | NOM            | Nom du client                         |
+| Client      | NOM            | Nom du client                         |
 | client      | ADR_COMPLEMENT | Adresse / Complément client           |
 | client      | ADR_NOVOIE     | Adresse / N° de rue client            |
 | client      | ADR_RUE        | Adresse / Rue client                  |
