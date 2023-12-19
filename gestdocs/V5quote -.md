@@ -1,4 +1,4 @@
-# Modèle de document Devis
+# Modèle de document Devis V5 SEULEMENT
 
 Voici le code correspondant  à la déclaration des champs d'un modèle de document Devis.
 
