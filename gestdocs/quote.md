@@ -64,7 +64,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>ADRFAC_CP</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-
+<Field Name="ADRFAC_COUNTRY">
+          <DataField>ADRFAC_COUNTRY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="ACCOUNTINGCODE">
           <DataField>ACCOUNTINGCODE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
