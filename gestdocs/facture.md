@@ -424,6 +424,22 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
         <CommandText />
       </Query>
     </DataSet>
+    <DataSet Name="postttc">
+        <Fields>
+            <Field Name="LABEL">
+              <DataField>LABEL</DataField>
+              <rd:TypeName>System.String</rd:TypeName>
+            </Field>
+            <Field Name="AMOUNT">
+              <DataField>AMOUNT</DataField>
+              <rd:TypeName>System.Double</rd:TypeName>
+            </Field>
+        </Fields>
+        <Query>
+            <DataSourceName>Apeacz</DataSourceName>
+            <CommandText />
+        </Query>
+    </DataSet>
     <DataSet Name="detailtva">
       <Fields>
         <Field Name="TAUX">
@@ -768,6 +784,8 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | DEVISDATELIVRAISON   | Date de livraison devis / Date de démarrage des travaux |
 | facture           | DEVISDUREETRAVAUX    | Durée des travaux devis                                 |
 | facture           | MOBILECONTACT        | N° de mobile du contact client                          |
+| postttc           | LABEL                | Libellé Remise post TTC                                 |
+| postttc           | AMOUNT               | Montant Remise post TTC                                 |
 | detailtva         | TAUX                 | Taux de TVA                                             |
 | detailtva         | HT                   | Montant Hors Taxes TVA                                  |
 | detailtva         | TVA                  | Montant TVA                                             |
