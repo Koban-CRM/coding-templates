@@ -232,7 +232,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>PAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field
-        <Field Name="FONCTIONPAR">
+        <Field Name="FONCTIONPAR">
           <DataField>FONCTIONPAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
@@ -577,8 +577,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
             <DataSourceName>Apeacz</DataSourceName>
             <CommandText />
         </Query>
-    </DataSet
->
+    </DataSet>
   </DataSets>
 ```
 
@@ -614,7 +613,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | client          | OTHERCODE          | Autre code                             |
 | client          | ASSIGNEDTO         | Utilisateur affecté au compte          |
 | Opportunité     | LIBELLE            | Libellé opportunité                    |
-| Opportunité     | DESCRIPTION        | Commenrtaire opportunité               |
+| Opportunité     | DESCRIPTION        | Commentaire opportunité                |
 | Opportunité     | TELAFFECTE         | Téléphone personne affectée            |
 | Opportunité     | EMAILAFFECTE       | EMail personne affectée                |
 | Opportunité     | NOMAFFECTE         | Personne affectée                      |
