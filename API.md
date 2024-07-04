@@ -60,7 +60,10 @@ Specific objects are retrieved or updated with **MoreFields** array.
 Each part of this array consists of two properties :
 
 - **FieldId** : The specific field ID in Koban (*you can find it in Koban parameters > Object (Third, Contact, Lead...) > Customization*)
-- **Value** : The specific field value (true or false for a boolean value, DD/MM/YYYY for a date...)
+- **Value** : The specific field value. The format is :
+  - true or false for a boolean value
+  - DD/MM/YYYY for a date
+  - Label or External code for a list value
 
 ### Webhooks
 
