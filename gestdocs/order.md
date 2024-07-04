@@ -486,6 +486,22 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
         <CommandText />
       </Query>
     </DataSet>
+ <DataSet Name="postttc">
+        <Fields>
+            <Field Name="LABEL">
+              <DataField>LABEL</DataField>
+              <rd:TypeName>System.String</rd:TypeName>
+            </Field>
+            <Field Name="AMOUNT">
+              <DataField>AMOUNT</DataField>
+              <rd:TypeName>System.Double</rd:TypeName>
+            </Field>
+        </Fields>
+        <Query>
+            <DataSourceName>Apeacz</DataSourceName>
+            <CommandText />
+        </Query>
+    </DataSet>
   </DataSets>
 ```
 
@@ -594,3 +610,5 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | detailtva       | TAUX                 | Taux de TVA                            |
 | detailtva       | HT                   | Montant Hors Taxes TVA                 |
 | detailtva       | TVA                  | Montant TVA                            |
+| postttc         | LABEL                | Libellé Remise post TTC                |
+| postttc         | AMOUNT               | Montant Remise post TTC                |

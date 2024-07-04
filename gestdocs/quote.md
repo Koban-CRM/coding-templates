@@ -64,6 +64,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>ADRFAC_CP</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+<Field Name="ADRFAC_COUNTRY">
+          <DataField>ADRFAC_COUNTRY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="ACCOUNTINGCODE">
           <DataField>ACCOUNTINGCODE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -192,6 +196,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>DATEENVOI</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
+  <Field Name="CTR_PREVSTARTDATE">
+          <DataField>CTR_PREVSTARTDATE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
    <Field Name="DATECREATION">
           <DataField>DATECREATION</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
@@ -224,7 +232,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>PAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field
-        <Field Name="FONCTIONPAR">
+        <Field Name="FONCTIONPAR">
           <DataField>FONCTIONPAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
@@ -554,6 +562,22 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
         <CommandText />
       </Query>
     </DataSet>
+    <DataSet Name="postttc">
+        <Fields>
+            <Field Name="LABEL">
+              <DataField>LABEL</DataField>
+              <rd:TypeName>System.String</rd:TypeName>
+            </Field>
+            <Field Name="AMOUNT">
+              <DataField>AMOUNT</DataField>
+              <rd:TypeName>System.Double</rd:TypeName>
+            </Field>
+        </Fields>
+        <Query>
+            <DataSourceName>Apeacz</DataSourceName>
+            <CommandText />
+        </Query>
+    </DataSet>
   </DataSets>
 ```
 
@@ -589,11 +613,12 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | client          | OTHERCODE          | Autre code                             |
 | client          | ASSIGNEDTO         | Utilisateur affecté au compte          |
 | Opportunité     | LIBELLE            | Libellé opportunité                    |
-| Opportunité     | DESCRIPTION        | Commenrtaire opportunité               |
+| Opportunité     | DESCRIPTION        | Commentaire opportunité                |
 | Opportunité     | TELAFFECTE         | Téléphone personne affectée            |
 | Opportunité     | EMAILAFFECTE       | EMail personne affectée                |
 | Opportunité     | NOMAFFECTE         | Personne affectée                      |
 | devis           | DATEENVOI          | Date d'envoi                           |
+| devis           | CTR_PREVSTARTDATE  | Date de début contrat prévue           |
 | devis           | DATECREATION       | Date de création du devis              |
 | devis           | NUMERO             | N° de devis                            |
 | devis           | LIBELLE            | Libellé devis                          |
@@ -698,6 +723,8 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | lignes          | TVA5               | Montant TVA 5% sur ligne               |
 | lignes          | TVA10              | Montant TVA 10% sur ligne              |
 | lignes          | TVA20              | Montant TVA 20% sur ligne              |
+| postttc         | LABEL              | Libellé Remise post TTC                |
+| postttc         | AMOUNT             | Montant Remise post TTC                |
 | detailtva       | TAUX               | Taux de TVA                            |
 | detailtva       | HT                 | Montant Hors Taxes TVA                 |
 | detailtva       | TVA                | Montant TVA                            |
