@@ -71,10 +71,9 @@ Each part of this array consists of two properties :
 
 Koban can launch a webhook on several events.
 
-You can register your webhook by two ways :
+You can register your webhook by API :
 
-- From the API with the [ncHook](https://app-koban.com/Static/apidoc.html#operation/ncHook_Subscribe) methods
-- From Koban directly under **Parameters > API > Webhooks**.
+- From the API with the [ncHook](https://documenter.getpostman.com/view/1804856/SzKSSKAk?version=latest#8ff82e14-ca89-4cbf-b8c0-f192f328983d) methods
 
 #### Payloads
 
