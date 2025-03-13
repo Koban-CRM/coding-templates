@@ -698,6 +698,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | devis           | BIC                | BIC Structure                          |
 | devis           | MOBILECONTACT      | N° de mobile du contact client         |
 | devis           | MOBILEPAR          | Mobile personne affectée               |
+| devis           | INCOTERM           |                                        |
 | lignes          | SECTIONID          | Identifiant Section                    |
 | lignes          | LIBELLE            | Libellé Section                        |
 | lignes          | COMMENTAIRESECTION | Commentaire section                    |
