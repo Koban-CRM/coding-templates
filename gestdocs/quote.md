@@ -396,6 +396,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>MOBILEPAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+<Field Name="INCOTERM">
+          <DataField>INCOTERM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Query>
         <DataSourceName>Apeacz</DataSourceName>
