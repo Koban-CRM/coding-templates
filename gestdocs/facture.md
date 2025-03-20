@@ -687,149 +687,149 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
   </DataSets> Définition des champs
 ```
 
-| Nom DataSet       | Nom Champ            | Définition                                              |
-| ----------------- | -------------------- | ------------------------------------------------------- |
-| client            | NOM                  | Nom du client                                           |
-| client            | ADR_COMPLEMENT       | Adresse / Complément client                             |
-| client            | ADR_NOVOIE           | Non utilisé                                             |
-| client            | ADR_RUE              | Adresse / Rue client                                    |
-| client            | ADR_VILLE            | Adresse / Ville client                                  |
-| client            | ADR_CPOSTAL          | Adresse / Code Postal client                            |
-| client            | ADR_COUNTRY          | Adresse / Pays client                                   |
-| client            | NOTVA                | N° TVA client                                           |
-| client            | CONTACTNAME          | Nom du contact client                                   |
-| client            | CONTACTFIRSTNAME     | Prénom du contact client                                |
-| client            | CONTACTEMAIL         | Email contact client                                    |
-| client            | ORIG_NOM             |                                                         |
-| client            | ORIG_ADR_COMPLEMENT  |                                                         |
-| client            | ORIG_ADR_RUE         |                                                         |
-| client            | ORIG_ADR_VILLE       |                                                         |
-| client            | ORIG_ADR_CPOSTA      |                                                         |
-| client            | ORIG_NOTVA           | N° de TVA du compte d'Origine                           |
-| client            | ISTTC                | Est TTC                                                 |
-| client            | ACCOUNTINGCODE       | Compte comptable client                                 |
-| client            | EXTCODE              | Code externe client                                     |
-| client            | SPECFIELD1           | Non utilisé                                             |
-| client            | SPECFIELD2           | Non utilisé                                             |
-| client            | CUST_SIRET           | N° SIRET client                                         |
-| client            | CUST_LOGO            | Logo client                                             |
-| facture           | NOMCONTACT           | Nom contact client                                      |
-| facture           | FAXCONTACT           | N° de fax contact client                                |
-| facture           | MAILCONTACT          | Email contact client                                    |
-| facture           | PHONECONTACT         | Télephone contact client                                |
-| facture           | AVOIR                | Avoir                                                   |
-| facture           | DATE                 | Date de Facture                                         |
-| facture           | ECHEANCE             | Échéance                                                |
-| facture           | NOCOMMANDE           | Numéro commande client                                  |
-| facture           | LABELOPPORTUNITE     | Libellé Opportunité                                     |
-| facture           | NODEVIS              | Numéro devis client                                     |
-| facture           | NOCOMMANDECLIENT     | Numéro commande externe client                          |
-| facture           | LOGO                 | Logo structure                                          |
-| facture           | ACOMPTEHT            | Montant hors taxes acompte                              |
-| facture           | ACOMPTETVA           | Montant TVA acompte                                     |
-| facture           | ACOMPTETTC           | Montant TTC acompte                                     |
-| facture           | PIEDPAGE             | Texte Pied de page                                      |
-| facture           | NUMERO               | Numéro Facture client                                   |
-| facture           | BACKCOLOR            | Couleur de fond du modèle de document                   |
-| facture           | MODERGLT             | Mode de règlement                                       |
-| facture           | NOMSOCIETE           | Nom Structure                                           |
-| facture           | FORMECAPITAL         | Forme Capital Structure                                 |
-| facture           | ADRESSE1             | Adresse 1 Structure                                     |
-| facture           | ADRESSE2             | Adresse 2 Structure                                     |
-| facture           | SIREN                | SIREN Structure                                         |
-| facture           | RCS                  | Non utilisé                                             |
-| facture           | APE                  | Non utilisé                                             |
-| facture           | NOTVA                | Numéro TVA Structure                                    |
-| facture           | MENTIONCOMPL         | Mentions complémentaire Structure                       |
-| facture           | HEADER               | Texte Entête                                            |
-| facture           | FOOTER               | Texte Pied de page                                      |
-| facture           | ISPAYED              | Statut soldé                                            |
-| facture           | CURRENCYSYMBOL       | Devise                                                  |
-| facture           | NODELIV              | N° bon de livraison                                     |
-| facture           | RIB                  | RIB Structure                                           |
-| facture           | IBAN                 | IBAN Structure                                          |
-| facture           | BIC                  | BIC Structure                                           |
-| facture           | DELIVCOMPL           | Adresse Livraison / Complément Client                   |
-| facture           | DELIVRUE             | Adresse Livraison / Rue Client                          |
-| facture           | DELIVVILLE           | Adresse Livraison / Ville Client                        |
-| facture           | DELIVCP              | Adresse Livraison / Code Postal Client                  |
-| facture           | PAR                  | Personne affectée                                       |
-| facture           | TELPAR               | Téléphone personne affectée                             |
-| facture           | EMAILPAR             | EMail personne affectée                                 |
-| facture           | TH_CHPSUP1           | Non utilisé                                             |
-| facture           | TH_CHPSUP2           | Non utilisé                                             |
-| facture           | TH_CHPSUP3           | Non utilisé                                             |
-| facture           | TH_CHPSUP4           | Non utilisé                                             |
-| facture           | TH_CHPSUP5           | Non utilisé                                             |
-| facture           | TH_CHPSUP6           | Non utilisé                                             |
-| facture           | PERIODFROM           | Date de début de période                                |
-| facture           | PERIODTO             | Date de fin de période                                  |
-| facture           | HASH                 | ID KOBAN                                                |
-| facture           | TTCPAYED             | Montant ttc payé                                        |
-| facture           | NBPACK               | Nombre de colis                                         |
-| facture           | TOTALWEIGHT          | Poids total                                             |
-| Immobilier        |                      |                                                         |
-| facture / adf     | PROCLOGO             | Logo programme                                          |
-| facture / adf     | DEALPROCESS          | Libellé programme                                       |
-| facture / adf     | DEALPROCESS_VILLE    | Ville programme                                         |
-| facture / adf     | STEP                 | Etape                                                   |
-| facture / adf     | STEPPERCENT          | Pourcentage étape                                       |
-| facture / adf     | PRJ_DONE             | Appel de fonds émis                                     |
-| facture / adf     | PRJ_TOPAY            | Appel de fond payer                                     |
-| facture / adf     | PRJ_TODO             | Appel de fonds à emettre                                |
-| facture           | CODEOPPORTUNITE      | Code opportunité                                        |
-| facture           | QUOTE_LABEL          | Libellé du devis initial                                |
-| facture           | IBAN_LABEL           | Libellé IBAN                                            |
-| facture           | DEVISPERIODEVALIDITE | Durée de validité devis                                 |
-| facture           | DEVISDATELIVRAISON   | Date de livraison devis / Date de démarrage des travaux |
-| facture           | DEVISDUREETRAVAUX    | Durée des travaux devis                                 |
-| facture           | MOBILECONTACT        | N° de mobile du contact client                          |
-| postttc           | LABEL                | Libellé Remise post TTC                                 |
-| postttc           | AMOUNT               | Montant Remise post TTC                                 |
-| detailtva         | TAUX                 | Taux de TVA                                             |
-| detailtva         | HT                   | Montant Hors Taxes TVA                                  |
-| detailtva         | TVA                  | Montant TVA                                             |
-| echeances         | DATE                 | Date d'écheance facture                                 |
-| echeances         | HT                   | Montant hors taxe de l'écheance                         |
-| echeances         | TTC                  | Montant TTC de l'écheance                               |
-| facintermediaires | NUMERO               | N° de facture intermediaire                             |
-| facintermediaires | INVOICEDATE          | Date de facture intermediaire                           |
-| facintermediaires | HT                   | Montant hors taxe facture intermediaire                 |
-| facintermediaires | TTC                  | Montant TTC facture intermediaire                       |
-| facintermediaires | AMOUNTPAYED          | Montant payé facture intermediaire                      |
-| facintermediaires | MODEREGLT            | Mode de reglement facture intermediaire                 |
-| faccommande       | NUMERO               | N° de commande                                          |
-| faccommande       | INVOICEDATE          | Date de commande                                        |
-| faccommande       | HT                   | Montant hors taxe commande                              |
-| faccommande       | TTC                  | Montant ttc commande                                    |
-| faccommande       | AMOUNTPAYED          | Montant payé commande                                   |
-| faccommande       | MODEREGLT            | Mode de reglement commande                              |
-| faccommande       | LASTPAYMENTDATE      | Date du dernier paiement                                |
-| faccommande       | ISACOMPTE            | Est un acompte                                          |
-| faccommande       | ISASSET              | Est un avoir                                            |
-| histoacompte      | NUMERO               | N° d'acompte                                            |
-| histoacompte      | TTC                  | Montant ttc acompte                                     |
-| histoacompte      | HT                   | Montant Hors Taxes acompte                              |
-| histoacompte      | TVA                  | TVA acompte                                             |
-| lignes            | REFERENCE            | Libellé ligne                                           |
-| lignes            | COMMENTAIRE          | Commentaire ligne                                       |
-| lignes            | UNITE                | Unité                                                   |
-| lignes            | PRIXUNITAIRE         | Prix unitaire                                           |
-| lignes            | HT                   | Montant HT                                              |
-| lignes            | QUANTITE             | Quantité                                                |
-| lignes            | REDUCTION            | Réduction                                               |
-| lignes            | TTC                  | Montant TTC                                             |
-| lignes            | TVA                  | Montant TVA                                             |
-| lignes            | REFPRODUCT           | Référence Produit interne                               |
-| lignes            | BARCODE              | Code barre                                              |
-| lignes            | SECTIONID            | Identifiant section                                     |
-| lignes            | LIBELLE              | Libellé ligne                                           |
-| lignes            | COMMENTAIRE_SECTION  | Commentaire section                                     |
-| lignes            | CATPRODUCT_LABEL     | Libellé catégorie produit                               |
-| lignes            | ORDERQUANTITE        | Quantité commandée                                      |
-| lignes            | CUSTORDERREFERENCE   | Référence client                                        |
-| lignes            | PRODUCTLOGO          | Logo Produit                                            |
-| lignes            | HTTPS                | URL boutique                                            |
-| lignes            | TVA5                 | Montant TVA 5% sur ligne                                |
-| lignes            | TVA10                | Montant TVA 10% sur ligne                               |
-| lignes            | TVA20                | Montant TVA 20% sur ligne                               |
+| Nom DataSet       | Nom Champ            | Définition                                                        |
+| ----------------- | -------------------- | ----------------------------------------------------------------- |
+| client            | NOM                  | Nom du client                                                     |
+| client            | ADR_COMPLEMENT       | Adresse / Complément client                                       |
+| client            | ADR_NOVOIE           | Non utilisé                                                       |
+| client            | ADR_RUE              | Adresse / Rue client                                              |
+| client            | ADR_VILLE            | Adresse / Ville client                                            |
+| client            | ADR_CPOSTAL          | Adresse / Code Postal client                                      |
+| client            | ADR_COUNTRY          | Adresse / Pays client                                             |
+| client            | NOTVA                | N° TVA client                                                     |
+| client            | CONTACTNAME          | Nom du contact client                                             |
+| client            | CONTACTFIRSTNAME     | Prénom du contact client                                          |
+| client            | CONTACTEMAIL         | Email contact client                                              |
+| client            | ORIG_NOM             |                                                                   |
+| client            | ORIG_ADR_COMPLEMENT  |                                                                   |
+| client            | ORIG_ADR_RUE         |                                                                   |
+| client            | ORIG_ADR_VILLE       |                                                                   |
+| client            | ORIG_ADR_CPOSTA      |                                                                   |
+| client            | ORIG_NOTVA           | N° de TVA du compte d'Origine                                     |
+| client            | ISTTC                | Est TTC                                                           |
+| client            | ACCOUNTINGCODE       | Compte comptable client                                           |
+| client            | EXTCODE              | Code externe client                                               |
+| client            | SPECFIELD1           | Non utilisé                                                       |
+| client            | SPECFIELD2           | Non utilisé                                                       |
+| client            | CUST_SIRET           | N° SIRET client                                                   |
+| client            | CUST_LOGO            | Logo client                                                       |
+| facture           | NOMCONTACT           | Nom contact client                                                |
+| facture           | FAXCONTACT           | N° de fax contact client                                          |
+| facture           | MAILCONTACT          | Email contact client                                              |
+| facture           | PHONECONTACT         | Télephone contact client                                          |
+| facture           | AVOIR                | Avoir                                                             |
+| facture           | DATE                 | Date de Facture                                                   |
+| facture           | ECHEANCE             | Échéance                                                          |
+| facture           | NOCOMMANDE           | Numéro commande client                                            |
+| facture           | LABELOPPORTUNITE     | Libellé Opportunité                                               |
+| facture           | NODEVIS              | Numéro devis client                                               |
+| facture           | NOCOMMANDECLIENT     | Numéro commande externe client                                    |
+| facture           | LOGO                 | Logo structure                                                    |
+| facture           | ACOMPTEHT            | Montant hors taxes acompte                                        |
+| facture           | ACOMPTETVA           | Montant TVA acompte                                               |
+| facture           | ACOMPTETTC           | Montant TTC acompte                                               |
+| facture           | PIEDPAGE             | Texte Pied de page                                                |
+| facture           | NUMERO               | Numéro Facture client                                             |
+| facture           | BACKCOLOR            | Couleur de fond du modèle de document                             |
+| facture           | MODERGLT             | Mode de règlement                                                 |
+| facture           | NOMSOCIETE           | Nom Structure                                                     |
+| facture           | FORMECAPITAL         | Forme Capital Structure                                           |
+| facture           | ADRESSE1             | Adresse 1 Structure                                               |
+| facture           | ADRESSE2             | Adresse 2 Structure                                               |
+| facture           | SIREN                | SIREN Structure                                                   |
+| facture           | RCS                  | Non utilisé                                                       |
+| facture           | APE                  | Non utilisé                                                       |
+| facture           | NOTVA                | Numéro TVA Structure                                              |
+| facture           | MENTIONCOMPL         | Mentions complémentaire Structure                                 |
+| facture           | HEADER               | Texte Entête                                                      |
+| facture           | FOOTER               | Texte Pied de page                                                |
+| facture           | ISPAYED              | Statut soldé                                                      |
+| facture           | CURRENCYSYMBOL       | Devise                                                            |
+| facture           | NODELIV              | N° bon de livraison                                               |
+| facture           | RIB                  | RIB Structure                                                     |
+| facture           | IBAN                 | IBAN Structure                                                    |
+| facture           | BIC                  | BIC Structure                                                     |
+| facture           | DELIVCOMPL           | Adresse Livraison / Complément Client                             |
+| facture           | DELIVRUE             | Adresse Livraison / Rue Client                                    |
+| facture           | DELIVVILLE           | Adresse Livraison / Ville Client                                  |
+| facture           | DELIVCP              | Adresse Livraison / Code Postal Client                            |
+| facture           | PAR                  | Personne affectée                                                 |
+| facture           | TELPAR               | Téléphone personne affectée                                       |
+| facture           | EMAILPAR             | EMail personne affectée                                           |
+| facture           | TH_CHPSUP1           | Non utilisé                                                       |
+| facture           | TH_CHPSUP2           | Non utilisé                                                       |
+| facture           | TH_CHPSUP3           | Non utilisé                                                       |
+| facture           | TH_CHPSUP4           | Non utilisé                                                       |
+| facture           | TH_CHPSUP5           | Non utilisé                                                       |
+| facture           | TH_CHPSUP6           | Non utilisé                                                       |
+| facture           | PERIODFROM           | Date de début de période                                          |
+| facture           | PERIODTO             | Date de fin de période                                            |
+| facture           | HASH                 | ID KOBAN                                                          |
+| facture           | TTCPAYED             | Montant ttc payé                                                  |
+| facture           | NBPACK               | Nombre de colis                                                   |
+| facture           | TOTALWEIGHT          | Poids total                                                       |
+| Immobilier        |                      |                                                                   |
+| facture / adf     | PROCLOGO             | Logo programme                                                    |
+| facture / adf     | DEALPROCESS          | Libellé programme                                                 |
+| facture / adf     | DEALPROCESS_VILLE    | Ville programme                                                   |
+| facture / adf     | STEP                 | Etape                                                             |
+| facture / adf     | STEPPERCENT          | Pourcentage étape                                                 |
+| facture / adf     | PRJ_DONE             | Appel de fonds émis                                               |
+| facture / adf     | PRJ_TOPAY            | Appel de fond payer                                               |
+| facture / adf     | PRJ_TODO             | Appel de fonds à emettre                                          |
+| facture           | CODEOPPORTUNITE      | Code opportunité                                                  |
+| facture           | QUOTE_LABEL          | Libellé du devis initial                                          |
+| facture           | IBAN_LABEL           | Libellé IBAN                                                      |
+| facture           | DEVISPERIODEVALIDITE | Durée de validité devis                                           |
+| facture           | DEVISDATELIVRAISON   | Date de livraison devis / Date de démarrage des travaux           |
+| facture           | DEVISDUREETRAVAUX    | Durée des travaux devis                                           |
+| facture           | MOBILECONTACT        | N° de mobile du contact client                                    |
+| postttc           | LABEL                | Libellé Remise post TTC                                           |
+| postttc           | AMOUNT               | Montant Remise post TTC                                           |
+| detailtva         | TAUX                 | Taux de TVA                                                       |
+| detailtva         | HT                   | Montant Hors Taxes TVA                                            |
+| detailtva         | TVA                  | Montant TVA                                                       |
+| echeances         | DATE                 | Date d'écheance facture                                           |
+| echeances         | HT                   | Montant hors taxe de l'écheance                                   |
+| echeances         | TTC                  | Montant TTC de l'écheance                                         |
+| facintermediaires | NUMERO               | N° de facture intermediaire                                       |
+| facintermediaires | INVOICEDATE          | Date de facture intermediaire                                     |
+| facintermediaires | HT                   | Montant hors taxe facture intermediaire                           |
+| facintermediaires | TTC                  | Montant TTC facture intermediaire                                 |
+| facintermediaires | AMOUNTPAYED          | Montant payé facture intermediaire                                |
+| facintermediaires | MODEREGLT            | Mode de reglement facture intermediaire                           |
+| faccommande       | NUMERO               | N° facture intermediaire liée à la commande                       |
+| faccommande       | INVOICEDATE          | Date de facture intermediaire liée à la commande                  |
+| faccommande       | HT                   | Montant hors taxe facture intermediaire liée à la  commande       |
+| faccommande       | TTC                  | Montant ttc facture intermediaire liée à la commande              |
+| faccommande       | AMOUNTPAYED          | Montant payé facture intermediaire liée à la commande             |
+| faccommande       | MODEREGLT            | Mode de reglement facture intermediaire liée à la commande        |
+| faccommande       | LASTPAYMENTDATE      | Date du dernier paiement facture intermediaire liée à la commande |
+| faccommande       | ISACOMPTE            | Facture intermediaire liée à la commande est un acompte           |
+| faccommande       | ISASSET              | Facture intermediaire liée à la commande est un avoir             |
+| histoacompte      | NUMERO               | N° d'acompte                                                      |
+| histoacompte      | TTC                  | Montant ttc acompte                                               |
+| histoacompte      | HT                   | Montant Hors Taxes acompte                                        |
+| histoacompte      | TVA                  | TVA acompte                                                       |
+| lignes            | REFERENCE            | Libellé ligne                                                     |
+| lignes            | COMMENTAIRE          | Commentaire ligne                                                 |
+| lignes            | UNITE                | Unité                                                             |
+| lignes            | PRIXUNITAIRE         | Prix unitaire                                                     |
+| lignes            | HT                   | Montant HT                                                        |
+| lignes            | QUANTITE             | Quantité                                                          |
+| lignes            | REDUCTION            | Réduction                                                         |
+| lignes            | TTC                  | Montant TTC                                                       |
+| lignes            | TVA                  | Montant TVA                                                       |
+| lignes            | REFPRODUCT           | Référence Produit interne                                         |
+| lignes            | BARCODE              | Code barre                                                        |
+| lignes            | SECTIONID            | Identifiant section                                               |
+| lignes            | LIBELLE              | Libellé ligne                                                     |
+| lignes            | COMMENTAIRE_SECTION  | Commentaire section                                               |
+| lignes            | CATPRODUCT_LABEL     | Libellé catégorie produit                                         |
+| lignes            | ORDERQUANTITE        | Quantité commandée                                                |
+| lignes            | CUSTORDERREFERENCE   | Référence client                                                  |
+| lignes            | PRODUCTLOGO          | Logo Produit                                                      |
+| lignes            | HTTPS                | URL boutique                                                      |
+| lignes            | TVA5                 | Montant TVA 5% sur ligne                                          |
+| lignes            | TVA10                | Montant TVA 10% sur ligne                                         |
+| lignes            | TVA20                | Montant TVA 20% sur ligne                                         |
