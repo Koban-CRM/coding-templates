@@ -546,6 +546,138 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
         <CommandText />
       </Query>
     </DataSet>
+    <DataSet Name="lignesoption">
+      <Fields>
+        <Field Name="SECTIONID">
+          <DataField>SECTIONID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LIBELLE">
+          <DataField>LIBELLE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMMENTAIRE_SECTION">
+          <DataField>COMMENTAIRE_SECTION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DESIGNATION">
+          <DataField>DESIGNATION</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMMENTAIRE">
+          <DataField>COMMENTAIRE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UNITE">
+          <DataField>UNITE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRIXUNITAIRE">
+          <DataField>PRIXUNITAIRE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="HT">
+          <DataField>HT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="QUANTITE">
+          <DataField>QUANTITE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="REDUCTION">
+          <DataField>REDUCTION</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TTC">
+          <DataField>TTC</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TVA">
+          <DataField>TVA</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="REFERENCE">
+          <DataField>REFERENCE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRDSF1">
+          <DataField>PRDSF1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PRDSF2">
+          <DataField>PRDSF2</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HTTPS">
+          <DataField>HTTPS</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="BARCODE">
+          <DataField>BARCODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ISCTR">
+          <DataField>ISCTR</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="HT_PUCTR">
+          <DataField>HT_PUCTR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TTC_PUCTR">
+          <DataField>TTC_PUCTR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="HT_NOCTR">
+          <DataField>HT_NOCTR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TTC_NOCTR">
+          <DataField>TTC_NOCTR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PRIXPAR">
+          <DataField>PRIXPAR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="CATPRODUCT_LABEL">
+          <DataField>CATPRODUCT_LABEL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CLASSIF">
+          <DataField>CLASSIF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TVA5">
+          <DataField>TVA5</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TVA10">
+          <DataField>TVA10</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TVA20">
+          <DataField>TVA20</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PRODUCTLOGO">
+          <DataField>PRODUCTLOGO</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DATE_LIVR_PREVUEE">
+          <DataField>PRVDATEDELIVERY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SEM_LIVR_PREVUEE">
+          <DataField>PRVWEEKDELIVERY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>Apeacz</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
     <DataSet Name="detailtva">
       <Fields>
         <Field Name="TAUX">
@@ -587,149 +719,178 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 
 ## Définition des champs
 
-| Nom DataSet     | Nom Champ          | Définition                             |
-| --------------- | ------------------ | -------------------------------------- |
-| client          | NOM                | Nom du client                          |
-| client          | ADR_COMPLEMENT     | Adresse / Complément client            |
-| client          | ADR_NOVOIE         | Non utilisé                            |
-| client          | ADR_RUE            | Adresse / Rue client                   |
-| client          | ADR_VILLE          | Adresse / Ville client                 |
-| client          | ADR_CPOSTAL        | Adresse / Code Postal client           |
-| client          | ADR_COUNTRY        | Adresse / Pays client                  |
-| client          | PHONE              | Téléphone client                       |
-| client          | FAX                | N° de fax client                       |
-| client          | EMAIL              | Email client                           |
-| client          | SIRET              | N° de siret client                     |
-| client          | ADRFAC_COMPLEMENT  | Adresse de facturation / Complément    |
-| client          | ADRFAC_RUE         | Adresse de facturation / Rue           |
-| client          | ADRFAC_VILLE       | Adresse de facturation / Ville         |
-| client          | ADRFAC_CP          | Adresse de facturation / Code postal   |
-| client          | ADRFAC_COUNTRY     | Adresse de facturation / Pays          |
-| client          | ACCOUNTINGCODE     | Compte comptable client                |
-| client          | EXTCODE            | Code externe client                    |
-| client          | ISTTC              |                                        |
-| client          | NOTVA              | N° TVA client                          |
-| client          | ADR_COUNTRY        | Adresse / Pays                         |
-| client          | THIRDLOGO          | Logo du compte                         |
-| client          | FIRSTNAME          | Prénom du compte                       |
-| client          | GENDER             | Civilité du compte                     |
-| client          | MOBILE             | Mobile du compte                       |
-| client          | OTHERCODE          | Autre code                             |
-| client          | ASSIGNEDTO         | Utilisateur affecté au compte          |
-| Opportunité     | LIBELLE            | Libellé opportunité                    |
-| Opportunité     | DESCRIPTION        | Commentaire opportunité                |
-| Opportunité     | TELAFFECTE         | Téléphone personne affectée            |
-| Opportunité     | EMAILAFFECTE       | EMail personne affectée                |
-| Opportunité     | NOMAFFECTE         | Personne affectée                      |
-| devis           | DATEENVOI          | Date d'envoi                           |
-| devis           | CTR_PREVSTARTDATE  | Date de début contrat prévue           |
-| devis           | DATECREATION       | Date de création du devis              |
-| devis           | NUMERO             | N° de devis                            |
-| devis           | LIBELLE            | Libellé devis                          |
-| devis           | PIEDPAGE           | Texte Pied de page                     |
-| devis           | LOGO               | Logo structure                         |
-| devis           | TELPAR             | Téléphone personne affectée            |
-| devis           | EMAILPAR           | EMail personne affectée                |
-| devis           | PAR                | Nom et prénom personne affectée        |
-| devis           | FONCTIONPAR        | Fonction de la personne affectée       |
-| devis           | NOMCONTACT         | Nom contact client                     |
-| devis           | DATELIVRAISON      | Date de livraion devis                 |
-| devis           | DUREETRAVAUX       | Durée des travaux devis                |
-| devis           | BACKCOLOR          | Couleur de fond du modèle de document  |
-| devis           | PERIODEVALIDITE    | Période de validité                    |
-| devis           | MODERGLT           | Mode de règlement                      |
-| devis           | NOMSOCIETE         | Nom Structure                          |
-| devis           | FORMECAPITAL       | Forme Capital Structure                |
-| devis           | ADRESSE1           | Adresse 1 Structure                    |
-| devis           | ADRESSE2           | Adresse 2 Structure                    |
-| devis           | SIREN              | SIREN Structure                        |
-| devis           | RCS                | Non utilisé                            |
-| devis           | APE                | Non utilisé                            |
-| devis           | NOTVA              | Numéro TVA Structure                   |
-| opportspecfield | SPECFIELD1         | Non utilisé                            |
-| opportspecfield | SPECFIELD2         | Non utilisé                            |
-| opportspecfield | SPECFIELD3         | Non utilisé                            |
-| opportspecfield | SPECFIELD4         | Non utilisé                            |
-| opportspecfield | SPECFIELD5         | Non utilisé                            |
-| opportspecfield | SPECFIELD6         | Non utilisé                            |
-| opportspecfield | SPECACCOUNTFIEL1   | Non utilisé                            |
-| opportspecfield | SPECACCOUNTFIEL2   | Non utilisé                            |
-| devis           | DATEENVOI          | Date d'envoi                           |
-| devis           | NUMERO             | Numéro devis                           |
-| devis           | LIBELLE            | Libellé devis                          |
-| devis           | PIEDPAGE           | Pied de page                           |
-| devis           | LOGO               | Logo                                   |
-| devis           | TELPAR             | Téléphone personne affectée            |
-| devis           | EMAILPAR           | EMail personne affectée                |
-| devis           | PAR                | Personne affectée                      |
-| devis           | NOMCONTACT         | Nom contact client                     |
-| devis           | DATELIVRAISON      | Date de livraison devis                |
-| devis           | DUREETRAVAUX       | Durée des travaux                      |
-| devis           | BACKCOLOR          | Couleur de fond du modèle de document  |
-| devis           | PERIODEVALIDITE    | Période de validité                    |
-| devis           | MODERGLT           | Mode de règlement                      |
-| devis           | NOMSOCIETE         | Nom Structure                          |
-| devis           | FORMECAPITAL       | Forme Capital Structure                |
-| devis           | ADRESSE1           | Adresse 1 Structure                    |
-| devis           | ADRESSE2           | Adresse 2 Structure                    |
-| devis           | SIREN              | SIREN Structure                        |
-| devis           | RCS                | Non utilisé                            |
-| devis           | APE                | Non utilisé                            |
-| devis           | NOTVA              | Numéro TVA Structure                   |
-| devis           | MENTIONCOMPL       | Mentions complémentaire Structure      |
-| devis           | FAXCONTACT         | N° de fax contact client               |
-| devis           | MAILCONTACT        | Email contact client                   |
-| devis           | PHONECONTACT       | Télephone contact client               |
-| devis           | FONCTIONCONTACT    | Fonction contact client                |
-| devis           | HEADER             | Texte Entête                           |
-| devis           | FOOTER             | Texte Pied de page                     |
-| devis           | CURRENCYSYMBOL     | Devise                                 |
-| devis           | DELIVCOMPL         | Adresse Livraison / Complément Client  |
-| devis           | DELIVRUE           | Adresse Livraison / Rue Client         |
-| devis           | DELIVVILLE         | Adresse Livraison / Ville Client       |
-| devis           | DELIVCP            | Adresse Livraison / Code Postal Client |
-| devis           | ECHEANCE           | Échéance                               |
-| devis           | CPTFAC_NOM         | Nom/Libellé compte de facturation      |
-| devis           | CPT_FACADRS        | Adresse compte de facturation          |
-| devis           | CUSTOMERREFERENCE  | Référence client                       |
-| devis           | TRACKINGURL        | Non utilisé                            |
-| devis           | RIB                | RIB Structure                          |
-| devis           | IBAN               | IBAN Structure                         |
-| devis           | BIC                | BIC Structure                          |
-| devis           | MOBILECONTACT      | N° de mobile du contact client         |
-| devis           | MOBILEPAR          | Mobile personne affectée               |
-| devis           | INCOTERM           |                                        |
-| lignes          | SECTIONID          | Identifiant Section                    |
-| lignes          | LIBELLE            | Libellé Section                        |
-| lignes          | COMMENTAIRESECTION | Commentaire section                    |
-| lignes          | DESIGNATION        | Libellé ligne                          |
-| lignes          | COMMENTAIRE        | Commentaire ligne                      |
-| lignes          | UNITE              | Unité                                  |
-| lignes          | PRIXUNITAIRE       | Prix unitaire                          |
-| lignes          | HT                 | Montant HT                             |
-| lignes          | QUANTITE           | Quantité                               |
-| lignes          | REDUCTION          | Réduction                              |
-| lignes          | TTC                | Montant TTC                            |
-| lignes          | TVA                | Montant TVA                            |
-| lignes          | REFERENCE          | Référence Produit interne              |
-| lignes          | PRDSF1             |                                        |
-| lignes          | PRDSF2             |                                        |
-| lignes          | HTTPS              | URL eBoutique                          |
-| lignes          | BARCODE            | Code barre                             |
-| lignes          | ISCTR              | Est un produit avec tarif client       |
-| lignes          | HT_PUCTR           | Montant HT prix tarif client           |
-| lignes          | TTC_PUCTR          | Montant TTC prix tarif client          |
-| lignes          | HT_NOCTR           | Montant HT hors prix tarif client      |
-| lignes          | TTC_NOCTR          | Montant TTC hors prix tarif client     |
-| lignes          | PRIXPAR            |                                        |
-| lignes          | CATPRODUCT_LABEL   | Libellé catégorie produit              |
-| lignes          | PRODUCTLOGO        | Logo Produit                           |
-| lignes          | CLASSIF            | Classification produit                 |
-| lignes          | TVA5               | Montant TVA 5% sur ligne               |
-| lignes          | TVA10              | Montant TVA 10% sur ligne              |
-| lignes          | TVA20              | Montant TVA 20% sur ligne              |
-| postttc         | LABEL              | Libellé Remise post TTC                |
-| postttc         | AMOUNT             | Montant Remise post TTC                |
-| detailtva       | TAUX               | Taux de TVA                            |
-| detailtva       | HT                 | Montant Hors Taxes TVA                 |
-| detailtva       | TVA                | Montant TVA                            |
+| **Nom DataSet** | **Nom Champ**      | **Définition**                             |
+| --------------- | ------------------ | ------------------------------------------ |
+| client          | NOM                | Nom du client                              |
+| client          | ADR_COMPLEMENT     | Adresse / Complément client                |
+| client          | ADR_NOVOIE         | Non utilisé                                |
+| client          | ADR_RUE            | Adresse / Rue client                       |
+| client          | ADR_VILLE          | Adresse / Ville client                     |
+| client          | ADR_CPOSTAL        | Adresse / Code Postal client               |
+| client          | ADR_COUNTRY        | Adresse / Pays client                      |
+| client          | PHONE              | Téléphone client                           |
+| client          | FAX                | N° de fax client                           |
+| client          | EMAIL              | Email client                               |
+| client          | SIRET              | N° de siret client                         |
+| client          | ADRFAC_COMPLEMENT  | Adresse de facturation /<br> Complément    |
+| client          | ADRFAC_RUE         | Adresse de facturation / Rue               |
+| client          | ADRFAC_VILLE       | Adresse de facturation / Ville             |
+| client          | ADRFAC_CP          | Adresse de facturation / Code<br> postal   |
+| client          | ADRFAC_COUNTRY     | Adresse de facturation / Pays              |
+| client          | ACCOUNTINGCODE     | Compte comptable client                    |
+| client          | EXTCODE            | Code externe client                        |
+| client          | ISTTC              |                                            |
+| client          | NOTVA              | N° TVA client                              |
+| client          | ADR_COUNTRY        | Adresse / Pays                             |
+| client          | THIRDLOGO          | Logo du compte                             |
+| client          | FIRSTNAME          | Prénom du compte                           |
+| client          | GENDER             | Civilité du compte                         |
+| client          | MOBILE             | Mobile du compte                           |
+| client          | OTHERCODE          | Autre code                                 |
+| client          | ASSIGNEDTO         | Utilisateur affecté au compte              |
+| Opportunité     | LIBELLE            | Libellé opportunité                        |
+| Opportunité     | DESCRIPTION        | Commentaire opportunité                    |
+| Opportunité     | TELAFFECTE         | Téléphone personne affectée                |
+| Opportunité     | EMAILAFFECTE       | EMail personne affectée                    |
+| Opportunité     | NOMAFFECTE         | Personne affectée                          |
+| devis           | DATEENVOI          | Date d'envoi                               |
+| devis           | CTR_PREVSTARTDATE  | Date de début contrat prévue               |
+| devis           | DATECREATION       | Date de création du devis                  |
+| devis           | NUMERO             | N° de devis                                |
+| devis           | LIBELLE            | Libellé devis                              |
+| devis           | PIEDPAGE           | Texte Pied de page                         |
+| devis           | LOGO               | Logo structure                             |
+| devis           | TELPAR             | Téléphone personne affectée                |
+| devis           | EMAILPAR           | EMail personne affectée                    |
+| devis           | PAR                | Nom et prénom personne affectée            |
+| devis           | FONCTIONPAR        | Fonction de la personne affectée           |
+| devis           | NOMCONTACT         | Nom contact client                         |
+| devis           | DATELIVRAISON      | Date de livraion devis                     |
+| devis           | DUREETRAVAUX       | Durée des travaux devis                    |
+| devis           | BACKCOLOR          | Couleur de fond du modèle de<br> document  |
+| devis           | PERIODEVALIDITE    | Période de validité                        |
+| devis           | MODERGLT           | Mode de règlement                          |
+| devis           | NOMSOCIETE         | Nom Structure                              |
+| devis           | FORMECAPITAL       | Forme Capital Structure                    |
+| devis           | ADRESSE1           | Adresse 1 Structure                        |
+| devis           | ADRESSE2           | Adresse 2 Structure                        |
+| devis           | SIREN              | SIREN Structure                            |
+| devis           | RCS                | Non utilisé                                |
+| devis           | APE                | Non utilisé                                |
+| devis           | NOTVA              | Numéro TVA Structure                       |
+| opportspecfield | SPECFIELD1         | Non utilisé                                |
+| opportspecfield | SPECFIELD2         | Non utilisé                                |
+| opportspecfield | SPECFIELD3         | Non utilisé                                |
+| opportspecfield | SPECFIELD4         | Non utilisé                                |
+| opportspecfield | SPECFIELD5         | Non utilisé                                |
+| opportspecfield | SPECFIELD6         | Non utilisé                                |
+| opportspecfield | SPECACCOUNTFIEL1   | Non utilisé                                |
+| opportspecfield | SPECACCOUNTFIEL2   | Non utilisé                                |
+| devis           | DATEENVOI          | Date d'envoi                               |
+| devis           | NUMERO             | Numéro devis                               |
+| devis           | LIBELLE            | Libellé devis                              |
+| devis           | PIEDPAGE           | Pied de page                               |
+| devis           | LOGO               | Logo                                       |
+| devis           | TELPAR             | Téléphone personne affectée                |
+| devis           | EMAILPAR           | EMail personne affectée                    |
+| devis           | PAR                | Personne affectée                          |
+| devis           | NOMCONTACT         | Nom contact client                         |
+| devis           | DATELIVRAISON      | Date de livraison devis                    |
+| devis           | DUREETRAVAUX       | Durée des travaux                          |
+| devis           | BACKCOLOR          | Couleur de fond du modèle de<br> document  |
+| devis           | PERIODEVALIDITE    | Période de validité                        |
+| devis           | MODERGLT           | Mode de règlement                          |
+| devis           | NOMSOCIETE         | Nom Structure                              |
+| devis           | FORMECAPITAL       | Forme Capital Structure                    |
+| devis           | ADRESSE1           | Adresse 1 Structure                        |
+| devis           | ADRESSE2           | Adresse 2 Structure                        |
+| devis           | SIREN              | SIREN Structure                            |
+| devis           | RCS                | Non utilisé                                |
+| devis           | APE                | Non utilisé                                |
+| devis           | NOTVA              | Numéro TVA Structure                       |
+| devis           | MENTIONCOMPL       | Mentions complémentaire<br> Structure      |
+| devis           | FAXCONTACT         | N° de fax contact client                   |
+| devis           | MAILCONTACT        | Email contact client                       |
+| devis           | PHONECONTACT       | Télephone contact client                   |
+| devis           | FONCTIONCONTACT    | Fonction contact client                    |
+| devis           | HEADER             | Texte Entête                               |
+| devis           | FOOTER             | Texte Pied de page                         |
+| devis           | CURRENCYSYMBOL     | Devise                                     |
+| devis           | DELIVCOMPL         | Adresse Livraison / Complément<br> Client  |
+| devis           | DELIVRUE           | Adresse Livraison / Rue Client             |
+| devis           | DELIVVILLE         | Adresse Livraison / Ville Client           |
+| devis           | DELIVCP            | Adresse Livraison / Code Postal<br> Client |
+| devis           | ECHEANCE           | Échéance                                   |
+| devis           | CPTFAC_NOM         | Nom/Libellé compte de<br> facturation      |
+| devis           | CPT_FACADRS        | Adresse compte de facturation              |
+| devis           | CUSTOMERREFERENCE  | Référence client                           |
+| devis           | TRACKINGURL        | Non utilisé                                |
+| devis           | RIB                | RIB Structure                              |
+| devis           | IBAN               | IBAN Structure                             |
+| devis           | BIC                | BIC Structure                              |
+| devis           | MOBILECONTACT      | N° de mobile du contact client             |
+| devis           | MOBILEPAR          | Mobile personne affectée                   |
+| devis           | INCOTERM           |                                            |
+| lignes          | SECTIONID          | Identifiant Section                        |
+| lignes          | LIBELLE            | Libellé Section                            |
+| lignes          | COMMENTAIRESECTION | Commentaire section                        |
+| lignes          | DESIGNATION        | Libellé ligne                              |
+| lignes          | COMMENTAIRE        | Commentaire ligne                          |
+| lignes          | UNITE              | Unité                                      |
+| lignes          | PRIXUNITAIRE       | Prix unitaire                              |
+| lignes          | HT                 | Montant HT                                 |
+| lignes          | QUANTITE           | Quantité                                   |
+| lignes          | REDUCTION          | Réduction                                  |
+| lignes          | TTC                | Montant TTC                                |
+| lignes          | TVA                | Montant TVA                                |
+| lignes          | REFERENCE          | Référence Produit interne                  |
+| lignes          | PRDSF1             |                                            |
+| lignes          | PRDSF2             |                                            |
+| lignes          | HTTPS              | URL eBoutique                              |
+| lignes          | BARCODE            | Code barre                                 |
+| lignes          | ISCTR              | Est un produit avec tarif client           |
+| lignes          | HT_PUCTR           | Montant HT prix tarif client               |
+| lignes          | TTC_PUCTR          | Montant TTC prix tarif client              |
+| lignes          | HT_NOCTR           | Montant HT hors prix tarif<br> client      |
+| lignes          | TTC_NOCTR          | Montant TTC hors prix tarif<br> client     |
+| lignes          | PRIXPAR            |                                            |
+| lignes          | CATPRODUCT_LABEL   | Libellé catégorie produit                  |
+| lignes          | PRODUCTLOGO        | Logo Produit                               |
+| lignes          | CLASSIF            | Classification produit                     |
+| lignes          | TVA5               | Montant TVA 5% sur ligne                   |
+| lignes          | TVA10              | Montant TVA 10% sur ligne                  |
+| lignes          | TVA20              | Montant TVA 20% sur ligne                  |
+| lignesoption    | SECTIONID          | Identifiant Section                        |
+| lignesoption    | LIBELLE            | Libellé Section                            |
+| lignesoption    | COMMENTAIRESECTION | Commentaire section                        |
+| lignesoption    | DESIGNATION        | Libellé ligne                              |
+| lignesoption    | COMMENTAIRE        | Commentaire ligne                          |
+| lignesoption    | UNITE              | Unité                                      |
+| lignesoption    | PRIXUNITAIRE       | Prix unitaire                              |
+| lignesoption    | HT                 | Montant HT                                 |
+| lignesoption    | QUANTITE           | Quantité                                   |
+| lignesoption    | REDUCTION          | Réduction                                  |
+| lignesoption    | TTC                | Montant TTC                                |
+| lignesoption    | TVA                | Montant TVA                                |
+| lignesoption    | REFERENCE          | Référence Produit interne                  |
+| lignesoption    | PRDSF1             |                                            |
+| lignesoption    | PRDSF2             |                                            |
+| lignesoption    | HTTPS              | URL eBoutique                              |
+| lignesoption    | BARCODE            | Code barre                                 |
+| lignesoption    | ISCTR              | Est un produit avec tarif client           |
+| lignesoption    | HT_PUCTR           | Montant HT prix tarif client               |
+| lignesoption    | TTC_PUCTR          | Montant TTC prix tarif client              |
+| lignesoption    | HT_NOCTR           | Montant HT hors prix tarif<br> client      |
+| lignesoption    | TTC_NOCTR          | Montant TTC hors prix tarif<br> client     |
+| lignesoption    | PRIXPAR            |                                            |
+| lignesoption    | CATPRODUCT_LABEL   | Libellé catégorie produit                  |
+| lignesoption    | PRODUCTLOGO        | Logo Produit                               |
+| lignesoption    | CLASSIF            | Classification produit                     |
+| lignesoption    | TVA5               | Montant TVA 5% sur ligne                   |
+| lignesoption    | TVA10              | Montant TVA 10% sur ligne                  |
+| lignesoption    | TVA20              | Montant TVA 20% sur ligne                  |
+| postttc         | LABEL              | Libellé Remise post TTC                    |
+| postttc         | AMOUNT             | Montant Remise post TTC                    |
+| detailtva       | TAUX               | Taux de TVA                                |
+| detailtva       | HT                 | Montant Hors Taxes TVA                     |
+| detailtva       | TVA                | Montant TVA                                |
