@@ -460,6 +460,14 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>REFERENCE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+    <Field Name="DATE_LIVR_PREVUEE">
+          <DataField>PRVDATEDELIVERY</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="SEM_LIVR_PREVUEE">
+          <DataField>PRVWEEKDELIVERY</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="PRDSF1">
           <DataField>PRDSF1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -844,6 +852,8 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | lignes          | TTC                | Montant TTC                                |
 | lignes          | TVA                | Montant TVA                                |
 | lignes          | REFERENCE          | Référence Produit interne                  |
+| lignes          | DATE_LIVR_PREVUEE  | Date de livraison produit                  |
+| lignes          | SEM_LIVR_PREVUEE   | Semaine de livraison produit               |
 | lignes          | PRDSF1             |                                            |
 | lignes          | PRDSF2             |                                            |
 | lignes          | HTTPS              | URL eBoutique                              |
