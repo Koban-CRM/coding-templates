@@ -142,48 +142,48 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 
 ## Définition des champs
 
-| Nom DataSet | Nom Champ                 | Définition                                                                      |
-|:-----------:| ------------------------- | ------------------------------------------------------------------------------- |
-| client      | ADR_COMPLEMENT            | Adresse /  Complément client                                                    |
-| client      | ADR_NOVOIE                | Non utilisé                                                                     |
-| client      | ADR_RUE                   | Adresse / Rue  client                                                           |
-| client      | ADR_VILLE                 | Adresse /  Ville client                                                         |
-| client      | ADR_CPOSTAL               | Adresse /  Code Postal client                                                   |
-| client      | ADR_COUNTRY               | Adresse /  Pays client                                                          |
-| client      | PHONE                     | Téléphone  client                                                               |
-| client      | EMAIL                     | Email client                                                                    |
-| fields      | adequation_besoin         | Champ personnalisé Koban (id du champ)                                          |
-| fields      | pres_alternatives         | Champ personnalisé Koban (id du champ)                                          |
-| fields      | entreprise_cible          | Champ personnalisé Koban (id du champ)                                          |
-| fields      | fournisseurs_actuels      | Champ personnalisé Koban (id du champ)                                          |
-| fields      | budget                    | Champ personnalisé Koban (id du champ)                                          |
-| fields      | circuit_decision          | Champ personnalisé Koban (id du champ)                                          |
-| fields      | remise_gadgets            | Champ personnalisé Koban (id du champ)                                          |
-| fields      | ecoute_client             | Champ personnalisé Koban (id du champ)                                          |
-| fields      | cadre_reglementaire       | Champ personnalisé Koban (id du champ)                                          |
-| fields      | surfaces_traitement       | Champ personnalisé Koban (id du champ)                                          |
-| fields      | materiel_maintenance      | Champ personnalisé Koban (id du champ)                                          |
-| fields      | personnes_hygiene         | Champ personnalisé Koban (id du champ)                                          |
-| fields      | processus_production      | Champ personnalisé Koban (id du champ)                                          |
-| fields      | process_controle          | Champ personnalisé Koban (id du champ)                                          |
-| fields      | plan_maintenance          | Champ personnalisé Koban (id du champ)                                          |
-| fields      | frequence_usage           | Champ personnalisé Koban (id du champ)                                          |
-| fields      | saisonnalite_activite     | Champ personnalisé Koban (id du champ)                                          |
-| fields      | centres_interets_perso    | Champ personnalisé Koban (id du champ)                                          |
-| fields      | presentation_indiv        | Champ personnalisé Koban (id du champ)                                          |
-| fields      | points_attention          | Champ personnalisé Koban (id du champ)                                          |
-| fields      | vocabulaire_adapte        | Champ personnalisé Koban (id du champ)                                          |
-| fields      | clients_visites_nombre    | Champ personnalisé Koban (id du champ)                                          |
-| fields      | clients_visites_potentiel | Champ personnalisé Koban (id du champ)                                          |
-| fields      | visites_blanc_nombre      | Champ personnalisé Koban (id du champ)                                          |
-| fields      | visites_blanc_potentiel   | Champ personnalisé Koban (id du champ)                                          |
-| fields      | visites_rdv_nombre        | Champ personnalisé Koban (id du champ)                                          |
-| fields      | visites_rdv_potentiel     | Champ personnalisé Koban (id du champ)                                          |
-| fields      | prospects_nombre          | Champ personnalisé Koban (id du champ)                                          |
-| fields      | prospects_potentiel       | Champ personnalisé Koban (id du champ)                                          |
-| fields      | n_de_serie                | Champ personnalisé Koban (id du champ) de type  System string(caractères)       |
-| fields      | sous_garantie             | Champ personnalisé Koban (id du champ) de type System.Boolean ( case à cocher)  |
-| fields      | date_installation         | Champ personnalisé Koban (id du champ) de type System.DateTime (Format date)    |
-| fields      | prix_ht                   | Champ personnalisé Koban (id du champ) de type System.Double (Format numérique) |
-| photos      | URL                       | Url de l'image insérée sur fil de l'Objet dans Koban                            |
-| photos      | POSITION                  | Position de l'image                                                             |
+| Nom DataSet | Nom Champ                 | Définition                                                                           |
+|:-----------:| ------------------------- | ------------------------------------------------------------------------------------ |
+| client      | ADR_COMPLEMENT            | Adresse /  Complément client                                                         |
+| client      | ADR_NOVOIE                | Non utilisé                                                                          |
+| client      | ADR_RUE                   | Adresse / Rue  client                                                                |
+| client      | ADR_VILLE                 | Adresse /  Ville client                                                              |
+| client      | ADR_CPOSTAL               | Adresse /  Code Postal client                                                        |
+| client      | ADR_COUNTRY               | Adresse /  Pays client                                                               |
+| client      | PHONE                     | Téléphone  client                                                                    |
+| client      | EMAIL                     | Email client                                                                         |
+| fields      | adequation_besoin         | Champ personnalisé Koban (id du champ)                                               |
+| fields      | pres_alternatives         | Champ personnalisé Koban (id du champ)                                               |
+| fields      | entreprise_cible          | Champ personnalisé Koban (id du champ)                                               |
+| fields      | fournisseurs_actuels      | Champ personnalisé Koban (id du champ)                                               |
+| fields      | budget                    | Champ personnalisé Koban (id du champ)                                               |
+| fields      | circuit_decision          | Champ personnalisé Koban (id du champ)                                               |
+| fields      | remise_gadgets            | Champ personnalisé Koban (id du champ)                                               |
+| fields      | ecoute_client             | Champ personnalisé Koban (id du champ)                                               |
+| fields      | cadre_reglementaire       | Champ personnalisé Koban (id du champ)                                               |
+| fields      | surfaces_traitement       | Champ personnalisé Koban (id du champ)                                               |
+| fields      | materiel_maintenance      | Champ personnalisé Koban (id du champ)                                               |
+| fields      | personnes_hygiene         | Champ personnalisé Koban (id du champ)                                               |
+| fields      | processus_production      | Champ personnalisé Koban (id du champ)                                               |
+| fields      | process_controle          | Champ personnalisé Koban (id du champ)                                               |
+| fields      | plan_maintenance          | Champ personnalisé Koban (id du champ)                                               |
+| fields      | frequence_usage           | Champ personnalisé Koban (id du champ)                                               |
+| fields      | saisonnalite_activite     | Champ personnalisé Koban (id du champ)                                               |
+| fields      | centres_interets_perso    | Champ personnalisé Koban (id du champ)                                               |
+| fields      | presentation_indiv        | Champ personnalisé Koban (id du champ)                                               |
+| fields      | points_attention          | Champ personnalisé Koban (id du champ)                                               |
+| fields      | vocabulaire_adapte        | Champ personnalisé Koban (id du champ)                                               |
+| fields      | clients_visites_nombre    | Champ personnalisé Koban (id du champ)                                               |
+| fields      | clients_visites_potentiel | Champ personnalisé Koban (id du champ)                                               |
+| fields      | visites_blanc_nombre      | Champ personnalisé Koban (id du champ)                                               |
+| fields      | visites_blanc_potentiel   | Champ personnalisé Koban (id du champ)                                               |
+| fields      | visites_rdv_nombre        | Champ personnalisé Koban (id du champ)                                               |
+| fields      | visites_rdv_potentiel     | Champ personnalisé Koban (id du champ)                                               |
+| fields      | prospects_nombre          | Champ personnalisé Koban (id du champ)                                               |
+| fields      | prospects_potentiel       | Champ personnalisé Koban (id du champ)                                               |
+| fields      | n_de_serie                | Champ personnalisé Koban (id du champ) de type  System string(Format caractères)     |
+| fields      | sous_garantie             | Champ personnalisé Koban (id du champ) de type System.Boolean (Format case à cocher) |
+| fields      | date_installation         | Champ personnalisé Koban (id du champ) de type System.DateTime (Format date)         |
+| fields      | prix_ht                   | Champ personnalisé Koban (id du champ) de type System.Double (Format numérique)      |
+| photos      | URL                       | Url de l'image insérée sur fil de l'Objet dans Koban                                 |
+| photos      | POSITION                  | Position de l'image                                                                  |
