@@ -264,6 +264,11 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>NOMSOCIETE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="STRUCTURECODE">
+          <DataField>STRUCTURECODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+
         <Field Name="FORMECAPITAL">
           <DataField>FORMECAPITAL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -788,6 +793,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | devis           | MODERGLT           | Mode de règlement                          |
 | devis           | NOMSOCIETE         | Nom Structure                              |
 | devis           | FORMECAPITAL       | Forme Capital Structure                    |
+| devis           | STRUCTURECODE      | Code Structure                             |
 | devis           | ADRESSE1           | Adresse 1 Structure                        |
 | devis           | ADRESSE2           | Adresse 2 Structure                        |
 | devis           | SIREN              | SIREN Structure                            |
