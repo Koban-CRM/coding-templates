@@ -2,7 +2,7 @@
 
 Voici le code correspondant  à la déclaration des champs d'un modèle de document Objet spécifique.
 
-**Version Compatible** : Juin 2021 et supérieures
+**Version Compatible** : Juin 2025 et supérieures
 
 ```xml
   <DataSets>
