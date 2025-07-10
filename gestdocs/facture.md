@@ -106,7 +106,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
           <DataField>CUST_LOGO</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CUST_SIRET">
+        <Field Name="CUST_SIRET">
           <DataField>CUST_SIRET</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
@@ -616,6 +616,14 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
         </Field>
         <Field Name="TVA">
           <DataField>TVA</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+         <Field Name="HT_HORSACOMPTE">
+          <DataField>HT_HORSACOMPTE</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="TVA_HORSACOMPTE">
+          <DataField>TVA_HORSACOMPTE</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
         <Field Name="REFPRODUCT">
