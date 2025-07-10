@@ -454,6 +454,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
           <DataField>TVA</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
+
       </Fields>
       <Query>
         <DataSourceName>Apeacz</DataSourceName>
@@ -617,15 +618,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
         <Field Name="TVA">
           <DataField>TVA</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-         <Field Name="HT_HORSACOMPTE">
-          <DataField>HT_HORSACOMPTE</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="TVA_HORSACOMPTE">
-          <DataField>TVA_HORSACOMPTE</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
+        </Field>     
         <Field Name="REFPRODUCT">
           <DataField>REFPRODUCT</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -797,6 +790,8 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | detailtva         | TAUX                 | Taux de TVA                                                       |
 | detailtva         | HT                   | Montant Hors Taxes TVA                                            |
 | detailtva         | TVA                  | Montant TVA                                                       |
+| detailtva         | HT_HORSACOMPTE       | Montant HT Hors acompte                                           |
+| detailtva         | TVA_HORSACOMPTE      | Montant Hors Taxes acompte                                        |
 | echeances         | DATE                 | Date d'écheance facture                                           |
 | echeances         | HT                   | Montant hors taxe de l'écheance                                   |
 | echeances         | TTC                  | Montant TTC de l'écheance                                         |
