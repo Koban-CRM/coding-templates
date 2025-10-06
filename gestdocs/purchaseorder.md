@@ -94,6 +94,10 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>DEPOSIT</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="DEPOSITNAME">
+          <DataField>DEPOSITNAME</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="NOCUSTORDER">
           <DataField>NOCUSTORDER</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -277,7 +281,8 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | commande    | BACKCOLOR                   | Couleur de fond du modèle de document                                                  |
 | commande    | PERIODEVALIDITE             | Période de validité                                                                    |
 | commande    | MODERGLT                    | Mode de règlement                                                                      |
-| commande    | DEPOSIT                     | Dépot                                                                                  |
+| commande    | DEPOSIT                     | Adresse du dépot                                                                       |
+| commande    | DEPOSITNAME                 | Nom du dépot                                                                           |
 | commande    | NOCUSTORDER                 | Numéro commande client                                                                 |
 | commande    | NOPROVIDER                  | Numéro commande fournisseur                                                            |
 | commande    | CURRENCYSYMBOL              | Devise                                                                                 |
