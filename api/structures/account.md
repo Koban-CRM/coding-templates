@@ -109,7 +109,7 @@ It is to be used for updates via the API and is also returned by the selection m
 | OtherCode        | Other Code                                                   | yes                            | no             |
 | Obsolete         | Obsolete or not                                              | yes                            | no             |
 | FirstName        | First name (for a person)                                    | yes                            | yes            |
-| Gender           | Civility Code                                                | yes                            | yes            |
+| Gender           | Civility Code / Label.                                       | yes (Code)                     | yes (Label)    |
 | Status           | Status                                                       | yes (Fill Code)                | yes            |
 | Type             | Type                                                         | yes (Fill Code)                | yes            |
 | Comments         | Comments                                                     | yes                            | yes            |
