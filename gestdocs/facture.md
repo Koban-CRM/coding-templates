@@ -701,11 +701,12 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | client            | CONTACTNAME          | Nom du contact client                                             |
 | client            | CONTACTFIRSTNAME     | Prénom du contact client                                          |
 | client            | CONTACTEMAIL         | Email contact client                                              |
-| client            | ORIG_NOM             |                                                                   |
-| client            | ORIG_ADR_COMPLEMENT  |                                                                   |
-| client            | ORIG_ADR_RUE         |                                                                   |
-| client            | ORIG_ADR_VILLE       |                                                                   |
-| client            | ORIG_ADR_CPOSTA      |                                                                   |
+| client            | ORIG                 | ORIG = Compte original ( Pas compte facturé)                      |
+| client            | ORIG_NOM             | Nom du compte originel                                            |
+| client            | ORIG_ADR_COMPLEMENT  | Adresse complément compte originel                                |
+| client            | ORIG_ADR_RUE         | Adresse rue compte originel                                       |
+| client            | ORIG_ADR_VILLE       | Adresse ville compte originel                                     |
+| client            | ORIG_ADR_CPOSTA      | Adresse code postal compte originel                               |
 | client            | ORIG_NOTVA           | N° de TVA du compte d'Origine                                     |
 | client            | ISTTC                | Est TTC                                                           |
 | client            | ACCOUNTINGCODE       | Compte comptable client                                           |
