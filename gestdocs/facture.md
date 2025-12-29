@@ -334,6 +334,22 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
           <DataField>TH_CHPSUP6</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+         <Field Name="CONTRACTFROM">
+          <DataField>CONTRACTFROM</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CONTRACTTO">
+          <DataField>CONTRACTTO</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="CONTRACTNUMBER">
+          <DataField>CONTRACTNUMBER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CONTRACTLABEL">
+          <DataField>CONTRACTLABEL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="PERIODFROM">
           <DataField>PERIODFROM</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
@@ -764,6 +780,10 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | TH_CHPSUP4           | Non utilisé                                                       |
 | facture           | TH_CHPSUP5           | Non utilisé                                                       |
 | facture           | TH_CHPSUP6           | Non utilisé                                                       |
+| facture           | CONTRACTFROM         | Date début de contrat                                             |
+| facture           | CONTRACTTO           | Date fin de contrat                                               |
+| facture           | CONTRACTNUMBER       | N° de contrat                                                     |
+| facture           | CONTRACTLABEL        | Libellé du contrat                                                |
 | facture           | PERIODFROM           | Date de début de période                                          |
 | facture           | PERIODTO             | Date de fin de période                                            |
 | facture           | HASH                 | ID KOBAN                                                          |
