@@ -710,8 +710,8 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | client            | ADR_COMPLEMENT       | Adresse / Complément client                                       |
 | client            | ADR_NOVOIE           | Non utilisé                                                       |
 | client            | ADR_RUE              | Adresse / Rue client                                              |
-| client            | ADR_VILLE            | Adresse / Ville client                                            |
 | client            | ADR_CPOSTAL          | Adresse / Code Postal client                                      |
+| client            | ADR_VILLE            | Adresse / Ville client                                            |
 | client            | ADR_COUNTRY          | Adresse / Pays client                                             |
 | client            | NOTVA                | N° TVA client                                                     |
 | client            | CONTACTNAME          | Nom du contact client                                             |
@@ -721,8 +721,9 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | client            | ORIG_NOM             | Nom du compte originel                                            |
 | client            | ORIG_ADR_COMPLEMENT  | Adresse complément compte originel                                |
 | client            | ORIG_ADR_RUE         | Adresse rue compte originel                                       |
+| client            | ORIG_ADR_CPOSTAL     | Adresse code postal compte originel                               |
 | client            | ORIG_ADR_VILLE       | Adresse ville compte originel                                     |
-| client            | ORIG_ADR_CPOSTA      | Adresse code postal compte originel                               |
+| client            | ORIG_ADR_COUNTRY     | Adresse pays compte originel                                      |
 | client            | ORIG_NOTVA           | N° de TVA du compte d'Origine                                     |
 | client            | ISTTC                | Est TTC                                                           |
 | client            | ACCOUNTINGCODE       | Compte comptable client                                           |
