@@ -226,6 +226,14 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
           <DataField>NOTVA</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+   <Field Name="REGIMETVA">
+          <DataField>REGIMETVA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CODETYPOLOGIE">
+          <DataField>CODETYPOLOGIE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="MENTIONCOMPL">
           <DataField>MENTIONCOMPL</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -760,6 +768,8 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | APE                  | Non utilisé                                                       |
 | facture           | NOTVA                | Numéro TVA Structure                                              |
 | facture           | MENTIONCOMPL         | Mentions complémentaire Structure                                 |
+| facture           | REGIMETVA            | Régime TVA de la structure                                        |
+| facture           | CODETYPOLOGIE        | Nature de l'opération                                             |
 | facture           | HEADER               | Texte Entête                                                      |
 | facture           | FOOTER               | Texte Pied de page                                                |
 | facture           | ISPAYED              | Statut soldé                                                      |
