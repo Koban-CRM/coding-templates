@@ -110,6 +110,10 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
           <DataField>CUST_SIRET</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+     <Field Name="CUST_SIREN">
+          <DataField>CUST_SIREN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
       </Fields>
       <Query>
         <DataSourceName>Apeacz</DataSourceName>
