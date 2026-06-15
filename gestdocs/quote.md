@@ -89,7 +89,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>ORIG_ADR_VILLE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>      
- 	<Field Name="ORIG_ADR_COUNTRY">
+     <Field Name="ORIG_ADR_COUNTRY">
           <DataField>ORIG_ADR_COUNTRY</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
@@ -676,6 +676,14 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
         </Field>
         <Field Name="TTC_NOCTR">
           <DataField>TTC_NOCTR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+  <Field Name="REM_CTR">
+          <DataField>REM_CTR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="REM_NOCTR">
+          <DataField>REM_NOCTR</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
         <Field Name="PRIXPAR">
