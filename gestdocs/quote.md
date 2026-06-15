@@ -922,8 +922,8 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | lignes          | TTC_PUCTR           | Montant TTC prix tarif client                     |
 | lignes          | HT_NOCTR            | Montant HT hors prix tarif client                 |
 | lignes          | TTC_NOCTR           | Montant TTC hors prix tarif client                |
-| lignes          | REM_CTR             | Montant sur contrat                               |
-| lignes          | REM_NOCTR           | Montant hors contrat                              |
+| lignes          | REM_CTR             | Montant remise sur contrat                        |
+| lignes          | REM_NOCTR           | Montant remise hors contrat                       |
 | lignes          | PRIXPAR             | Montant TTC hors prix tarif client                |
 | lignes          | CATPRODUCT_LABEL    | Libellé catégorie produit                         |
 | lignes          | PRODUCTLOGO         | Logo Produit                                      |
@@ -955,6 +955,8 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | lignesoption    | TTC_PUCTR           | Montant TTC prix tarif client                     |
 | lignesoption    | HT_NOCTR            | Montant HT sur contrat                            |
 | lignesoption    | TTC_NOCTR           | Montant TTC hors contrat                          |
+| lignesoption    | REM_NOCTR           | Montant Remise hors contrat                       |
+| lignesoption    | REM_CTR             | Montant Remise sur contrat                        |
 | lignesoption    | PRIXPAR             | Prix par combien (champ dans la fiche produit)    |
 | lignesoption    | CATPRODUCT_LABEL    | Libellé catégorie produit                         |
 | lignesoption    | PRODUCTLOGO         | Logo Produit                                      |
@@ -966,4 +968,4 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | postttc         | AMOUNT              | Montant Remise post TTC                           |
 | detailtva       | TAUX                | Taux de TVA                                       |
 | detailtva       | HT                  | Montant Hors Taxes TVA                            |
-| detailtva       | TVA                 | Montant TVA                                       |
+| detailtva       | TVA                 | Montant TVARemi                                   |
