@@ -422,7 +422,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>MOBILEPAR</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-<Field Name="INCOTERM">
+        <Field Name="INCOTERM">
           <DataField>INCOTERM</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
@@ -530,6 +530,14 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>TTC_NOCTR</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
+  <Field Name="REM_CTR">
+          <DataField>REM_CTR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="REM_NOCTR">
+          <DataField>REM_NOCTR</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
         <Field Name="PRIXPAR">
           <DataField>PRIXPAR</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
@@ -634,7 +642,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>REFERENCE</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-<Field Name="DATE_LIVR_PREVUEE">
+        <Field Name="DATE_LIVR_PREVUEE">
           <DataField>PRVDATEDELIVERY</DataField>
           <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
@@ -678,7 +686,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
           <DataField>TTC_NOCTR</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
-  <Field Name="REM_CTR">
+      <Field Name="REM_CTR">
           <DataField>REM_CTR</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
@@ -825,7 +833,7 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | devis           | NOMCONTACT          | Nom contact client                                |
 | devis           | DATELIVRAISON       | Date de livraion devis                            |
 | devis           | DUREETRAVAUX        | Durée des travaux devis                           |
-| devis           | BACKCOLOR           | Couleur de fond du modèle de<br> document         |
+| devis           | BACKCOLOR           | Couleur de fond du modèle de document             |
 | devis           | PERIODEVALIDITE     | Période de validité                               |
 | devis           | MODERGLT            | Mode de règlement                                 |
 | devis           | NOMSOCIETE          | Nom Structure                                     |
@@ -912,9 +920,11 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | lignes          | ISCTR               | Est un produit avec tarif client                  |
 | lignes          | HT_PUCTR            | Montant HT prix tarif client                      |
 | lignes          | TTC_PUCTR           | Montant TTC prix tarif client                     |
-| lignes          | HT_NOCTR            | Montant HT hors prix tarif<br> client             |
-| lignes          | TTC_NOCTR           | Montant TTC hors prix tarif<br> client            |
-| lignes          | PRIXPAR             |                                                   |
+| lignes          | HT_NOCTR            | Montant HT hors prix tarif client                 |
+| lignes          | TTC_NOCTR           | Montant TTC hors prix tarif client                |
+| lignes          | REM_CTR             | Montant sur contrat                               |
+| lignes          | REM_NOCTR           | Montant hors contrat                              |
+| lignes          | PRIXPAR             | Montant TTC hors prix tarif client                |
 | lignes          | CATPRODUCT_LABEL    | Libellé catégorie produit                         |
 | lignes          | PRODUCTLOGO         | Logo Produit                                      |
 | lignes          | REDUCTION_CTR       | Réduction si le produit est un récurrent(Contrat) |
@@ -943,9 +953,9 @@ Voici le code correspondant  à la déclaration des champs d'un modèle de docum
 | lignesoption    | ISCTR               | Est un produit avec tarif client                  |
 | lignesoption    | HT_PUCTR            | Montant HT prix tarif client                      |
 | lignesoption    | TTC_PUCTR           | Montant TTC prix tarif client                     |
-| lignesoption    | HT_NOCTR            | Montant HT hors prix tarif<br> client             |
-| lignesoption    | TTC_NOCTR           | Montant TTC hors prix tarif<br> client            |
-| lignesoption    | PRIXPAR             |                                                   |
+| lignesoption    | HT_NOCTR            | Montant HT sur contrat                            |
+| lignesoption    | TTC_NOCTR           | Montant TTC hors contrat                          |
+| lignesoption    | PRIXPAR             | Prix par combien (champ dans la fiche produit)    |
 | lignesoption    | CATPRODUCT_LABEL    | Libellé catégorie produit                         |
 | lignesoption    | PRODUCTLOGO         | Logo Produit                                      |
 | lignesoption    | CLASSIF             | Classification produit                            |
