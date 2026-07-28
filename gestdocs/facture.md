@@ -747,6 +747,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | client            | SPECFIELD1           | Non utilisé                                                       |
 | client            | SPECFIELD2           | Non utilisé                                                       |
 | client            | CUST_SIRET           | N° SIRET client                                                   |
+|                   | CUST_SIREN           | N° SIREN client                                                   |
 | client            | CUST_LOGO            | Logo client                                                       |
 | facture           | NOMCONTACT           | Nom contact client                                                |
 | facture           | FAXCONTACT           | N° de fax contact client                                          |
