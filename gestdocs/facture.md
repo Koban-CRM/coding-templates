@@ -110,6 +110,10 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
           <DataField>CUST_SIRET</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+         <Field Name="CUST_SIREN">
+          <DataField>CUST_SIREN</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         </Fields>
       <Query>
         <DataSourceName>Apeacz</DataSourceName>
@@ -739,6 +743,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | client            | SPECFIELD1           | Non utilisé                                                       |
 | client            | SPECFIELD2           | Non utilisé                                                       |
 | client            | CUST_SIRET           | N° SIRET client                                                   |
+| client            | CUST_SIREN           | N° SIREN client                                                   |
 | client            | CUST_LOGO            | Logo client                                                       |
 | facture           | NOMCONTACT           | Nom contact client                                                |
 | facture           | FAXCONTACT           | N° de fax contact client                                          |
