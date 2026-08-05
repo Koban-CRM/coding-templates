@@ -482,7 +482,30 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
           <DataField>TVA</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
-
+DataSet Name="payments">
+      <Fields>
+        <Field Name="AMOUNT">
+          <DataField>AMOUNT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+       <Field Name="PAYMENTDATE">
+          <DataField>PAYMENTDATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+  <Field Name="PAYMENTMODE">
+          <DataField>MODERGLT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+  <Field Name="COMMENTS">
+          <DataField>COMMENTS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>Apeacz</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
       </Fields>
       <Query>
         <DataSourceName>Apeacz</DataSourceName>
@@ -824,6 +847,7 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
 | facture           | MOBILECONTACT        | N° de mobile du contact client                                    |
 | postttc           | LABEL                | Libellé Remise post TTC                                           |
 | postttc           | AMOUNT               | Montant Remise post TTC                                           |
+| payments          | AMOUNT               | Montant payé                                                      |
 | detailtva         | TAUX                 | Taux de TVA                                                       |
 | detailtva         | HT                   | Montant Hors Taxes TVA                                            |
 | detailtva         | TVA                  | Montant TVA                                                       |
