@@ -848,6 +848,9 @@ DataSet Name="payments">
 | postttc           | LABEL                | Libellé Remise post TTC                                           |
 | postttc           | AMOUNT               | Montant Remise post TTC                                           |
 | payments          | AMOUNT               | Montant payé                                                      |
+| payments          | PAYMENTDATE          | Date de paiement                                                  |
+| payments          | PAYMENTMODE          | Mode de paiement                                                  |
+| payments          | COMMENTS             | Commentaires du paiement                                          |
 | detailtva         | TAUX                 | Taux de TVA                                                       |
 | detailtva         | HT                   | Montant Hors Taxes TVA                                            |
 | detailtva         | TVA                  | Montant TVA                                                       |
