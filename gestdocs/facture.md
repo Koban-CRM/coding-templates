@@ -482,6 +482,12 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
           <DataField>TVA</DataField>
           <rd:TypeName>System.Double</rd:TypeName>
         </Field>
+  </Fields>
+      <Query>
+        <DataSourceName>Apeacz</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
 DataSet Name="payments">
       <Fields>
         <Field Name="AMOUNT">
@@ -500,12 +506,6 @@ DataSet Name="payments">
           <DataField>COMMENTS</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-      </Fields>
-      <Query>
-        <DataSourceName>Apeacz</DataSourceName>
-        <CommandText />
-      </Query>
-    </DataSet>
       </Fields>
       <Query>
         <DataSourceName>Apeacz</DataSourceName>
