@@ -468,7 +468,30 @@ Voici le code correspondant à la déclaration des champs d'un modèle de docume
             <CommandText />
         </Query>
     </DataSet>
-
+<DataSet Name="payments">
+      <Fields>
+        <Field Name="PAYMENTDATE">
+          <DataField>PAYMENTDATE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="AMOUNT">
+          <DataField>AMOUNT</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="PAYMENTMODE">
+          <DataField>PAYMENTMODE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="COMMENTS">
+          <DataField>COMMENTS</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>Apeacz</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
     <DataSet Name="detailtva">
       <Fields>
         <Field Name="TAUX">
